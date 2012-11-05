@@ -6,3 +6,4 @@ Do not hesitate to add yours.
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
 - [HKWarnings](https://itunes.apple.com/us/app/hkwarnings/id370901118)
+- [Askking Quizz](https://itunes.apple.com/fr/app/askkingquizz/id547039149)
