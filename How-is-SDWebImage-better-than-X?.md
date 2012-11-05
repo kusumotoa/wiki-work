@@ -1,6 +1,6 @@
 ### Since iOS 5.0, NSURLCache handles disk caching, what is the advantage of SDWebImage over plain NSURLRequest?
 
-iOS NSURLCache does memory and disk caching (since iOS 5) of raw HTTP responses. Each time the cache is hit, you're app will have to transform the raw cached data into an UIImage. This involves extensive operations like data parsing (HTTP data are encoded), memory copy etc.
+iOS NSURLCache does memory and disk caching (since iOS 5) of raw HTTP responses. Each time the cache is hit, your app will have to transform the raw cached data into an UIImage. This involves extensive operations like data parsing (HTTP data are encoded), memory copy etc.
 
 On the other side, SDWebImage caches the UIImage representation in memory and store the original compressed (but decoded) image file on disk. UIImage are stored as-is in memory using NSCache, so no copy is involved, and memory is freed as soon as your app or the system needs it.
 
