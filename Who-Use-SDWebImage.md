@@ -12,3 +12,4 @@ Do not hesitate to add yours.
 - [DareYa!](https://itunes.apple.com/us/app/dare-ya!/id526882846)
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
 - [cubodo](https://itunes.apple.com/en/app/cubodo-path-moments-die-london/id509493671?mt=8)
+- [HopStop](https://itunes.apple.com/us/app/hopstop/id303217144)
