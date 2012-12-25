@@ -13,3 +13,4 @@ Do not hesitate to add yours.
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
 - [cubodo](https://itunes.apple.com/en/app/cubodo-path-moments-die-london/id509493671?mt=8)
 - [HopStop](https://itunes.apple.com/us/app/hopstop/id303217144)
+- [Bazaart](https://itunes.apple.com/us/app/bazaart/id515094775)
