@@ -14,3 +14,4 @@ Do not hesitate to add yours.
 - [cubodo](https://itunes.apple.com/en/app/cubodo-path-moments-die-london/id509493671?mt=8)
 - [HopStop](https://itunes.apple.com/us/app/hopstop/id303217144)
 - [Bazaart](https://itunes.apple.com/us/app/bazaart/id515094775)
+- [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577)
