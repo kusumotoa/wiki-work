@@ -3,6 +3,7 @@ Do not hesitate to add yours.
 
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
+- [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
 - [HKWarnings](https://itunes.apple.com/us/app/hkwarnings/id370901118)
@@ -14,4 +15,3 @@ Do not hesitate to add yours.
 - [cubodo](https://itunes.apple.com/en/app/cubodo-path-moments-die-london/id509493671?mt=8)
 - [HopStop](https://itunes.apple.com/us/app/hopstop/id303217144)
 - [Bazaart](https://itunes.apple.com/us/app/bazaart/id515094775)
-- [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577)
