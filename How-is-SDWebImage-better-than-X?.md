@@ -6,7 +6,7 @@ On the other side, SDWebImage caches the UIImage representation in memory and st
 
 Additionally, image decompression that normally happen in the main thread the first time your use UIImage in an UIImageView is forced in a background thread by SDWebImageDecoder.
 
-Last but not least, SDWebImage will completely bypass the complex and often miss-configured HTTP cache control negotiation. This greatly accelerate cache lookup.
+Last but not least, SDWebImage will completely bypass the complex and often misconfigured HTTP cache control negotiation. This greatly accelerate cache lookup.
 
 ### Since [AFNetworking](https://github.com/AFNetworking/AFNetworking) added similar category on UIImageView, is SDWebImage still useful?
 
