@@ -17,3 +17,4 @@ Do not hesitate to add yours.
 - [Bazaart](https://itunes.apple.com/us/app/bazaart/id515094775)
 - [War of Words](https://itunes.apple.com/us/app/war-of-words-free/id395392584)
 - [War of Words Apocalypse](https://itunes.apple.com/us/app/war-of-words-apocalypse/id508103291)
+- [Via Lattea ski area](https://itunes.apple.com/us/app/via-lattea/id574253162)
