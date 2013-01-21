@@ -1,6 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-
+- [Hot Hotels](http://hot.co.uk)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 14 countries)
