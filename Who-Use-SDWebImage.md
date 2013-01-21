@@ -20,3 +20,4 @@ Do not hesitate to add yours.
 - [Via Lattea ski area](https://itunes.apple.com/us/app/via-lattea/id574253162)
 - [Mink](http://itunes.com/apps/minkda/mink)
 - [TopAdvisor](https://itunes.apple.com/us/app/id365337656)
+- [RealtyMoz](http://jinibot.com/jinibot-llc-develops-cutting-edge-first-of-its-kind-real-estate-app-for-the-cloud/)
