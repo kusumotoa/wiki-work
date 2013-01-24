@@ -21,4 +21,4 @@ Do not hesitate to add yours.
 - [Mink](http://itunes.com/apps/minkda/mink)
 - [TopAdvisor](https://itunes.apple.com/us/app/id365337656)
 - [RealtyMoz](http://jinibot.com/jinibot-llc-develops-cutting-edge-first-of-its-kind-real-estate-app-for-the-cloud/) (Cloud based real estate app)
-- [phonetrait](http://apps.paulsteinhilber.de/phonetrait)([App Store](http://itunes.apple.com/app/phonetrait/id479472176?ign-mpt=uo%3D6&mt=8))
+- [phonetrait](http://apps.paulsteinhilber.de/phonetrait) ([App Store](http://itunes.apple.com/app/phonetrait/id479472176?ign-mpt=uo%3D6&mt=8))
