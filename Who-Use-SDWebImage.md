@@ -1,8 +1,8 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-- [Hot Hotels](http://hot.co.uk)
-- [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
+- [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
+- [Hot Hotels](http://hot.co.uk)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 14 countries)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
@@ -21,3 +21,4 @@ Do not hesitate to add yours.
 - [Mink](http://itunes.com/apps/minkda/mink)
 - [TopAdvisor](https://itunes.apple.com/us/app/id365337656)
 - [RealtyMoz](http://jinibot.com/jinibot-llc-develops-cutting-edge-first-of-its-kind-real-estate-app-for-the-cloud/) (Cloud based real estate app)
+- [phonetrait](http://apps.paulsteinhilber.de/phonetrait)([App Store](http://itunes.apple.com/app/phonetrait/id479472176?ign-mpt=uo%3D6&mt=8))
