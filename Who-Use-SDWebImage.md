@@ -1,7 +1,5 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-- [HeyCrowd](https://itunes.apple.com/us/app/heycrowd-le-grand-jeu-des/id407361691?mt=8 300 000 votes per day)
-- [OuDormir.mobi](https://itunes.apple.com/fr/app/ou-dormir/id419875144?mt=8)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 31 countries)
@@ -25,3 +23,5 @@ Do not hesitate to add yours.
 - [TopAdvisor](https://itunes.apple.com/us/app/id365337656)
 - [RealtyMoz](http://jinibot.com/jinibot-llc-develops-cutting-edge-first-of-its-kind-real-estate-app-for-the-cloud/) (Cloud based real estate app)
 - [phonetrait](http://apps.paulsteinhilber.de/phonetrait) ([App Store](http://itunes.apple.com/app/phonetrait/id479472176?ign-mpt=uo%3D6&mt=8))
+- [HeyCrowd](https://itunes.apple.com/us/app/heycrowd-le-grand-jeu-des/id407361691?mt=8 300 000 votes per day)
+- [OuDormir.mobi](https://itunes.apple.com/fr/app/ou-dormir/id419875144?mt=8)
