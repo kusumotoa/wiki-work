@@ -26,3 +26,4 @@ Do not hesitate to add yours.
 - [HeyCrowd](https://itunes.apple.com/us/app/heycrowd-le-grand-jeu-des/id407361691?mt=8 300 000 votes per day)
 - [OuDormir.mobi](https://itunes.apple.com/fr/app/ou-dormir/id419875144?mt=8)
 - [iGNANT](https://itunes.apple.com/de/app/ignant/id500183975?mt=8)
+- [GetAppNinja](http://getappninja.com)
