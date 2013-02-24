@@ -29,3 +29,4 @@ Do not hesitate to add yours.
 - [GetAppNinja](http://getappninja.com)
 - [Vendly](http://www.vend.ly)
 - [NOAA Weather Radar](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=486059426&mt=8)
+- [Passwird Deals](https://itunes.apple.com/us/app/passwirddeals/id517165629)
