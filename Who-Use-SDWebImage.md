@@ -4,7 +4,7 @@ Do not hesitate to add yours.
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 31 countries)
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533) (**new**)
-- [Moment.me](https://itunes.apple.com/us/app/moment.me/id551340583?mt=8)
+- [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
 - [Hot Hotels](http://hot.co.uk)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
