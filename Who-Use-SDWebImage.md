@@ -34,3 +34,4 @@ Do not hesitate to add yours.
 - [Garça](https://itunes.apple.com/app/id594552266?mt=8)
 - [Bycaster](https://itunes.apple.com/app/bycaster/id594950889)
 - [Xamarin Component Store](http://components.xamarin.com/view/sdwebimage/)
+- [Benerino Studios](http://www.BenerinoStudios.com)
