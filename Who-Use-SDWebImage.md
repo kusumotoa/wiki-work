@@ -36,3 +36,4 @@ Do not hesitate to add yours.
 - [Xamarin Component Store](http://components.xamarin.com/view/sdwebimage/)
 - [Benerino Studios](http://www.BenerinoStudios.com)
 - [Askking Duel](https://itunes.apple.com/app/id596771064)
+- [AutoFocus News](https://itunes.apple.com/us/app/id588216268)
