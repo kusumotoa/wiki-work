@@ -39,3 +39,4 @@ Do not hesitate to add yours.
 - [AutoFocus News](https://itunes.apple.com/us/app/id588216268)
 - [Ayran (Newsreader for COW)](https://itunes.apple.com/us/app/ayran-newsreader-for-cow/id523995658?mt=8)
 - [Listn] (http://appstore.com/listn)
+- [VinylWall] (https://itunes.apple.com/app/id635737755?mt=8)
