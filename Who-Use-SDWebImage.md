@@ -2,6 +2,7 @@ Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
+- [iHipster](https://itunes.apple.com/us/app/ihipster/id562859492)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 31 countries)
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533) (**new**)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
