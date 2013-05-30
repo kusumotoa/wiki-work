@@ -5,6 +5,7 @@ Do not hesitate to add yours.
 - [iHipster](https://itunes.apple.com/us/app/ihipster/id562859492)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 31 countries)
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533) (**new**)
+- [Tennis Score Tracker](https://itunes.apple.com/us/app/tennis-score-tracker-free/id632261225) (**new**)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
 - [Hot Hotels](http://hot.co.uk)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
