@@ -8,6 +8,7 @@ Do not hesitate to add yours.
 - [Tennis Score Tracker](https://itunes.apple.com/us/app/tennis-score-tracker-free/id632261225) (**new**)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
 - [Hot Hotels](http://hot.co.uk)
+- [Smart Weather](https://itunes.apple.com/us/app/smart-weather/id662949357?l=es&ls=1&mt=8)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
 - [HKWarnings](https://itunes.apple.com/us/app/hkwarnings/id370901118)
