@@ -12,4 +12,4 @@ Last but not least, SDWebImage will completely bypass the complex and often misc
 
 AFNetworking doesn't handle disk caching but relies on OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either.
 
-If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, AFNetworking UIImageView category may fits your needs.
+If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, AFNetworking UIImageView category may fit your needs.
