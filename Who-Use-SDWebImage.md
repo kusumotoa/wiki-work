@@ -46,3 +46,4 @@ Do not hesitate to add yours.
 - [Food Reporter] (https://itunes.apple.com/fr/app/food-reporter/id404530397?mt=8)
 - [SpeakingCars] (https://itunes.apple.com/ru/app/speakingcars/id567952026?mt=8)
 - [Quotes - Social Moments] (https://itunes.apple.com/app/id644394990)
+- [Neobuggy] (https://itunes.com/apps/neobuggy)
