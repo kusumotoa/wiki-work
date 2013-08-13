@@ -49,3 +49,4 @@ Do not hesitate to add yours.
 - [Quotes - Social Moments] (https://itunes.apple.com/app/id644394990)
 - [Neobuggy] (https://itunes.com/apps/neobuggy)
 - [PopUp] (https://itunes.apple.com/us/app/popup/id575281012?mt=8)
+- [The Daily Boards] (https://itunes.apple.com/app/id571048721)
