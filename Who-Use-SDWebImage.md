@@ -50,3 +50,4 @@ Do not hesitate to add yours.
 - [Neobuggy] (https://itunes.com/apps/neobuggy)
 - [PopUp] (https://itunes.apple.com/us/app/popup/id575281012?mt=8)
 - [The Daily Boards] (https://itunes.apple.com/app/id571048721)
+- [NexusPad] (https://itunes.apple.com/us/app/nexusapp/id573350231?ls=1&mt=8)
