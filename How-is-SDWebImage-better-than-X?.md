@@ -4,12 +4,12 @@ iOS NSURLCache does memory and disk caching (since iOS 5) of raw HTTP responses.
 
 On the other side, SDWebImage caches the UIImage representation in memory and store the original compressed (but decoded) image file on disk. UIImage are stored as-is in memory using NSCache, so no copy is involved, and memory is freed as soon as your app or the system needs it.
 
-Additionally, image decompression that normally happen in the main thread the first time your use UIImage in an UIImageView is forced in a background thread by SDWebImageDecoder.
+Additionally, image decompression that normally happens in the main thread the first time you use UIImage in an UIImageView is forced in a background thread by SDWebImageDecoder.
 
-Last but not least, SDWebImage will completely bypass the complex and often misconfigured HTTP cache control negotiation. This greatly accelerate cache lookup.
+Last but not least, SDWebImage will completely bypass the complex and often misconfigured HTTP cache control negotiation. This greatly accelerates cache lookup.
 
 ### Since [AFNetworking](https://github.com/AFNetworking/AFNetworking) added similar category on UIImageView, is SDWebImage still useful?
 
-AFNetworking doesn't handle disk caching but relies on OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either.
+AFNetworking doesn't handle disk caching but relies on the OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either.
 
-If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, AFNetworking UIImageView category may fit your needs.
+If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, the AFNetworking UIImageView category may fit your needs.
