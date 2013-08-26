@@ -8,6 +8,7 @@ Do not hesitate to add yours.
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577) (#1 on App Store in 31 countries)
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533) (**new**)
 - [Tennis Score Tracker](https://itunes.apple.com/us/app/tennis-score-tracker-free/id632261225) (**new**)
+- [Topic] (https://itunes.apple.com/app/topic./id569186190)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
 - [Hot Hotels](http://hot.co.uk)
 - [Smart Weather](https://itunes.apple.com/us/app/smart-weather/id662949357?l=es&ls=1&mt=8)
@@ -54,4 +55,3 @@ Do not hesitate to add yours.
 - [NexusPad] (https://itunes.apple.com/us/app/nexusapp/id573350231?ls=1&mt=8)
 - [Housing India] (https://itunes.apple.com/us/app/housing-india/id681756431?mt=8)
 - [FMap] (https://itunes.apple.com/au/app/fmap/id640082822?mt=8)
-- [Topic] (https://itunes.apple.com/app/topic./id569186190)
