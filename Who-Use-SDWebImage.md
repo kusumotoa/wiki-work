@@ -58,3 +58,4 @@ Do not hesitate to add yours.
 - [FMap] (https://itunes.apple.com/au/app/fmap/id640082822?mt=8)
 - [Soundwave Music Discovery] (https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
 - [ARMS F&B] (http://www.arms-fnb.com/)
+- [PR Insider] (https://itunes.apple.com/us/app/pr-insider/id694847326?l=ru&ls=1&mt=8)
