@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [SocialPar](http://socialpar.com)
 - [Pixter](http://pixter.in/)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [musiXmatch lyrics player](https://itunes.apple.com/us/app/musixmatch-lyrics-player/id448278467?l=en&mt=8)
