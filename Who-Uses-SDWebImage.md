@@ -64,4 +64,4 @@ Do not hesitate to add yours.
 - [PR Insider] (https://itunes.apple.com/us/app/pr-insider/id694847326?l=ru&ls=1&mt=8)
 - [Late Guest] (https://itunes.apple.com/br/app/id648332229)
 - [Wanelo Shopping] (https://itunes.apple.com/us/app/wanelo-shopping/id550842012?mt=8)
-- [Crowdtilt] (https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8)
+- [Crowdtilt] (https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8) (**new**)
