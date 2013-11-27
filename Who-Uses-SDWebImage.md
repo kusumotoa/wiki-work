@@ -68,3 +68,4 @@ Do not hesitate to add yours.
 - [PocketSuite] (https://itunes.apple.com/us/app/id721795146?mt=8) (Anyone with a phone can run a business)
 - [Nonapkin] (https://itunes.apple.com/us/app/nonapkin-social-food-network/id699489033?mt=8)
 - [Urban Outfitters] (https://itunes.apple.com/us/app/uo/id358821736?mt=8)
+- [NextMovies] (https://itunes.apple.com/hk/app/nextmovies-smart-movie-recommendation/id680850329?mt=8)
