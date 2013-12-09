@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Spots](https://itunes.apple.com/app/spots-location-search-for/id568368743)
 - [moeFM ACG](https://itunes.apple.com/us/app/meng-foufm-dai-ni-chang-xiang/id584640555?mt=8)
 - [SocialPar](http://socialpar.com)
 - [Pixter](http://pixter.in/)
