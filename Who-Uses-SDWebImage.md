@@ -72,3 +72,4 @@ Do not hesitate to add yours.
 - [NextMovies] (https://itunes.apple.com/hk/app/nextmovies-smart-movie-recommendation/id680850329?mt=8)
 - [Evil Apples] (https://itunes.apple.com/us/app/evil-apples-filthy-adult-card/id645705454)
 - [XBMC Music Remote] (http://xbmcmusicremote.com)
+- [Tudo Gostoso Receitas] (http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
