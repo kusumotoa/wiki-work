@@ -73,4 +73,4 @@ Do not hesitate to add yours.
 - [Evil Apples] (https://itunes.apple.com/us/app/evil-apples-filthy-adult-card/id645705454)
 - [XBMC Music Remote] (http://xbmcmusicremote.com)
 - [Tudo Gostoso Receitas] (http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
-- [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184)
+- [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
