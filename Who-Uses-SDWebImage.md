@@ -74,3 +74,4 @@ Do not hesitate to add yours.
 - [XBMC Music Remote] (http://xbmcmusicremote.com)
 - [Tudo Gostoso Receitas] (http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
 - [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
+- [Chance] (http://chance.fm)
