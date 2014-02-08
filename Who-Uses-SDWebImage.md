@@ -76,3 +76,4 @@ Do not hesitate to add yours.
 - [Tudo Gostoso Receitas] (http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
 - [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
 - [Chance] (http://chance.fm)
+- [Eennadu Sunday Book] (https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
