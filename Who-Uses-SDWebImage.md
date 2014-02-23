@@ -78,4 +78,4 @@ Do not hesitate to add yours.
 - [Chance] (http://chance.fm)
 - [Eennadu Sunday Book] (https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
 - [Tuber for YouTube] (https://itunes.apple.com/app/id555919650)
-- [Газета.RU] - https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8
+- [Газета.RU] (https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8)
