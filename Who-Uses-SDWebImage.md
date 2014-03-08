@@ -78,6 +78,6 @@ Do not hesitate to add yours.
 - [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
 - [Chance] (http://chance.fm)
 - [Eennadu Sunday Book] (https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
-- [Tuber for YouTube] (https://itunes.apple.com/app/id555919650)
+- [Tuber for YouTube] (https://itunes.apple.com/app/id555919650) (An intuitive YouTube client for iOS)
 - [Газета.RU] (https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8)
-- [Tuner for YouTube Music] (https://itunes.apple.com/app/id729354480)
+- [Tuner for YouTube Music] (https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
