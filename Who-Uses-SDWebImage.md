@@ -81,3 +81,5 @@ Do not hesitate to add yours.
 - [Tuber for YouTube] (https://itunes.apple.com/app/id555919650) (An intuitive YouTube client for iOS)
 - [Газета.RU] (https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8)
 - [Tuner for YouTube Music] (https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
+- [Gossip Bucket] (http://gossipbucket.com/app/) (Celebrity Gossip News Aggregator for iOS)
+- [MacHash News] (http://machash.com/app/) (Apple News Aggregator for iOS)
