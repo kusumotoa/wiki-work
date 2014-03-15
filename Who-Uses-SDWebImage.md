@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [60Hz](http://m2d2apps.com/60hz-for-ios7)
 - [Xronograph: For Football Fans](http://www.xronograph.com)
 - [AudioBox](http://appstore.com/icoretechinc/audiobox)
 - [Spots](https://itunes.apple.com/app/spots-location-search-for/id568368743)
