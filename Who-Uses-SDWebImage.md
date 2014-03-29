@@ -8,7 +8,7 @@ Do not hesitate to add yours.
 - [moeFM ACG](https://itunes.apple.com/us/app/meng-foufm-dai-ni-chang-xiang/id584640555?mt=8)
 - [SocialPar](http://socialpar.com)
 - [Pixter](http://pixter.in/)
-- [DerbyBred](https://appsto.re/us/pl2LO.i) (*new* puts triple-crown in palm)
+- [Derby Bred](https://appsto.re/us/pl2LO.i) (*new* puts triple-crown in palm)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [musiXmatch lyrics player](https://itunes.apple.com/us/app/musixmatch-lyrics-player/id448278467?l=en&mt=8)
 - [Zomato](https://itunes.apple.com/in/app/zomato/id434613896?mt=8) (1M+ downloads)
