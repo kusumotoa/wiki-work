@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [theScore](http://mobile.thescore.com)
 - [Jamondo](https://itunes.apple.com/br/app/jamondo/id730187068)
 - [60Hz](http://m2d2apps.com/60hz-for-ios7)
 - [Xronograph: For Football Fans](http://www.xronograph.com)
