@@ -87,3 +87,4 @@ Do not hesitate to add yours.
 - [Tuner for YouTube Music] (https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
 - [Gossip Bucket] (http://gossipbucket.com/app/) (Celebrity Gossip News Aggregator for iOS)
 - [MacHash News] (http://machash.com/app/) (Apple News Aggregator for iOS)
+- [Triposo](http://www.triposo.com/) (Interactive travel guide, [App Store](https://itunes.apple.com/app/triposo-travel-guide-to-world/id467053028))
