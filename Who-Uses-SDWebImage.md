@@ -90,3 +90,4 @@ Do not hesitate to add yours.
 - [MacHash News] (http://machash.com/app/) (Apple News Aggregator for iOS)
 - [Triposo Travel App](https://itunes.apple.com/app/triposo-travel-guide-to-world/id467053028) ([Free and interactive travel guide](http://www.triposo.com/))
 - [REC*IT] (http://recitcollege.com/) (Campus intramurals and fitness on the go!)
+- [Lifesum](https://itunes.apple.com/us/app/lifesum-lifestyle-tracker/id286906691?mt=8) 
