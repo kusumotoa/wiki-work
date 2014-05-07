@@ -91,3 +91,4 @@ Do not hesitate to add yours.
 - [Triposo Travel App](https://itunes.apple.com/app/triposo-travel-guide-to-world/id467053028) ([Free and interactive travel guide](http://www.triposo.com/))
 - [REC*IT] (http://recitcollege.com/) (Campus intramurals and fitness on the go!)
 - [Lifesum](https://itunes.apple.com/us/app/lifesum-lifestyle-tracker/id286906691?mt=8) 
+- [SOHUVideo](http://tv.sohu.com/sohuapp/) for [iPhone](https://itunes.apple.com/cn/app/id458587755?mt=8) and [iPad](https://itunes.apple.com/cn/app/sou-hu-shi-pinhd/id414430589?mt=8)
