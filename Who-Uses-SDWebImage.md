@@ -92,3 +92,4 @@ Do not hesitate to add yours.
 - [REC*IT] (http://recitcollege.com/) (Campus intramurals and fitness on the go!)
 - [Lifesum](https://itunes.apple.com/us/app/lifesum-lifestyle-tracker/id286906691?mt=8) 
 - [SOHUVideo](http://tv.sohu.com/sohuapp/) for [iPhone](https://itunes.apple.com/cn/app/id458587755?mt=8) and [iPad](https://itunes.apple.com/cn/app/sou-hu-shi-pinhd/id414430589?mt=8)
+- [Shopwave](http://getshopwave.com/) 
