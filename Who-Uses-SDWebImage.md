@@ -95,3 +95,4 @@ Do not hesitate to add yours.
 - [Shopwave](http://getshopwave.com/) 
 - [Podster](http://podster.fm/) 
 - [Kytt](https://itunes.apple.com/de/app/kytt-neue-leute-in-der-umgebung/id848959696)
+- [Tastebuds - Meet People Through Music](https://itunes.apple.com/gb/app/tastebuds-meet-people-through/id824167513?mt=8)
