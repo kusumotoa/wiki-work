@@ -99,3 +99,4 @@ Do not hesitate to add yours.
 - [Tastebuds - Meet People Through Music](https://itunes.apple.com/gb/app/tastebuds-meet-people-through/id824167513?mt=8)
 - [康大预诊](https://itunes.apple.com/cn/app/kang-da-yu-zhen-nu-ren-bao/id707364888?l=en&mt=8)
 - [Fit-Stitch: Visually Track Your Progress](http://www.fit-stitch.com/)
+- [Yahoo! News Digest](https://itunes.apple.com/us/app/yahoo-news-digest/id784982356?mt=8)
