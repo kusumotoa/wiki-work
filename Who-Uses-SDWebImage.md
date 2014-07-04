@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Delectable] (https://delectable.com/)
 - [wālo] (http://waloapp.com)
 - [Smart Post](http://pyraego.com)
 - [theScore](http://mobile.thescore.com)
