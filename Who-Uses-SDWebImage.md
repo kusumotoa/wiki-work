@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [picdumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id733115655?mt=8)
 - [Delectable] (https://delectable.com/)
 - [wālo] (http://waloapp.com)
 - [Smart Post](http://pyraego.com)
