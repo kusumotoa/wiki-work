@@ -104,3 +104,4 @@ Do not hesitate to add yours.
 - [Yahoo! News Digest](https://itunes.apple.com/us/app/yahoo-news-digest/id784982356?mt=8)
 - [YU - YUPPIU](https://itunes.apple.com/app/yu-yuppiu-kostenlose-chat/id807123201?mt=8)
 - [Histofme] (https://itunes.apple.com/us/app/histofme/id654616176?ls=1&mt=8) (Micro diary app)
+- [Peeps] (https://itunes.apple.com/us/app/peeps/id881444366)
