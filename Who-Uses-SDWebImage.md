@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar
 - [picdumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id733115655?mt=8)
 - [Delectable] (https://delectable.com/)
 - [wālo] (http://waloapp.com)
