@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Novels: On Location] (https://itunes.apple.com/us/app/novels-on-location/id625973663) Find books on a map of the world
 - [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
 - [picdumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id733115655?mt=8)
 - [Delectable] (https://delectable.com/)
