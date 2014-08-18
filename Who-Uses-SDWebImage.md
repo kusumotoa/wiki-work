@@ -1,6 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-- [NewsLoop] (https://itunes.apple.com/sg/app/newsloop/id527836708?mt=8) News Aggregator
+- [NewsLoop] (https://itunes.apple.com/sg/app/newsloop/id527836708?mt=8) Very Handsome News Aggregator
 - [Novels: On Location] (https://itunes.apple.com/us/app/novels-on-location/id625973663) Find books on a map of the world
 - [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
 - [viddumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id890354197?mt=8)
