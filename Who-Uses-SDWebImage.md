@@ -110,3 +110,4 @@ Do not hesitate to add yours.
 - [Histofme] (https://itunes.apple.com/us/app/histofme/id654616176?ls=1&mt=8) (Micro diary app)
 - [Peeps] (https://itunes.apple.com/us/app/peeps/id881444366)
 - [Riders] (https://ride.rs)
+- [Cinery] (https://www.cinery.de)
