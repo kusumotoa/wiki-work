@@ -10,6 +10,6 @@ Last but not least, SDWebImage will completely bypass the complex and often misc
 
 ### Since [AFNetworking](https://github.com/AFNetworking/AFNetworking) added similar category on UIImageView, is SDWebImage still useful?
 
-AFNetworking doesn't handle disk caching but relies on the OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either.
+AFNetworking doesn't handle disk caching but relies on the OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either. In addition, AFNetworking does not make the guarantee that the same URL won't be downloaded several times.
 
 If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, the AFNetworking UIImageView category may fit your needs.
