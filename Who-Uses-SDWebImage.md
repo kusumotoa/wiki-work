@@ -115,3 +115,4 @@ Do not hesitate to add yours.
 - [Riders] (https://ride.rs)
 - [Cinery] (https://www.cinery.de)
 - [myUwindsor] (http://www.uwindsor.ca)
+- [Appboy iOS SDK] (https://github.com/Appboy/appboy-ios-sdk)
