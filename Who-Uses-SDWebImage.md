@@ -116,3 +116,4 @@ Do not hesitate to add yours.
 - [Cinery] (https://www.cinery.de)
 - [myUwindsor] (http://www.uwindsor.ca)
 - [Appboy iOS SDK] (https://github.com/Appboy/appboy-ios-sdk)
+- [MovieSensei] (https://itunes.apple.com/se/app/dan-isacson/id922179777?l=en&mt=8)
