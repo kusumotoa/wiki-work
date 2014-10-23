@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Saloote](http://saloote.com/) A totally new concept about create virtual bands.
 - [Wusic](http://wusic.com/)
 - [Reffind] (https://itunes.apple.com/au/app/reffind/id908614584?mt=8) Find the people you need through the people you trust - Employee Referral App
 - [Retro] (https://itunes.apple.com/us/app/retro-for-instagram/id719610790?mt=8) Instagram client for iPad
