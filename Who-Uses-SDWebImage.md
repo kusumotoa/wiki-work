@@ -120,3 +120,4 @@ Do not hesitate to add yours.
 - [myUwindsor] (http://www.uwindsor.ca)
 - [Appboy iOS SDK] (https://github.com/Appboy/appboy-ios-sdk)
 - [MovieSensei] (https://itunes.apple.com/se/app/dan-isacson/id922179777?l=en&mt=8)
+- [Printables] (https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
