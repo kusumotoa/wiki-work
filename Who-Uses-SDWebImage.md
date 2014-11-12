@@ -121,3 +121,4 @@ Do not hesitate to add yours.
 - [Appboy iOS SDK] (https://github.com/Appboy/appboy-ios-sdk)
 - [MovieSensei] (https://itunes.apple.com/se/app/dan-isacson/id922179777?l=en&mt=8)
 - [Printables] (https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
+- [SimplePrints] (https://itunes.apple.com/us/app/create-photo-books-simple/id548773050?mt=8)
