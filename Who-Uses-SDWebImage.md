@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [GeoClique](https://itunes.apple.com/us/app/GeoClique/id604701780?mt=8) Social network for making friends, not followers
 - [Saloote](http://saloote.com/) A totally new concept about create virtual bands.
 - [Wusic](http://wusic.com/)
 - [Mars Images] (https://itunes.apple.com/us/app/mars-images/id492852224?mt=8) Browse a live feed of images from the NASA/JPL Curiosity and Opportunity Mars rovers
