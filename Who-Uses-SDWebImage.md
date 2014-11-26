@@ -30,6 +30,7 @@ Do not hesitate to add yours.
 - [Zomato](https://itunes.apple.com/in/app/zomato/id434613896?mt=8) (1M+ downloads)
 - [@ME App](https://itunes.apple.com/us/app/me-app/id675428660?ls=1&mt=8) (Never get lost again)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
+- [Slack] (https://itunes.apple.com/us/app/slack-team-communication/id618783545?mt=8)
 - [iHipster](https://itunes.apple.com/us/app/ihipster/id562859492)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577)
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533)
@@ -125,3 +126,4 @@ Do not hesitate to add yours.
 - [Printables] (https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
 - [SimplePrints] (https://itunes.apple.com/us/app/create-photo-books-simple/id548773050?mt=8)
 - [Throwdown] (http://itunes.apple.com/us/app/throwdown/id886061848?ls=1&mt=8) – Fitness Community, Workout Journal
+- [Epiclist] (https://itunes.apple.com/cl/app/epiclist/id789778193?l=en&mt=8)
