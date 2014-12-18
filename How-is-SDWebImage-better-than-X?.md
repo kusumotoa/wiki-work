@@ -8,8 +8,8 @@ Additionally, image decompression that normally happens in the main thread the f
 
 Last but not least, SDWebImage will completely bypass the complex and often misconfigured HTTP cache control negotiation. This greatly accelerates cache lookup.
 
-### Since [AFNetworking](https://github.com/AFNetworking/AFNetworking) added similar category on UIImageView, is SDWebImage still useful?
+### Since [AFNetworking](https://github.com/AFNetworking/AFNetworking) provides similar functionality for UIImageView, is SDWebImage still useful?
 
-AFNetworking doesn't handle disk caching but relies on the OS's implementation. See previous question to see why it's not an ideal solution. It doesn't handle background image decompression either. In addition, AFNetworking does not make the guarantee that the same URL won't be downloaded several times.
+Arguably not. AFNetworking takes advantage of Foundation URL Loading System caching using `NSURLCache`, as well as a configurable in-memory cache for `UIImageView` and `UIButton`, which uses `NSCache` by default. Caching behavior can be further specified in the caching policy of a corresponding `NSURLRequest`. Other SDWebImage features, like background decompression of image data is also provided by AFNetworking.
 
-If you're already using AFNetworking and just want an easy async image loading category but you don't care about performance and memory usage, the AFNetworking UIImageView category may fit your needs.
+If you're already using AFNetworking and just want an easy async image loading category, the built-in UIKit extensions will probably fit your needs.
