@@ -1,6 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-- [Fitbay.com](https://itunes.apple.com/dk/app/fitbay-clothes-for-everybody/id881787887?mt=8)
+- [Fitbay.com](https://itunes.apple.com/dk/app/fitbay-clothes-for-everybody/id881787887?mt=8) Clothes for every**body**
 - [GeoClique](https://itunes.apple.com/us/app/GeoClique/id604701780?mt=8) Social network for making friends, not followers
 - [Saloote](http://saloote.com/) A totally new concept about create virtual bands.
 - [Wusic](http://wusic.com/)
