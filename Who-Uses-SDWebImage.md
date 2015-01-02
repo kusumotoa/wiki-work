@@ -130,3 +130,4 @@ Do not hesitate to add yours.
 - [Throwdown] (http://itunes.apple.com/us/app/throwdown/id886061848?ls=1&mt=8) – Fitness Community, Workout Journal
 - [Epiclist] (https://itunes.apple.com/cl/app/epiclist/id789778193?l=en&mt=8)
 - [Real Estate by Point2 Homes - Houses for sale in Canada and US](https://itunes.apple.com/us/app/real-estate-by-point2-homes/id589022205?mt=8)
+- [Choosic - Discover new music] (https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
