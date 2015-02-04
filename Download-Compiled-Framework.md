@@ -12,7 +12,7 @@
 * Fix `SDWebImageCacheMemoryOnly` flag
 * Bug fixes
 
-#### Version 3.1 ([download](http://d.pr/f/9qFt))
+#### Version 3.1 ([download](http://d.pr/f/9qFt))*not working
 * Bug fixes
 
 #### Version 3.0 ([download](https://github.com/downloads/rs/SDWebImage/SDWebImage-3.0.framework.zip))
