@@ -134,3 +134,4 @@ Do not hesitate to add yours.
 - [Choosic - Discover new music] (https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
 - [Colab] (https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
 - [Present] (https://itunes.apple.com/sg/app/present-social-video-diary/id785837186) - Social Video Diary
+- [Grenadine Event Guide] (http://events.grenadine.co/event-and-conferences-mobile-app/) - An app for conventions and conferences
