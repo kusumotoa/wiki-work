@@ -1,6 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
-- [Subtitles Viewer](http://www.subtitlesviewer.com)
+- [Subtitles Viewer](http://www.subtitlesviewer.com) View subtitles synchronized with TV or movies.  
 - [携程旅行--携程在手，说走就走](https://itunes.apple.com/cn/app/xie-cheng-lu-xing-ding-jiu/id379395415?l=en&mt=8)  
 - [BronyTunes](https://itunes.apple.com/us/app/bronytunes/id672120864?mt=8) The brony music app
 - [Woof Rescue](https://itunes.apple.com/us/app/woof-rescue-pet-finder-for/id918610594?mt=8) Find the love of your life at a pet shelter
