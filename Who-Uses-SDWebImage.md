@@ -141,3 +141,4 @@ Do not hesitate to add yours.
 - [Grenadine Event Guide] (http://events.grenadine.co/event-and-conferences-mobile-app/) - An app for conventions and conferences
 - [Design Shots for Dribbble] (http://designshots.co) - A Dribbble app for iPhone
 - [Apprazed] (https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
+- [Lician Horse] (https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
