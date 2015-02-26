@@ -142,3 +142,4 @@ Do not hesitate to add yours.
 - [Design Shots for Dribbble] (http://designshots.co) - A Dribbble app for iPhone
 - [Apprazed] (https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
 - [Lician Horse] (https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
+- [Cluster] (https://getcluster.com) - Privately share special moments with friends and family
