@@ -144,3 +144,4 @@ Do not hesitate to add yours.
 - [Apprazed] (https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
 - [Lician Horse] (https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
 - [Cluster] (https://getcluster.com) - Privately share special moments with friends and family
+- [Dieta e Saúde] (https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil 
