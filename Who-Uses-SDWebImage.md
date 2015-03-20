@@ -145,3 +145,5 @@ Do not hesitate to add yours.
 - [Lician Horse] (https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
 - [Cluster] (https://getcluster.com) - Privately share special moments with friends and family
 - [Dieta e Saúde] (https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil 
+- [Kindr] (http://kindr.me) - Brighten someone's day
+- [Reveal] (https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
