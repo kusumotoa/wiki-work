@@ -148,4 +148,4 @@ Do not hesitate to add yours.
 - [Dieta e Saúde] (https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil 
 - [Kindr] (http://kindr.me) - Brighten someone's day
 - [Reveal] (https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
-- [Rent the Runway] (http://www.renttherunway.com)
+- [Rent the Runway] (http://www.renttherunway.com) -Designer dress and accessory rentals.
