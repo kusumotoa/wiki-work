@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [康应健康管家](http://www.healthin.cn/)
 - [捉急](http://zhuojiapp.com)
 - [美迹--生动记录生活](http://meijiapp.com/)
 - [The Oakland Post](https://github.com/aclissold/the-oakland-post) Open-source news reader for Oakland University's independent school newspaper
