@@ -151,3 +151,4 @@ Do not hesitate to add yours.
 - [Kindr] (http://kindr.me) - Brighten someone's day
 - [Reveal] (https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
 - [Rent the Runway] (http://www.renttherunway.com) -Designer dress and accessory rentals.
+- [Zola] (http://www.zola.com/iphone) - Reinventing the wedding registry for the modern couple.
