@@ -152,3 +152,4 @@ Do not hesitate to add yours.
 - [Reveal] (https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
 - [Rent the Runway] (http://www.renttherunway.com) -Designer dress and accessory rentals.
 - [Zola] (http://www.zola.com/iphone) - Reinventing the wedding registry for the modern couple.
+- [Orologi di Classe](https://itunes.apple.com/it/app/orologi-di-classe/id368733617?mt=8) - An app for luxury watches lovers
