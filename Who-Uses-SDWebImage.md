@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [最萌宝宝](http://zuimengapp.com)
 - [约车吧](http://www.yueche8.com/)
 - [康应健康管家](http://www.healthin.cn/)
 - [捉急](http://zhuojiapp.com)
