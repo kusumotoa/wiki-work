@@ -1,3 +1,8 @@
+> ##Instamotor - The Trusted Peer-To-Peer Car Marketplace .##
+> _A free, safe, and friendly app to buy & sell local cars between individuals.
+> 
+> **Download it in the app store - [INSTAMOTOR](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=929373823)**
+
 > ##Foodster - Delivery anywhere.##
 > _A local, friendly app for peer-to-peer food delivery._
 > 
