@@ -8,6 +8,11 @@
 > 
 > **Get Foodster on your mobile device - [bit.ly/Foodster](http://bit.ly/Foodster)**
 
+> ##Surge - The Ultimate Uber Surge Tracking App.##
+> _An Uber Surge tracking app for Uber drivers._
+>
+> **Get Surge on your iOS device - [http://surgeapp.org](http://surgeapp.org)**
+
 > ##YU - YUPPIU##
 > _Easy and fun to make new friends and more around you._
 > 
