@@ -17,3 +17,9 @@
 > _Easy and fun to make new friends and more around you._
 > 
 > **Get YU - YUPPIU on your iOS device - [http://goo.gl/zU0giC](http://goo.gl/zU0giC)**
+
+> ##Searchr - Action and Search Made Simple##
+>
+> **Get Searchr on your iOS device - [
+http://bit.ly/SearchrAppStore](
+http://bit.ly/SearchrAppStore)**
