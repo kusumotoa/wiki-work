@@ -1,3 +1,3 @@
-- [Who Use SDWebImage](https://github.com/rs/SDWebImage/wiki/Who-Uses-SDWebImage)
+- [Who Uses SDWebImage](https://github.com/rs/SDWebImage/wiki/Who-Uses-SDWebImage)
 - [How is SDWebImage better than X?](https://github.com/rs/SDWebImage/wiki/How-is-SDWebImage-better-than-X%3F)
 - [How to add SDWebImage as a submodule and configure for Archive](https://github.com/rs/SDWebImage/wiki/Add-as-a-submodule-and-configure-for-Archive)
