@@ -28,3 +28,8 @@
 > **Get Searchr on your iOS device - [
 http://bit.ly/SearchrAppStore](
 http://bit.ly/SearchrAppStore)**
+
+> ##Flynk - Change the way you connect.##
+> _Engage with your friends and family._
+> 
+> **Get [Flynk](http://itunes.com/apps/flynk)** on your iOS device - 
