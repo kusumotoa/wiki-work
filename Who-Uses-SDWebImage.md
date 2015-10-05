@@ -1,7 +1,7 @@
 > ##Monkey for GitHub##
-> _Monkey is a GitHub third party client for iOS,to show the rank of coders and repositories._
+> _Monkey is a GitHub third party client for iOS,to show the rank of coders and repositories. - [source code](https://github.com/coderyi/Monkey)_
 > 
-> **[App Store Download here](https://itunes.apple.com/app/id1003765407) - [source code](https://github.com/coderyi/Monkey)**
+> **[App Store Download here](https://itunes.apple.com/app/id1003765407)**
 
 > ##Whoniverse - Guide to Doctor Who.##
 > _Your coolest companion to Doctor Who Universe._
