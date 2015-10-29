@@ -37,9 +37,9 @@ http://bit.ly/SearchrAppStore)**
 > ##Flynk - Change the way you connect.##
 > _Engage with your friends and family._
 > 
-> **Get [Flynk](http://itunes.com/apps/flynk)** on your iOS device - 
+> **Get [Flynk](http://itunes.com/apps/flynk)** on your iOS device
 
 > ##Optonaut - The Instagram for Virtual Reality.##
 > _Create and share Virtual Reality panoramas using your smartphone._
 > 
-> **Get [Optonaut](http://optonaut.co)** on your iOS device - 
+> **Get [Optonaut](http://optonaut.co)** on your iOS device
