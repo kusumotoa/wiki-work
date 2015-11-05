@@ -43,3 +43,8 @@ http://bit.ly/SearchrAppStore)**
 > _Create and share Virtual Reality panoramas using your smartphone._
 > 
 > **Get [Optonaut](http://optonaut.co)** on your iOS device
+
+> ##Punchit.io - Community based comparison network.##
+> _Create and share Virtual Reality panoramas using your smartphone._
+> We offer you a platform, where you can decide between two choices at a particular time. However if you are in a dilemma and are not able to make a judgement as to what is better, don’t freak out. Let your friends, family and followers help you to make the right choice.
+> **Get [Punchit](http://punchit.io)** on your iOS device(Coming soon)
