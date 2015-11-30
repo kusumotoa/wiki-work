@@ -48,3 +48,6 @@ http://bit.ly/SearchrAppStore)**
 > _Create and share Virtual Reality panoramas using your smartphone._
 > We offer you a platform, where you can decide between two choices at a particular time. However if you are in a dilemma and are not able to make a judgement as to what is better, don’t freak out. Let your friends, family and followers help you to make the right choice.
 > **Get [Punchit](http://punchit.io)** on your iOS device(Coming soon)
+
+> ##eHarmony.com - Online Matchmaking site##
+> **Get [eHarmony](https://itunes.apple.com/us/app/eharmony/id458272450?mt=8)** on your iOS device.
