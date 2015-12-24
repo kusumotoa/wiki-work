@@ -51,3 +51,7 @@ http://bit.ly/SearchrAppStore)**
 
 > ##eHarmony.com - Online Matchmaking site##
 > **Get [eHarmony](https://itunes.apple.com/us/app/eharmony/id458272450?mt=8)** on your iOS device.
+
+> ##Earthmiles - Fitness Rewards##
+> Healthy rewards for your fitness activities (walking, running, cycling, yoga and more) from a variety of reward partners in the health, fitness and wellness space. Get earthmiles and redeem for offers and discounts each time you walk, run, cycle or do yoga and track your fitness activities.
+> **Get [Earthmiles](https://itunes.apple.com/gb/app/earthmiles-healthy-rewards/id926440987?mt=8)** on your iOS device.
