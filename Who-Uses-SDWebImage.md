@@ -166,3 +166,4 @@ Do not hesitate to add yours.
 - [Punchit](http://punchit.io) - Community based comparison network.
 - [eHarmony](https://itunes.apple.com/us/app/eharmony/id458272450?mt=8) - Online Matchmaking site
 - [Earthmiles](https://itunes.apple.com/gb/app/earthmiles-healthy-rewards/id926440987?mt=8) - Fitness Rewards
+- [KorkBoard](http://korkapp.com) - KorkBoard is a digital bulletin for your campus community.
