@@ -167,3 +167,4 @@ Do not hesitate to add yours.
 - [eHarmony](https://itunes.apple.com/us/app/eharmony/id458272450?mt=8) - Online Matchmaking site
 - [Earthmiles](https://itunes.apple.com/gb/app/earthmiles-healthy-rewards/id926440987?mt=8) - Fitness Rewards
 - [KorkBoard](http://korkapp.com) - KorkBoard is a digital bulletin for your campus community.
+- [Kuna](http://getkuna.com) - Prevent break-ins before they happen!
