@@ -170,3 +170,4 @@ Do not hesitate to add yours.
 - [Kuna](http://getkuna.com) - Prevent break-ins before they happen!
 - [Lish](http://lishfood.com) - Seattle meal delivery from local chefs
 - [Decktracker](http://decktracker.jovitoroyeca.com) - A database of Magic: The Gathering.
+- [Loaf App](https://geo.itunes.apple.com/gb/app/loaf-recipes-for-easy-cooking/id956511078?mt=8)
