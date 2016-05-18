@@ -177,3 +177,4 @@ Do not hesitate to add yours.
 - [Loaf App](https://geo.itunes.apple.com/gb/app/loaf-recipes-for-easy-cooking/id956511078?mt=8) - Achieve delicious in your every day cooking together with a community food lovers
 - [Venturepick] (https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
 - [Woo](http://getwoo.at) - Matchmaking app for singles
+- [SwiftFlickrSearch](https://github.com/kyleclegg/SwiftFlickrSearch) - A simple Flickr Search app written in Swift
