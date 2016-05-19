@@ -178,3 +178,4 @@ Do not hesitate to add yours.
 - [Venturepick] (https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
 - [Woo](http://getwoo.at) - Matchmaking app for singles
 - [SwiftFlickrSearch](https://github.com/kyleclegg/SwiftFlickrSearch) - A simple Flickr Search app written in Swift
+- [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
