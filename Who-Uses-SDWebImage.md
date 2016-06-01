@@ -179,3 +179,4 @@ Do not hesitate to add yours.
 - [Woo](http://getwoo.at) - Matchmaking app for singles
 - [SwiftFlickrSearch](https://github.com/kyleclegg/SwiftFlickrSearch) - A simple Flickr Search app written in Swift
 - [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
+- [Commentts](https://itunes.apple.com/ca/app/commentts/id1057955782?mt=8) - Social network based around the news
