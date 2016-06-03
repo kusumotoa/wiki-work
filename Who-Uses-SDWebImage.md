@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [游谱旅行](https://itunes.apple.com/cn/app/you-pu-lu-xing-chu-jing-you/id924327064?mt=8)
 - [魔能碰撞](https://itunes.apple.com/us/app/mo-neng-peng-zhuang/id1085983302?l=zh&ls=1&mt=8)
 - [11street Malaysia by Celcom Planet](https://itunes.apple.com/my/app/11street-malaysias-latest/id989090200?mt=8)
 - [嘀嗒拼车](http://www.didapinche.com/home/)
