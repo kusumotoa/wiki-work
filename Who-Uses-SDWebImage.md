@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Movie Genie](https://itunes.apple.com/us/app/movie-genie*/id984496680?mt=8) Find new movies to watch
 - [CATCHPLAY](https://itunes.apple.com/tw/app/catchplay/id1062810357?mt=8)
 - [Myntra](https://itunes.apple.com/in/app/myntra-fashion-shopping-app/id907394059?mt=8)
 - [游谱旅行](https://itunes.apple.com/cn/app/you-pu-lu-xing-chu-jing-you/id924327064?mt=8)
