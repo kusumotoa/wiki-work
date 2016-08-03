@@ -8,6 +8,7 @@ Do not hesitate to add yours.
 - [魔能碰撞](https://itunes.apple.com/us/app/mo-neng-peng-zhuang/id1085983302?l=zh&ls=1&mt=8)
 - [11street Malaysia by Celcom Planet](https://itunes.apple.com/my/app/11street-malaysias-latest/id989090200?mt=8)
 - [嘀嗒拼车](http://www.didapinche.com/home/)
+- [爱玩吉他](http://www.iguitar.me/)
 - [三目VR——看不一样的世界](http://www.samonkey.com)
 - [最萌宝宝](http://zuimengapp.com)
 - [约车吧](http://www.yueche8.com/)
