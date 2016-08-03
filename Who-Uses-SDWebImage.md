@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
 - [Jelly Social](https://itunes.apple.com/us/app/jelly-social/id868994252?mt=8) Meet fun and interesting people near you
 - [Movie Genie](https://itunes.apple.com/us/app/movie-genie*/id984496680?mt=8) Find new movies to watch
 - [CATCHPLAY](https://itunes.apple.com/tw/app/catchplay/id1062810357?mt=8)
