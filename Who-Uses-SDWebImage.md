@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Свадьба ПРО](https://itunes.apple.com/ru/app/cvadba-pro/id1006127177?mt=8) Wedding App
 - [NomadMe](https://itunes.apple.com/de/app/nomadme-nomad-list-remote/id1103164595?l=en&mt=8) A Nomad List and remote jobs viewer
 - [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
 - [Jelly Social](https://itunes.apple.com/us/app/jelly-social/id868994252?mt=8) Meet fun and interesting people near you
