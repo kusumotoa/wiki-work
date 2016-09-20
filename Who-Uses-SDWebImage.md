@@ -33,6 +33,7 @@ Do not hesitate to add yours.
 - [Retro] (https://itunes.apple.com/us/app/retro-for-instagram/id719610790?mt=8) Instagram client for iPad
 - [MovieLaLa] (https://itunes.apple.com/app/id869901634) Upcoming Movie Trailers, Showtimes & Tickets
 - [NewsLoop] (https://itunes.apple.com/sg/app/newsloop/id527836708?mt=8) Very Handsome News Aggregator
+- [Netflix] (https://itunes.apple.com/us/app/netflix/id363590051?mt=8) Netflix iOS Apps
 - [Novels: On Location] (https://itunes.apple.com/us/app/novels-on-location/id625973663) Find books on a map of the world
 - [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
 - [Radiate] (https://itunes.apple.com/us/app/radiate/id939284774?mt=8) Social hub for music festivals
