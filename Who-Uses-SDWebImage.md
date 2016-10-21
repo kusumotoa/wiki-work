@@ -1,7 +1,7 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
 - [Artsy's Eigen](https://github.com/artsy/eigen/)
-- Smule for https://itunes.apple.com/us/app/magic-piano-by-smule/id421254504?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_PianoiOS&ls=1, https://itunes.apple.com/us/app/sing!-karaoke-by-smule/id509993510?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_SingiOS&ls=1 , https://itunes.apple.com/us/app/autorap-by-smule/id524299475?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_AutoRapiOS&ls=1, https://itunes.apple.com/us/app/guitar!-by-smule/id632353530?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_GuitariOS&ls=1
+- Smule for [Magic Piano](https://itunes.apple.com/us/app/magic-piano-by-smule/id421254504?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_PianoiOS&ls=1), [Sing! Karaoke](https://itunes.apple.com/us/app/sing!-karaoke-by-smule/id509993510?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_SingiOS&ls=1) , [Autorap](https://itunes.apple.com/us/app/autorap-by-smule/id524299475?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_AutoRapiOS&ls=1), [Guitar](https://itunes.apple.com/us/app/guitar!-by-smule/id632353530?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_GuitariOS&ls=1)
 - [Свадьба ПРО](https://itunes.apple.com/ru/app/cvadba-pro/id1006127177?mt=8) Wedding App
 - [NomadMe](https://itunes.apple.com/de/app/nomadme-nomad-list-remote/id1103164595?l=en&mt=8) A Nomad List and remote jobs viewer
 - [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
