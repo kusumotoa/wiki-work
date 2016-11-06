@@ -201,3 +201,4 @@ Do not hesitate to add yours.
 - [PatientReach](https://itunes.apple.com/us/app/patientreach-mobile/id894164116?mt=8) - Practice to Patient secure messages, appointment management, and online payments.
 - [Imgury For Imgur](https://itunes.apple.com/us/app/imgury-for-imgur/id908045724?mt=8) TO convert Images to URLs using Imgur API.
 - [Trunk Club](https://itunes.apple.com/us/app/trunk-club/id635441999?mt=8) Member facing App Store app and multiple internal enterprise apps
+- [INKHUNTER](http://inkhunter.tattoo) Augmented Reality tattoo app
