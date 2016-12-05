@@ -21,6 +21,7 @@ Do not hesitate to add yours.
 - [康应健康管家](http://www.healthin.cn/)
 - [捉急](http://zhuojiapp.com)
 - [美迹--生动记录生活](http://meijiapp.com/)
+- [Finger--掌上音乐教师](https://www.finger66.com)
 - [The Oakland Post](https://github.com/aclissold/the-oakland-post) Open-source news reader for Oakland University's independent school newspaper
 - [东航金融--掌控全球](http://www.kiiik.com)
 - [Subtitles Viewer](http://www.subtitlesviewer.com) View subtitles synchronized with TV or movies.  
