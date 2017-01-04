@@ -204,3 +204,4 @@ Do not hesitate to add yours.
 - [Imgury For Imgur](https://itunes.apple.com/us/app/imgury-for-imgur/id908045724?mt=8) TO convert Images to URLs using Imgur API.
 - [Trunk Club](https://itunes.apple.com/us/app/trunk-club/id635441999?mt=8) Member facing App Store app and multiple internal enterprise apps
 - [INKHUNTER](http://inkhunter.tattoo) Augmented Reality tattoo app
+- [Life360](https://itunes.apple.com/us/app/life360-family-friends-locator/id384830320?mt=8) Life360 Family and Friends Locator
