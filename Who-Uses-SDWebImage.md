@@ -64,6 +64,7 @@ Do not hesitate to add yours.
 - [Instamotor](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=929373823) - The Trusted Peer-To-Peer Car Marketplace. A free, safe, and friendly app to buy & sell local cars between individuals.
 - [Jamondo](https://itunes.apple.com/br/app/jamondo/id730187068)
 - [Jelly Social](https://itunes.apple.com/us/app/jelly-social/id868994252?mt=8) Meet fun and interesting people near you
+- [Kentucky Farm Bureau](https://itunes.apple.com/us/app/kentucky-farm-bureau/id580530986?mt=8)
 - [Kidfund](http://link.kidfund.us/github "Kidfund") - Helping you save for your child's future
 - [Kindr] (http://kindr.me) - Brighten someone's day
 - [KorkBoard](http://korkapp.com) - KorkBoard is a digital bulletin for your campus community.
