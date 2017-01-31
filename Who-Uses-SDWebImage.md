@@ -14,6 +14,7 @@ Do not hesitate to add yours.
 - [Ayran (Newsreader for COW)](https://itunes.apple.com/us/app/ayran-newsreader-for-cow/id523995658?mt=8)
 - [Bazaart](https://itunes.apple.com/us/app/bazaart/id515094775)
 - [Benerino Studios](http://www.BenerinoStudios.com)
+- [Bliss Yoga Cayman](https://itunes.apple.com/gb/app/bliss-yoga-cayman/id964239226?mt=8)
 - [BronyTunes](https://itunes.apple.com/us/app/bronytunes/id672120864?mt=8) The brony music app
 - [Bycaster](https://itunes.apple.com/app/bycaster/id594950889)
 - [CATCHPLAY](https://itunes.apple.com/tw/app/catchplay/id1062810357?mt=8)
