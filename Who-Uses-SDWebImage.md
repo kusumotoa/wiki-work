@@ -22,6 +22,7 @@ Do not hesitate to add yours.
 - [Chimani](https://www.chimani.com/) - Apps for all 59 U.S. National Parks
 - [Choosic - Discover new music] (https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
 - [Cinery] (https://www.cinery.de)
+- [ClassDojo] (https://www.classdojo.com)
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
 - [Cluster] (https://getcluster.com) - Privately share special moments with friends and family
 - [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
