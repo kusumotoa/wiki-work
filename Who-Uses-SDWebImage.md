@@ -173,6 +173,7 @@ Do not hesitate to add yours.
 - [Wikipedia](https://itunes.apple.com/us/app/wikipedia-mobile/id324715238?mt=8) - WikiPedia's official iOS app 
 - [Woo](http://getwoo.at) - Matchmaking app for singles
 - [Woof Rescue](https://itunes.apple.com/us/app/woof-rescue-pet-finder-for/id918610594?mt=8) Find the love of your life at a pet shelter
+- [World Is Small](https://itunes.apple.com/app/id1104276098) - Mobile news, high tech, good deals
 - [Wusic](http://wusic.com/)
 - [XBMC Music Remote] (http://xbmcmusicremote.com)
 - [Xamarin Component Store](http://components.xamarin.com/view/sdwebimage/)
