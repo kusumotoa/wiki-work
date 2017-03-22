@@ -178,6 +178,7 @@ Do not hesitate to add yours.
 - [XBMC Music Remote] (http://xbmcmusicremote.com)
 - [Xamarin Component Store](http://components.xamarin.com/view/sdwebimage/)
 - [Xronograph: For Football Fans](http://www.xronograph.com)
+- [Yle Areena](https://itunes.apple.com/fi/app/yle-areena-for-ipad/id542317657)
 - [YU - YUPPIU](http://goo.gl/zU0giC) - Easy and fun to make new friends and more around you.
 - [YU - YUPPIU](https://itunes.apple.com/app/yu-yuppiu-kostenlose-chat/id807123201?mt=8)
 - [Yahoo! News Digest](https://itunes.apple.com/us/app/yahoo-news-digest/id784982356?mt=8)
