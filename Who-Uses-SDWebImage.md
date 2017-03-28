@@ -3,9 +3,9 @@ Do not hesitate to add yours.
 - [11street Malaysia by Celcom Planet](https://itunes.apple.com/my/app/11street-malaysias-latest/id989090200?mt=8)
 - [60Hz](http://m2d2apps.com/60hz-for-ios7)
 - [@ME App](https://itunes.apple.com/us/app/me-app/id675428660?ls=1&mt=8) (Never get lost again)
-- [ARMS F&B] (http://www.arms-fnb.com/)
-- [Appboy iOS SDK] (https://github.com/Appboy/appboy-ios-sdk)
-- [Apprazed] (https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
+- [ARMS F&B](http://www.arms-fnb.com/)
+- [Appboy iOS SDK](https://github.com/Appboy/appboy-ios-sdk)
+- [Apprazed](https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
 - [Artsy's Eigen](https://github.com/artsy/eigen/)
 - [Askking Duel](https://itunes.apple.com/app/id596771064)
 - [Askking Quizz](https://itunes.apple.com/fr/app/askkingquizz/id547039149)
@@ -18,49 +18,49 @@ Do not hesitate to add yours.
 - [BronyTunes](https://itunes.apple.com/us/app/bronytunes/id672120864?mt=8) The brony music app
 - [Bycaster](https://itunes.apple.com/app/bycaster/id594950889)
 - [CATCHPLAY](https://itunes.apple.com/tw/app/catchplay/id1062810357?mt=8)
-- [Chance] (http://chance.fm)
+- [Chance](http://chance.fm)
 - [Chimani](https://www.chimani.com/) - Apps for all 59 U.S. National Parks
-- [Choosic - Discover new music] (https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
-- [Cinery] (https://www.cinery.de)
-- [ClassDojo] (https://www.classdojo.com)
+- [Choosic - Discover new music](https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
+- [Cinery](https://www.cinery.de)
+- [ClassDojo](https://www.classdojo.com)
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
-- [Cluster] (https://getcluster.com) - Privately share special moments with friends and family
-- [CoachGuitar] (https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
-- [Colab] (https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
+- [Cluster](https://getcluster.com) - Privately share special moments with friends and family
+- [CoachGuitar](https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
+- [Colab](https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
 - [Commentts](https://itunes.apple.com/ca/app/commentts/id1057955782?mt=8) - Social network based around the news
-- [Crowdtilt] (https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8) (**new**)
+- [Crowdtilt](https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8) (**new**)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [DareYa! Free](https://itunes.apple.com/us/app/dare-ya!-free/id542098949)
 - [DareYa!](https://itunes.apple.com/us/app/dare-ya!/id526882846)
 - [Decktracker](http://decktracker.jovitoroyeca.com) - A database of Magic: The Gathering.
-- [Delectable] (https://delectable.com/)
+- [Delectable](https://delectable.com/)
 - [Derby Bred](https://appsto.re/us/pl2LO.i) (*new* puts triple-crown in palm)
-- [Design Shots for Dribbble] (http://designshots.co) - A Dribbble app for iPhone
-- [Dieta e Saúde] (https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil
+- [Design Shots for Dribbble](http://designshots.co) - A Dribbble app for iPhone
+- [Dieta e Saúde](https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil
 - [Earthmiles](https://itunes.apple.com/gb/app/earthmiles-healthy-rewards/id926440987?mt=8) - Fitness Rewards
-- [Eennadu Sunday Book] (https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
-- [Epiclist] (https://itunes.apple.com/cl/app/epiclist/id789778193?l=en&mt=8)
-- [Evil Apples] (https://itunes.apple.com/us/app/evil-apples-filthy-adult-card/id645705454)
-- [FMap] (https://itunes.apple.com/au/app/fmap/id640082822?mt=8)
+- [Eennadu Sunday Book](https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
+- [Epiclist](https://itunes.apple.com/cl/app/epiclist/id789778193?l=en&mt=8)
+- [Evil Apples](https://itunes.apple.com/us/app/evil-apples-filthy-adult-card/id645705454)
+- [FMap](https://itunes.apple.com/au/app/fmap/id640082822?mt=8)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [Finger--掌上音乐教师](https://www.finger66.com)
 - [Fit-Stitch: Visually Track Your Progress](http://www.fit-stitch.com/)
 - [Fitbay.com](https://itunes.apple.com/dk/app/fitbay-clothes-for-everybody/id881787887?mt=8) Clothes for every**body**
 - [Flynk](http://itunes.com/apps/flynk) - Engage with your friends and family
-- [Food Reporter] (https://itunes.apple.com/fr/app/food-reporter/id404530397?mt=8)
+- [Food Reporter](https://itunes.apple.com/fr/app/food-reporter/id404530397?mt=8)
 - [Foodster](http://bit.ly/Foodster) - A local, friendly app for peer-to-peer food delivery.
 - [Garça](https://itunes.apple.com/app/id594552266?mt=8)
 - [GeoClique](https://itunes.apple.com/us/app/GeoClique/id604701780?mt=8) Social network for making friends, not followers
 - [GetAppNinja](http://getappninja.com)
 - [Go World](https://itunes.apple.com/us/app/go-world-plus/id581593577)
-- [Gossip Bucket] (http://gossipbucket.com/app/) (Celebrity Gossip News Aggregator for iOS)
-- [Grenadine Event Guide] (http://events.grenadine.co/event-and-conferences-mobile-app/) - An app for conventions and conferences
+- [Gossip Bucket](http://gossipbucket.com/app/) (Celebrity Gossip News Aggregator for iOS)
+- [Grenadine Event Guide](http://events.grenadine.co/event-and-conferences-mobile-app/) - An app for conventions and conferences
 - [HKWarnings](https://itunes.apple.com/us/app/hkwarnings/id370901118)
-- [HeyCrowd](https://itunes.apple.com/us/app/heycrowd-le-grand-jeu-des/id407361691?mt=8 300 000 votes per day)
-- [Histofme] (https://itunes.apple.com/us/app/histofme/id654616176?ls=1&mt=8) (Micro diary app)
+- [HeyCrowd](https://itunes.apple.com/us/app/heycrowd-le-grand-jeu-des/id407361691?mt=8) (300 000 votes per day)
+- [Histofme](https://itunes.apple.com/us/app/histofme/id654616176?ls=1&mt=8) (Micro diary app)
 - [HopStop](https://itunes.apple.com/us/app/hopstop/id303217144)
 - [Hot Hotels](http://hot.co.uk)
-- [Housing India] (https://itunes.apple.com/us/app/housing-india/id681756431?mt=8)
+- [Housing India](https://itunes.apple.com/us/app/housing-india/id681756431?mt=8)
 - [INKHUNTER](http://inkhunter.tattoo) Augmented Reality tattoo app
 - [Imgury For Imgur](https://itunes.apple.com/us/app/imgury-for-imgur/id908045724?mt=8) TO convert Images to URLs using Imgur API.
 - [Instamotor](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=929373823) - The Trusted Peer-To-Peer Car Marketplace. A free, safe, and friendly app to buy & sell local cars between individuals.
@@ -68,78 +68,78 @@ Do not hesitate to add yours.
 - [Jelly Social](https://itunes.apple.com/us/app/jelly-social/id868994252?mt=8) Meet fun and interesting people near you
 - [Kentucky Farm Bureau](https://itunes.apple.com/us/app/kentucky-farm-bureau/id580530986?mt=8)
 - [Kidfund](http://link.kidfund.us/github "Kidfund") - Helping you save for your child's future
-- [Kindr] (http://kindr.me) - Brighten someone's day
+- [Kindr](http://kindr.me) - Brighten someone's day
 - [KorkBoard](http://korkapp.com) - KorkBoard is a digital bulletin for your campus community.
 - [Kuna](http://getkuna.com) - Prevent break-ins before they happen!
 - [Kytt](https://itunes.apple.com/de/app/kytt-neue-leute-in-der-umgebung/id848959696)
-- [Late Guest] (https://itunes.apple.com/br/app/id648332229)
-- [Lician Horse] (https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
+- [Late Guest](https://itunes.apple.com/br/app/id648332229)
+- [Lician Horse](https://itunes.apple.com/us/app/lician-horse/id816234435?mt=8) - Lician - Distinct Systems
 - [Life360](https://itunes.apple.com/us/app/life360-family-friends-locator/id384830320?mt=8) Life360 Family and Friends Locator
 - [Lifesum](https://itunes.apple.com/us/app/lifesum-lifestyle-tracker/id286906691?mt=8)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
 - [Lish](http://lishfood.com) - Seattle meal delivery from local chefs
-- [Listn] (http://appstore.com/listn)
+- [Listn](http://appstore.com/listn)
 - [Loaf App](https://geo.itunes.apple.com/gb/app/loaf-recipes-for-easy-cooking/id956511078?mt=8) - Achieve delicious in your every day cooking together with a community food lovers
 - [LowRes Coder](http://lowres.inutilis.com) - Play homegrown retro games and program your own directly on your iPad or iPhone!
-- [MacHash News] (http://machash.com/app/) (Apple News Aggregator for iOS)
-- [Mars Images] (https://itunes.apple.com/us/app/mars-images/id492852224?mt=8) Browse a live feed of images from the NASA/JPL Curiosity and Opportunity Mars rovers
-- [Metrekare] (https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
+- [MacHash News](http://machash.com/app/) (Apple News Aggregator for iOS)
+- [Mars Images](https://itunes.apple.com/us/app/mars-images/id492852224?mt=8) Browse a live feed of images from the NASA/JPL Curiosity and Opportunity Mars rovers
+- [Metrekare](https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
 - [Mink](http://itunes.com/apps/minkda/mink)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
 - [Monkey for GitHub](https://itunes.apple.com/app/id1003765407) - Monkey is a GitHub third party client for iOS,to show the rank of coders and repositories. - [source code](https://github.com/coderyi/Monkey)
 - [Movie Genie](https://itunes.apple.com/us/app/movie-genie*/id984496680?mt=8) Find new movies to watch
-- [MovieLaLa] (https://itunes.apple.com/app/id869901634) Upcoming Movie Trailers, Showtimes & Tickets
-- [MovieSensei] (https://itunes.apple.com/se/app/dan-isacson/id922179777?l=en&mt=8)
+- [MovieLaLa](https://itunes.apple.com/app/id869901634) Upcoming Movie Trailers, Showtimes & Tickets
+- [MovieSensei](https://itunes.apple.com/se/app/dan-isacson/id922179777?l=en&mt=8)
 - [Myntra](https://itunes.apple.com/in/app/myntra-fashion-shopping-app/id907394059?mt=8)
 - [NOAA Weather Radar](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=486059426&mt=8)
-- [Neobuggy] (https://itunes.com/apps/neobuggy)
-- [Netflix] (https://itunes.apple.com/us/app/netflix/id363590051?mt=8) Netflix iOS Apps
-- [NewsLoop] (https://itunes.apple.com/sg/app/newsloop/id527836708?mt=8) Very Handsome News Aggregator
-- [NextMovies] (https://itunes.apple.com/hk/app/nextmovies-smart-movie-recommendation/id680850329?mt=8)
-- [NexusPad] (https://itunes.apple.com/us/app/nexusapp/id573350231?ls=1&mt=8)
+- [Neobuggy](https://itunes.com/apps/neobuggy)
+- [Netflix](https://itunes.apple.com/us/app/netflix/id363590051?mt=8) Netflix iOS Apps
+- [NewsLoop](https://itunes.apple.com/sg/app/newsloop/id527836708?mt=8) Very Handsome News Aggregator
+- [NextMovies](https://itunes.apple.com/hk/app/nextmovies-smart-movie-recommendation/id680850329?mt=8)
+- [NexusPad](https://itunes.apple.com/us/app/nexusapp/id573350231?ls=1&mt=8)
 - [NomadMe](https://itunes.apple.com/de/app/nomadme-nomad-list-remote/id1103164595?l=en&mt=8) A Nomad List and remote jobs viewer
-- [Nonapkin] (https://itunes.apple.com/us/app/nonapkin-social-food-network/id699489033?mt=8)
-- [Novels: On Location] (https://itunes.apple.com/us/app/novels-on-location/id625973663) Find books on a map of the world
+- [Nonapkin](https://itunes.apple.com/us/app/nonapkin-social-food-network/id699489033?mt=8)
+- [Novels: On Location](https://itunes.apple.com/us/app/novels-on-location/id625973663) Find books on a map of the world
 - [OGQ Backgrounds HD](https://itunes.apple.com/kr/app/wallpapers-backgrounds-hd/id541860561?mt=8) - World 1st mobile wallpaper app.
 - [Optonaut](http://optonaut.co) - The Instagram for Virtual Reality. Create and share Virtual Reality panoramas using your smartphone.
 - [Orologi di Classe](https://itunes.apple.com/it/app/orologi-di-classe/id368733617?mt=8) - An app for luxury watches lovers
 - [OuDormir.mobi](https://itunes.apple.com/fr/app/ou-dormir/id419875144?mt=8)
-- [PR Insider] (https://itunes.apple.com/us/app/pr-insider/id694847326?l=ru&ls=1&mt=8)
+- [PR Insider](https://itunes.apple.com/us/app/pr-insider/id694847326?l=ru&ls=1&mt=8)
 - [Passwird Deals](https://itunes.apple.com/us/app/passwirddeals/id517165629)
 - [PatientReach](https://itunes.apple.com/us/app/patientreach-mobile/id894164116?mt=8) - Practice to Patient secure messages, appointment management, and online payments.
-- [Peeps] (https://itunes.apple.com/us/app/peeps/id881444366)
+- [Peeps](https://itunes.apple.com/us/app/peeps/id881444366)
 - [Pixter](http://pixter.in/)
-- [PocketSuite] (https://itunes.apple.com/us/app/id721795146?mt=8) (Anyone with a phone can run a business)
+- [PocketSuite](https://itunes.apple.com/us/app/id721795146?mt=8) (Anyone with a phone can run a business)
 - [Podster](http://podster.fm/)
 - [Pogoplug](https://itunes.apple.com/us/app/pogoplug/id306217576)
-- [PopUp] (https://itunes.apple.com/us/app/popup/id575281012?mt=8)
+- [PopUp](https://itunes.apple.com/us/app/popup/id575281012?mt=8)
 - [Portea](https://itunes.apple.com/in/app/portea-heal-at-home/id1054416705?mt=8) 
-- [PrankDial] (https://itunes.apple.com/us/app/prankdial-funny-trick-prank/id367287593) Number #1 Pranking app
-- [Present] (https://itunes.apple.com/sg/app/present-social-video-diary/id785837186) - Social Video Diary
-- [Printables] (https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
+- [PrankDial](https://itunes.apple.com/us/app/prankdial-funny-trick-prank/id367287593) Number #1 Pranking app
+- [Present](https://itunes.apple.com/sg/app/present-social-video-diary/id785837186) - Social Video Diary
+- [Printables](https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
 - [Punchit](http://punchit.io) - Community based comparison network.
-- [Quotes - Social Moments] (https://itunes.apple.com/app/id644394990)
-- [REC*IT] (http://recitcollege.com/) (Campus intramurals and fitness on the go!)
-- [Radiate] (https://itunes.apple.com/us/app/radiate/id939284774?mt=8) Social hub for music festivals
+- [Quotes - Social Moments](https://itunes.apple.com/app/id644394990)
+- [REC*IT](http://recitcollege.com/) (Campus intramurals and fitness on the go!)
+- [Radiate](https://itunes.apple.com/us/app/radiate/id939284774?mt=8) Social hub for music festivals
 - [Real Estate by Point2 Homes - Houses for sale in Canada and US](https://itunes.apple.com/us/app/real-estate-by-point2-homes/id589022205?mt=8)
 - [RealtyMoz](http://jinibot.com/jinibot-llc-develops-cutting-edge-first-of-its-kind-real-estate-app-for-the-cloud/) (Cloud based real estate app)
-- [Reffind] (https://itunes.apple.com/au/app/reffind/id908614584?mt=8) Find the people you need through the people you trust - Employee Referral App
-- [Rent the Runway] (http://www.renttherunway.com) - Designer dress and accessory rentals.
-- [Retro] (https://itunes.apple.com/us/app/retro-for-instagram/id719610790?mt=8) Instagram client for iPad
-- [Reveal] (https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
-- [Riders] (https://ride.rs)
+- [Reffind](https://itunes.apple.com/au/app/reffind/id908614584?mt=8) Find the people you need through the people you trust - Employee Referral App
+- [Rent the Runway](http://www.renttherunway.com) - Designer dress and accessory rentals.
+- [Retro](https://itunes.apple.com/us/app/retro-for-instagram/id719610790?mt=8) Instagram client for iPad
+- [Reveal](https://itunes.apple.com/app/reveal-share-earn-explore/id903546571?ls=1&mt=8)
+- [Riders](https://ride.rs)
 - [SOHUVideo](http://tv.sohu.com/sohuapp/) for [iPhone](https://itunes.apple.com/cn/app/id458587755?mt=8) and [iPad](https://itunes.apple.com/cn/app/sou-hu-shi-pinhd/id414430589?mt=8)
 - [Saloote](http://saloote.com/) A totally new concept about create virtual bands.
 - [Searchr](http://bit.ly/SearchrAppStore) - Action and Search Made Simple
 - [Shopwave](http://getshopwave.com/)
-- [SimplePrints] (https://itunes.apple.com/us/app/create-photo-books-simple/id548773050?mt=8)
-- [Slack] (https://itunes.apple.com/us/app/slack-team-communication/id618783545?mt=8)
+- [SimplePrints](https://itunes.apple.com/us/app/create-photo-books-simple/id548773050?mt=8)
+- [Slack](https://itunes.apple.com/us/app/slack-team-communication/id618783545?mt=8)
 - [Smart Post](http://pyraego.com)
 - [Smart Weather](https://itunes.apple.com/us/app/smart-weather/id662949357?l=es&ls=1&mt=8)
 - Smule for [Magic Piano](https://itunes.apple.com/us/app/magic-piano-by-smule/id421254504?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_PianoiOS&ls=1), [Sing! Karaoke](https://itunes.apple.com/us/app/sing!-karaoke-by-smule/id509993510?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_SingiOS&ls=1) , [Autorap](https://itunes.apple.com/us/app/autorap-by-smule/id524299475?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_AutoRapiOS&ls=1), [Guitar](https://itunes.apple.com/us/app/guitar!-by-smule/id632353530?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_GuitariOS&ls=1)
 - [SocialPar](http://socialpar.com)
-- [Soundwave Music Discovery] (https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
-- [SpeakingCars] (https://itunes.apple.com/ru/app/speakingcars/id567952026?mt=8)
+- [Soundwave Music Discovery](https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
+- [SpeakingCars](https://itunes.apple.com/ru/app/speakingcars/id567952026?mt=8)
 - [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
 - [Spots](https://itunes.apple.com/app/spots-location-search-for/id568368743)
 - [Stars & Stats](https://itunes.apple.com/us/app/stars-stats/id568043448)
@@ -149,24 +149,24 @@ Do not hesitate to add yours.
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533)
 - [Tastebuds - Meet People Through Music](https://itunes.apple.com/gb/app/tastebuds-meet-people-through/id824167513?mt=8)
 - [Tennis Score Tracker](https://itunes.apple.com/us/app/tennis-score-tracker-free/id632261225) (**new**)
-- [The Daily Boards] (https://itunes.apple.com/app/id571048721)
+- [The Daily Boards](https://itunes.apple.com/app/id571048721)
 - [The Oakland Post](https://github.com/aclissold/the-oakland-post) Open-source news reader for Oakland University's independent school newspaper
 - [The Three Six](https://itunes.apple.com/us/app/the-three-six/id909076961?mt=8)
-- [Throwdown] (http://itunes.apple.com/us/app/throwdown/id886061848?ls=1&mt=8) – Fitness Community, Workout Journal
+- [Throwdown](http://itunes.apple.com/us/app/throwdown/id886061848?ls=1&mt=8) – Fitness Community, Workout Journal
 - [TopAdvisor](https://itunes.apple.com/us/app/id365337656)
-- [Topic] (https://itunes.apple.com/app/topic./id569186190)
+- [Topic](https://itunes.apple.com/app/topic./id569186190)
 - [Triposo Travel App](https://itunes.apple.com/app/triposo-travel-guide-to-world/id467053028) ([Free and interactive travel guide](http://www.triposo.com/))
 - [Trunk Club](https://itunes.apple.com/us/app/trunk-club/id635441999?mt=8) Member facing App Store app and multiple internal enterprise apps
-- [Tuber for YouTube] (https://itunes.apple.com/app/id555919650) (An intuitive YouTube client for iOS)
-- [Tudo Gostoso Receitas] (http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
-- [Tuner for YouTube Music] (https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
-- [Urban Outfitters] (https://itunes.apple.com/us/app/uo/id358821736?mt=8)
+- [Tuber for YouTube](https://itunes.apple.com/app/id555919650) (An intuitive YouTube client for iOS)
+- [Tudo Gostoso Receitas](http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
+- [Tuner for YouTube Music](https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
+- [Urban Outfitters](https://itunes.apple.com/us/app/uo/id358821736?mt=8)
 - [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
 - [Vendly](http://www.vend.ly)
-- [Venturepick] (https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
+- [Venturepick](https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
 - [Via Lattea ski area](https://itunes.apple.com/us/app/via-lattea/id574253162)
-- [VinylWall] (https://itunes.apple.com/app/id635737755?mt=8)
-- [Wanelo Shopping] (https://itunes.apple.com/us/app/wanelo-shopping/id550842012?mt=8)
+- [VinylWall](https://itunes.apple.com/app/id635737755?mt=8)
+- [Wanelo Shopping](https://itunes.apple.com/us/app/wanelo-shopping/id550842012?mt=8)
 - [War of Words Apocalypse](https://itunes.apple.com/us/app/war-of-words-apocalypse/id508103291)
 - [War of Words](https://itunes.apple.com/us/app/war-of-words-free/id395392584)
 - [Whoniverse](https://itunes.apple.com/app/id821412407) - Guide to Doctor Who, Your coolest companion to Doctor Who Universe
@@ -175,14 +175,14 @@ Do not hesitate to add yours.
 - [Woof Rescue](https://itunes.apple.com/us/app/woof-rescue-pet-finder-for/id918610594?mt=8) Find the love of your life at a pet shelter
 - [World Is Small](https://itunes.apple.com/app/id1104276098) - Mobile news, high tech, good deals
 - [Wusic](http://wusic.com/)
-- [XBMC Music Remote] (http://xbmcmusicremote.com)
+- [XBMC Music Remote](http://xbmcmusicremote.com)
 - [Xamarin Component Store](http://components.xamarin.com/view/sdwebimage/)
 - [Xronograph: For Football Fans](http://www.xronograph.com)
 - [Yle Areena](https://itunes.apple.com/fi/app/yle-areena-for-ipad/id542317657)
 - [YU - YUPPIU](http://goo.gl/zU0giC) - Easy and fun to make new friends and more around you.
 - [YU - YUPPIU](https://itunes.apple.com/app/yu-yuppiu-kostenlose-chat/id807123201?mt=8)
 - [Yahoo! News Digest](https://itunes.apple.com/us/app/yahoo-news-digest/id784982356?mt=8)
-- [Zola] (http://www.zola.com/iphone) - Reinventing the wedding registry for the modern couple.
+- [Zola](http://www.zola.com/iphone) - Reinventing the wedding registry for the modern couple.
 - [Zomato](https://itunes.apple.com/in/app/zomato/id434613896?mt=8) (1M+ downloads)
 - [cubodo](https://itunes.apple.com/en/app/cubodo-path-moments-die-london/id509493671?mt=8)
 - [eHarmony](https://itunes.apple.com/us/app/eharmony/id458272450?mt=8) - Online Matchmaking site
@@ -190,12 +190,12 @@ Do not hesitate to add yours.
 - [iHipster](https://itunes.apple.com/us/app/ihipster/id562859492)
 - [moeFM ACG](https://itunes.apple.com/us/app/meng-foufm-dai-ni-chang-xiang/id584640555?mt=8)
 - [musiXmatch lyrics player](https://itunes.apple.com/us/app/musixmatch-lyrics-player/id448278467?l=en&mt=8)
-- [myUwindsor] (http://www.uwindsor.ca)
+- [myUwindsor](http://www.uwindsor.ca)
 - [phonetrait](http://apps.paulsteinhilber.de/phonetrait) ([App Store](http://itunes.apple.com/app/phonetrait/id479472176?ign-mpt=uo%3D6&mt=8))
-- [picdumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id733115655?mt=8)
+- [picdumps](https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id733115655?mt=8)
 - [theScore](http://mobile.thescore.com)
-- [viddumps] (https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id890354197?mt=8)
-- [wālo] (http://waloapp.com)
+- [viddumps](https://itunes.apple.com/de/app/picdumps-your-daily-dose-picdumps/id890354197?mt=8)
+- [wālo](http://waloapp.com)
 - [美迹--生动记录生活](http://meijiapp.com/)
 - [三目VR——看不一样的世界](http://www.samonkey.com)
 - [捉急](http://zhuojiapp.com)
@@ -208,6 +208,6 @@ Do not hesitate to add yours.
 - [康大预诊](https://itunes.apple.com/cn/app/kang-da-yu-zhen-nu-ren-bao/id707364888?l=en&mt=8)
 - [游谱旅行](https://itunes.apple.com/cn/app/you-pu-lu-xing-chu-jing-you/id924327064?mt=8)
 - [魔能碰撞](https://itunes.apple.com/us/app/mo-neng-peng-zhuang/id1085983302?l=zh&ls=1&mt=8)
-- [Газета.RU] (https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8)
+- [Газета.RU](https://itunes.apple.com/ru/app/gazeta.ru/id401707326?mt=8)
 - [康应健康管家](http://www.healthin.cn/)
 - [Свадьба ПРО](https://itunes.apple.com/ru/app/cvadba-pro/id1006127177?mt=8) Wedding App
