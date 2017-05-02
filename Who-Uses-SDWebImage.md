@@ -138,6 +138,7 @@ Do not hesitate to add yours.
 - [Smart Weather](https://itunes.apple.com/us/app/smart-weather/id662949357?l=es&ls=1&mt=8)
 - Smule for [Magic Piano](https://itunes.apple.com/us/app/magic-piano-by-smule/id421254504?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_PianoiOS&ls=1), [Sing! Karaoke](https://itunes.apple.com/us/app/sing!-karaoke-by-smule/id509993510?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_SingiOS&ls=1) , [Autorap](https://itunes.apple.com/us/app/autorap-by-smule/id524299475?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_AutoRapiOS&ls=1), [Guitar](https://itunes.apple.com/us/app/guitar!-by-smule/id632353530?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_GuitariOS&ls=1)
 - [SocialPar](http://socialpar.com)
+- [SoSafe](http://sosafeapp.com)
 - [Soundwave Music Discovery](https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
 - [SpeakingCars](https://itunes.apple.com/ru/app/speakingcars/id567952026?mt=8)
 - [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
