@@ -213,3 +213,4 @@ Do not hesitate to add yours.
 - [康应健康管家](http://www.healthin.cn/)
 - [Свадьба ПРО](https://itunes.apple.com/ru/app/cvadba-pro/id1006127177?mt=8) Wedding App
 - [花椒直播](https://itunes.apple.com/cn/app/%E8%8A%B1%E6%A4%92-%E6%9C%89%E9%A2%9C%E6%9C%89%E6%96%992%E4%BA%BF%E4%BA%BA%E9%83%BD%E5%9C%A8%E7%8E%A9/id988396858?mt=8)
+- [移动U8+](https://itunes.apple.com/cn/app/yi-dongu8+/id1003669975?mt=8&ign-mpt=uo%3D4)
