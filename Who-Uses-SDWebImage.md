@@ -1,5 +1,6 @@
 Here is a list of known apps using SDWebImage.
 Do not hesitate to add yours.
+- [Scorebat - Live Football](http://www.scorebat.com)
 - [11street Malaysia by Celcom Planet](https://itunes.apple.com/my/app/11street-malaysias-latest/id989090200?mt=8)
 - [60Hz](http://m2d2apps.com/60hz-for-ios7)
 - [@ME App](https://itunes.apple.com/us/app/me-app/id675428660?ls=1&mt=8) (Never get lost again)
