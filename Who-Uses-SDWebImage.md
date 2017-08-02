@@ -84,6 +84,7 @@ Do not hesitate to add yours.
 - [LowRes Coder](http://lowres.inutilis.com) - Play homegrown retro games and program your own directly on your iPad or iPhone!
 - [MacHash News](http://machash.com/app/) (Apple News Aggregator for iOS)
 - [Mars Images](https://itunes.apple.com/us/app/mars-images/id492852224?mt=8) Browse a live feed of images from the NASA/JPL Curiosity and Opportunity Mars rovers
+- [Memeois](http://itunes.apple.com/us/app/memeois/id1237691962) (An app for all your meme needs. Browse. Share. Create. Edit.)
 - [Metrekare](https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
 - [Mink](http://itunes.com/apps/minkda/mink)
 - [Moment.me](https://itunes.apple.com/app/moment.me/id551340583?mt=8)
