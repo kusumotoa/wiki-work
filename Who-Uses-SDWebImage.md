@@ -78,6 +78,7 @@ Do not hesitate to add yours.
 - [Life360](https://itunes.apple.com/us/app/life360-family-friends-locator/id384830320?mt=8) Life360 Family and Friends Locator
 - [Lifesum](https://itunes.apple.com/us/app/lifesum-lifestyle-tracker/id286906691?mt=8)
 - [Liker](https://itunes.apple.com/ca/app/liker-a-facebook-client/id543205771)
+- [LinkedIn] (https://itunes.apple.com/us/app/linkedin/id288429040?mt=8)
 - [Lish](http://lishfood.com) - Seattle meal delivery from local chefs
 - [Listn](http://appstore.com/listn)
 - [Loaf App](https://geo.itunes.apple.com/gb/app/loaf-recipes-for-easy-cooking/id956511078?mt=8) - Achieve delicious in your every day cooking together with a community food lovers
