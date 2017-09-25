@@ -166,6 +166,7 @@ Do not hesitate to add yours.
 - [Tuner for YouTube Music](https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
 - [Urban Outfitters](https://itunes.apple.com/us/app/uo/id358821736?mt=8)
 - [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
+- [Veggup](http://veggup.com) Digital coach to help people embracing a plant-based diet
 - [Vendly](http://www.vend.ly)
 - [Venturepick](https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
 - [Via Lattea ski area](https://itunes.apple.com/us/app/via-lattea/id574253162)
