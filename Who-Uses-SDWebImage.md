@@ -222,3 +222,4 @@ Do not hesitate to add yours.
 - [Aworded](https://itunes.apple.com/us/app/aworded-crack-apalabrados/id441092257?mt=8)
 - [TriviaCrack](https://itunes.apple.com/us/app/trivia-crack/id651510680?mt=8)
 - [WordCrack](https://itunes.apple.com/us/app/word-crack-free/id566593443?mt=8)
+- [翼健康](https://itunes.apple.com/cn/app/yi-jian-kang-yu-yue-gua-hao/id534168352?mt=8)
