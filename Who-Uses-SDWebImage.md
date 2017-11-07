@@ -223,3 +223,4 @@ Do not hesitate to add yours.
 - [TriviaCrack](https://itunes.apple.com/us/app/trivia-crack/id651510680?mt=8)
 - [WordCrack](https://itunes.apple.com/us/app/word-crack-free/id566593443?mt=8)
 - [翼健康](https://itunes.apple.com/cn/app/yi-jian-kang-yu-yue-gua-hao/id534168352?mt=8)
+- [LocalList](https://itunes.apple.com/us/app/locallist-live-updates-nearby/id1156706788?mt=8)
