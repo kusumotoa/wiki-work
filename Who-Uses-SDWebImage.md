@@ -175,6 +175,7 @@ Do not hesitate to add yours.
 - [Wanelo Shopping](https://itunes.apple.com/us/app/wanelo-shopping/id550842012?mt=8)
 - [War of Words Apocalypse](https://itunes.apple.com/us/app/war-of-words-apocalypse/id508103291)
 - [War of Words](https://itunes.apple.com/us/app/war-of-words-free/id395392584)
+- [Wayang](https://itunes.apple.com/us/app/wayang/id1217113186)
 - [Whoniverse](https://itunes.apple.com/app/id821412407) - Guide to Doctor Who, Your coolest companion to Doctor Who Universe
 - [Wikipedia](https://itunes.apple.com/us/app/wikipedia-mobile/id324715238?mt=8) - WikiPedia's official iOS app 
 - [Woo](http://getwoo.at) - Matchmaking app for singles
