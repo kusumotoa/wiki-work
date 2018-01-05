@@ -29,6 +29,7 @@ Do not hesitate to add yours.
 - [CoachGuitar](https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
 - [Colab](https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
 - [Commentts](https://itunes.apple.com/ca/app/commentts/id1057955782?mt=8) - Social network based around the news
+- [CoverLoad](https://coverloadapp.com) - Download cover art from the iTunes Store.
 - [Crowdtilt](https://itunes.apple.com/us/app/crowdtilt-do-more-together/id691096785?mt=8) (**new**)
 - [Dailymotion](https://itunes.apple.com/us/app/dailymotion-video-stream/id336978041) (4M+ downloads)
 - [DareYa! Free](https://itunes.apple.com/us/app/dare-ya!-free/id542098949)
