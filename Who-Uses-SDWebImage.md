@@ -46,6 +46,7 @@ Do not hesitate to add yours.
 - [FMap](https://itunes.apple.com/au/app/fmap/id640082822?mt=8)
 - [Facebook](https://itunes.apple.com/us/app/facebook/id284882215) (Almost embedded app since iOS 6)
 - [Finger--掌上音乐教师](https://www.finger66.com)
+- [Firebase](https://firebase.google.com/docs/storage/ios/download-files#downloading_images_with_firebaseui)
 - [Fit-Stitch: Visually Track Your Progress](http://www.fit-stitch.com/)
 - [Fitbay.com](https://itunes.apple.com/dk/app/fitbay-clothes-for-everybody/id881787887?mt=8) Clothes for every**body**
 - [Flynk](http://itunes.com/apps/flynk) - Engage with your friends and family
