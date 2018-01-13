@@ -124,6 +124,7 @@ Do not hesitate to add yours.
 - [Present](https://itunes.apple.com/sg/app/present-social-video-diary/id785837186) - Social Video Diary
 - [Printables](https://itunes.apple.com/us/app/printables/id634679113?ls=1&mt=8)
 - [Punchit](http://punchit.io) - Community based comparison network.
+- [Quizlet Flashcards](https://itunes.apple.com/us/app/quizlet-flashcards/id546473125?mt=8)
 - [Quotes - Social Moments](https://itunes.apple.com/app/id644394990)
 - [REC*IT](http://recitcollege.com/) (Campus intramurals and fitness on the go!)
 - [Radiate](https://itunes.apple.com/us/app/radiate/id939284774?mt=8) Social hub for music festivals
