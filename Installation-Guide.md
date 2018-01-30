@@ -1,5 +1,3 @@
-## Installation Guide
-
 There are three ways to use SDWebImage in your project:
 - using CocoaPods
 - using Carthage
@@ -46,7 +44,7 @@ github "rs/SDWebImage"
 ```
 
 ### Installation by cloning the repository
-- see [Manual install](Docs/ManualInstallation.md)
+- see [Manual install](https://github.com/rs/SDWebImage/blob/master/Docs/ManualInstallation.md)
 
 
 ## As a submodule and configure for Archive

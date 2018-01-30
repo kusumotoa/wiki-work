@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [How to use](https://github.com/rs/SDWebImage/blob/master/Docs/HowToUse.md)
-* [Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide.md)
+* [Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide)
 * [Advanced Usage](https://github.com/rs/SDWebImage/wiki/Advanced-Usage)
 * [API Reference](http://cocoadocs.org/docsets/SDWebImage/)
 

@@ -1,5 +1,3 @@
-##Adcaned Usage
-
 This section will introduce some advacend usages for SDWebImage. You can find the code snippet for basic usage and the minimum library version supports the feature. The code snippet is using Objective-C and Swift based on iOS. (Some feature's usage may be a little different crossing the platforms)
 
 ### Custom Download Operation (4.0)
