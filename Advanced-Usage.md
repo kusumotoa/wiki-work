@@ -68,6 +68,22 @@ SDWebImageCodersManager.sharedInstance().addCoder(coder)
 
 For more practical usage, check [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder), which supports the [BPG](https://bellard.org/bpg/) image format for SDWebImage.
 
+#### GIF coder
+
+SDWebImage does not enable full GIF decoding/encoding for all `UIImageView` by default in 4.x. Because it may reduce the performance for `FLAnimatedImageView`. However, you can enable this by simply adding the built-in GIF coder.
+
+* Objective-C
+
+```objective-c
+[[SDWebImageCodersManager sharedInstance] addCoder:[SDWebImageGIFCoder sharedCoder]];
+```
+
+* Swift
+
+```swift
+SDWebImageCodersManager.sharedInstance().addCoder(SDWebImageGIFCoder.shared())
+```
+
 
 ### Image Progress (4.3.0)
 
