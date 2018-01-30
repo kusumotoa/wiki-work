@@ -17,7 +17,7 @@ Custom download operation is a way to custom some specify logic for advanced usa
 class MySDWebImageDownloaderOperation : SDWebImageDownloaderOperation {}
 ```
 
-After you create a custom download class, you should now tell the downloader use that class instead of built-in one.
+After you create a custom download operation class, you can now tell the downloader use that class instead of built-in one.
 
 * Objective-C
 
@@ -137,7 +137,7 @@ imageView.sd_imageTransition = transition;
 
 ```swift
 let transition = SDWebImageTransition.fade
-transition.prepares = { (view, image, data, cacheType, URL) in
+transition.prepares = { (view, image, imageData, cacheType, imageURL) in
     view.transform = .init(rotationAngle: CGFloat.pi)
 }
 transition.animations = { (view, image) in
