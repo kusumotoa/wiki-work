@@ -1,7 +1,3 @@
-![](https://raw.githubusercontent.com/rs/SDWebImage/master/SDWebImage_logo.png)
-
-> #### Asynchronous image downloader with cache support as a UIImageView category
-
 ## Getting Started
 
 * [How to use](https://github.com/rs/SDWebImage/blob/master/Docs/HowToUse.md)
