@@ -94,7 +94,7 @@ Image progress use a [NSProgress](https://developer.apple.com/documentation/foun
 ```objective-c
 UIProgressView *progressView;
 [self.KVOController observe:imageView.sd_imageProgress keyPath:NSStringFromSelector(@selector(fractionCompleted)) options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
-    float progress = [change[NSKeyValueChangeNewKey] doubleValue];
+    float progress = [change[NSKeyValueChangeNewKey] floatValue];
     dispatch_main_async_safe(^{ // progress value updated in background queue
         [progressView setProgress:progress animated:YES]; // update UI
     });
