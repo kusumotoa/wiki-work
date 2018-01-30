@@ -100,7 +100,7 @@ self.kvoController.observe(imageView, keyPath: #keyPath(UIView.sd_imageProgress)
 
 ### Image Transition (4.3.0)
 
-Image transition is used to provide custom transition animation after the image load finished. You can use the built-in convenience method to easily specify your desired animation or use the custom animation.
+Image transition is used to provide custom transition animation after the image load finished. You can use the built-in convenience method to easily specify your desired animation.
 
 * Objective-C
 
@@ -118,7 +118,7 @@ let url = URL(string: "https://foo/bar.jpg")
 imageView.sd_setImage(with: url)
 ```
 
-And you can custom complicated animation using the `animations` and `prepares` property.
+And you can custom complicated animation using the `prepares` and `animations` property.
 
 * Objective-C
 
@@ -144,4 +144,6 @@ transition.animations = { (view, image) in
     view.transform = .identity
 }
 imageView.sd_imageTransition = transition
-```
+```	
+
+Image transition is only applied for image from network by default. If you want it been applied for image from cache as well, using `SDWebImageForceTransition` option.
