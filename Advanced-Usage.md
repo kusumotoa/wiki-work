@@ -89,10 +89,10 @@ UIProgressView *progressView;
 
 ```swift
 let progressView = UIProgressView();
-self.kvoController.observe(imageView, keyPath: #keyPath(UIView.sd_imageProgress), options: [.new]) { (observer, object, change) in
+self.kvoController.observe(imageView.sd_imageProgress, keyPath: #keyPath(Progress.fractionCompleted), options: [.new]) { (observer, object, change) in
     if let progress = (change[NSKeyValueChangeKey.newKey.rawValue] as? NSNumber)?.floatValue {
-        DispatchQueue.main.async {
-            progressView.setProgress(progress, animated: true)
+        DispatchQueue.main.async { // progress value updated in background queue
+            progressView.setProgress(progress, animated: true) // update UI
         }
     }
 }
