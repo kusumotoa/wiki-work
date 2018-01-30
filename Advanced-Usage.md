@@ -1,10 +1,10 @@
 ##Adcaned Usage
 
-This section will introduce some advacend usage for SDWebImage. You can find the code snippet for basic usage and the minimum library version supports the feature. The code snippet is using Objective-C and Swift based on iOS. (Some feature's usage may be a little different crossing the platforms)
+This section will introduce some advacend usages for SDWebImage. You can find the code snippet for basic usage and the minimum library version supports the feature. The code snippet is using Objective-C and Swift based on iOS. (Some feature's usage may be a little different crossing the platforms)
 
 ### Custom Download Operation (4.0)
 
-Custom download operation is a way to custom some specify logic for advanced usage. Mostly you do need to do this because we have many configuration to control the bahavior for download. Only if you find no way to achieve your goal, you can create a subclass of `NSOperation` which conforms to `SDWebImageDownloaderOperationInterface`. However, the best practice is to subclass `SDWebImageDownloaderOperation` directly to override some functions because some protocol method is not easy to implement.
+Custom download operation is a way to custom some specify logic for advanced usage. Mostly you do need to do this because we have many configurations to control the bahavior for download. Only if you find no way to achieve your goal, you can create a subclass of `NSOperation` which conforms to `SDWebImageDownloaderOperationInterface`. However, the best practice is to subclass `SDWebImageDownloaderOperation` directly and override some functions because some protocol method is not easy to implement.
 
 * Objective-C
 
@@ -64,7 +64,8 @@ MySDWebImageCoder *coder = [MySDWebImageCoder new];
 * Swift
 
 ```swift
-SDWebImageCodersManager.sharedInstance().addCoder(MySDWebImageCoder())
+let coder = MySDWebImageCoder()
+SDWebImageCodersManager.sharedInstance().addCoder(coder)
 ```
 
 For more practical usage, check [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder), which supports the [BPG](https://bellard.org/bpg/) image format for SDWebImage.
@@ -107,13 +108,16 @@ Image transition is used to provide custom transition animation after the image 
 
 ```objective-c
 imageView.sd_imageTransition = SDWebImageTransition.fadeTransition;
-[imageView sd_setImageWithURL:URL];
+NSURL *url = [NSURL URLWithString:@"https://foo/bar.jpg"];
+[imageView sd_setImageWithURL:url];
 ```
 
 * Swift
 
 ```swift
 imageView.sd_imageTransition = .fade
+let url = URL(string: "https://foo/bar.jpg")
+imageView.sd_setImage(with: url)
 ```
 
 And you can custom complicated animation using the `animations` and `prepares` property.
