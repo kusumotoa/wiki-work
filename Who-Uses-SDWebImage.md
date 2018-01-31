@@ -23,10 +23,11 @@ Do not hesitate to add yours.
 - [Chimani](https://www.chimani.com/) - Apps for all 59 U.S. National Parks
 - [Choosic - Discover new music](https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
 - [Cinery](https://www.cinery.de)
+- [Cinémur](https://itunes.apple.com/fr/app/cinemur-films-bandes-annonces-et-s%C3%A9ances/id596346457?mt=8) - Le nouveau réflexe cinéma
 - [ClassDojo](https://www.classdojo.com)
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
 - [Cluster](https://getcluster.com) - Privately share special moments with friends and family
-- [CoachGuitar](https://itunes.apple.com/app/id405338085) The virtual teacher for guitar (2M+ downloads)
+- [CoachGuitar](https://itunes.apple.com/app/id405338085) - The virtual teacher for guitar (2M+ downloads)
 - [Colab](https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
 - [Commentts](https://itunes.apple.com/ca/app/commentts/id1057955782?mt=8) - Social network based around the news
 - [CoverLoad](https://coverloadapp.com) - Download cover art from the iTunes Store.
