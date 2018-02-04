@@ -6,6 +6,36 @@ The following article gives a way to workaround this issue:
 
 [http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/](http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/)
 
+### Handle cell reusing for view category
+
+The View Category including `UIImage+WebCache`, `UIView+WebCache` or some other categories supports cell reusing from the scratch design. Actually, for most of use cases. All you need to do to work with cell reusing in `UITableView`, `UICollectionView` on iOS (`NSTableView`, `NSCollectionView`on macOS) is quite simple, just use:
+
+* Objective-C:
+
+```objective-c
+[cell.imageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"placeholder"]];
+```
+
+* Swift:
+
+```swift
+cell.imageView?.sd_setImage(with: url, placeholderImage: UIImage(named: “placeholder"))
+```
+
+However, there are some options to control the detailed behavior using for View Category such as `SDWebImageDelayPlaceholder`, `SDWebImageAvoidAutoSetImage`. You can try these options if the default behavior cause some issues with your use cases.
+
+##### Detailed behavior when using view category
+
+1. When you call `sd_setImageWithURL:`, whatever you provide a valid url or nil, we will firstly set the placeholder(Or nil, which means will clear the current rendered image) to the current imageView's image before any cache or network request. Then the placeholder argument is totally unused, unless you specify `SDWebImageDelayPlaceholder`.
+
+2. If the image fetched in memory cache, the callback from manager is synchronously and is dispatched to the main queue if need(If you already call `sd_setImageWithURL:` in the main queue, there is no queue disaptch and just like a normal function call). So it will immediately set the result image to override the placeholder. In the set image process, we will call [setNeedsLayout](https://developer.apple.com/documentation/uikit/uiview/1622601-setneedslayout) to mark the view it's ready for rendering. UIKit draw all the views during the same runloop(No asynchronous or queue dispatch) depended on view's first state and last state but not the intermediate state. The state we set the placeholder(or nil) at the beginning will be totally ignored and not even rendering to cause a flashing. If you do not understand this behavior, see [Understanding UIKit Rendering](https://developer.apple.com/videos/play/wwdc2011/121/)
+
+3. If the image fetched in disk cache, the callback is asynchronously and dispatched from the cache queue to the main queue. So the placeholder (or nil) will be rendered with a little short time(depend on the IO speed and decoding time. This may looks like a flashing). And then replaced by the final image. (Note if you really do not want any flashing, try use [Image Transition](https://github.com/rs/SDWebImage/wiki/Advanced-Usage#image-transition-430). Or using `SDWebImageQueryDiskSync`, which may decrease the frame rate)
+
+4. If the image fetched from network, the callback is asynchronously and dispatched from the downloader session queue to the main queue. So the placeholder (or nil) will be rendered with a long time(depend on the network speed and decoding time). And then replcaed by the final image. This behavior is nearlly the same as disk cache except the duration for placeholder rendering.(network speed is far more slower than disk cache)
+
+5. If you use `SDWebImageDelayPlaceholder`, we will use the placeholder as target image after the fetch finished if the image is nil.
+
 
 ### Handle image refresh
 
