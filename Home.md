@@ -2,7 +2,7 @@
 
 > #### Asynchronous image downloader with cache support as a UIImageView category
 
-## Getting Started1
+## Getting Started
 
 * [How to use](https://github.com/rs/SDWebImage/blob/master/Docs/HowToUse.md)
 * [Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide)
