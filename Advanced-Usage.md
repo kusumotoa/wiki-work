@@ -70,7 +70,9 @@ For more practical usage, check [SDWebImageBPGCoder](https://github.com/SDWebIma
 
 #### GIF coder
 
-SDWebImage does not enable full GIF decoding/encoding for all `UIImageView` by default in 4.x. Because it may reduce the performance for `FLAnimatedImageView`. However, you can enable this by simply adding the built-in GIF coder.
+SDWebImage does not enable full GIF decoding/encoding for all `UIImageView` by default in 4.x. Because it may reduce the performance for `FLAnimatedImageView`. However, you can enable this for all `UIImageView` instance by simply adding the built-in GIF coder.
+
+For macOS, `NSImage` supports built-in GIF decoding. However, the frame duration is limit to 50ms and may not correctly rendering some GIF images. However, if you enable GIF coder, we will use a subclass of `NSBitmapImageRep` to fix the frame duration to match the standard way modern browsers rendering GIF images. See #2223 for more detail.
 
 * Objective-C
 
