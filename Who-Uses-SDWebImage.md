@@ -54,6 +54,7 @@ Do not hesitate to add yours.
 - [Flynk](http://itunes.com/apps/flynk) - Engage with your friends and family
 - [Food Reporter](https://itunes.apple.com/fr/app/food-reporter/id404530397?mt=8)
 - [Foodster](http://bit.ly/Foodster) - A local, friendly app for peer-to-peer food delivery.
+- [FRAT](https://itunes.apple.com/us/app/frat/id1195382221?ls=1&mt=8) - A social network that allows post-secondary students to upload pictures and videos to their College/University's story
 - [Garça](https://itunes.apple.com/app/id594552266?mt=8)
 - [GeoClique](https://itunes.apple.com/us/app/GeoClique/id604701780?mt=8) Social network for making friends, not followers
 - [GetAppNinja](http://getappninja.com)
