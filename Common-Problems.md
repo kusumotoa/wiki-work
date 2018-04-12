@@ -77,7 +77,7 @@ imageView.sd_setIndicatorStyle(.Gray)
 
 ### Handle self capture in completion block
 
-When you try to use `sd_setImageWithURL:completed` and write some code in the completion block which contains `self`. You sohuld take care that this may cause [Strong Reference Cycles for Closures
+When you try to use `sd_setImageWithURL:completed` and write some code in the completion block which contains `self`. You should take care that this may cause [Strong Reference Cycles for Closures
 ](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56). This because the completion block you provided will be retained by `SDWebImageManager`'s running operations. So the `self` in the completionBlock will also be captured until the load progress finished (Cache fetched or network finished).
 
 If you do not want to keep `self` instance alive during load progress, just mark it to weak. For Objective-C, use a weak reference to `self`:
