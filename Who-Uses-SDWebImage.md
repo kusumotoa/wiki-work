@@ -171,6 +171,7 @@ Do not hesitate to add yours.
 - [Tuber for YouTube](https://itunes.apple.com/app/id555919650) (An intuitive YouTube client for iOS)
 - [Tudo Gostoso Receitas](http://itunes.apple.com/br/app/nzn/id577891381?mt=8)
 - [Tuner for YouTube Music](https://itunes.apple.com/app/id729354480) (A music streaming app for iOS)
+- [TweetXpress](https://itunes.apple.com/us/app/tweetxpress/id1317426705?mt=8) (A Simple Twitter Client)
 - [Urban Outfitters](https://itunes.apple.com/us/app/uo/id358821736?mt=8)
 - [Vapeam](http://vapeam.com) Vape community for all vapers and e-cigarette fans
 - [Veggup](http://veggup.com) Digital coach to help people embracing a plant-based diet
