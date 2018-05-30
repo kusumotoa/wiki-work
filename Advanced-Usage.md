@@ -2,7 +2,7 @@ This section will introduce some advacend usages for SDWebImage. You can find th
 
 ### Custom Download Operation (4.0)
 
-Custom download operation is a way to custom some specify logic for advanced usage. Mostly you do need to do this because we have many configurations to control the bahavior for download. Only if you find no way to achieve your goal, you can create a subclass of `NSOperation` which conforms to `SDWebImageDownloaderOperationInterface`. However, the best practice is to subclass `SDWebImageDownloaderOperation` directly and override some functions because some protocol method is not easy to implement.
+Custom download operation is a way to custom some specify logic for advanced usage. Mostly you don't need to do this because we have many configurations to control the bahavior for download. Only if you find no way to achieve your goal, you can create a subclass of `NSOperation` which conforms to `SDWebImageDownloaderOperationInterface`. However, the best practice is to subclass `SDWebImageDownloaderOperation` directly and override some functions because some protocol method is not easy to implement.
 
 * Objective-C
 
