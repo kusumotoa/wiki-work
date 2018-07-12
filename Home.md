@@ -19,6 +19,7 @@
 ## Migration Guide
 
 * [4.0 Migration Guide](https://github.com/rs/SDWebImage/blob/master/Docs/SDWebImage-4.0-Migration-guide.md)
+* [5.0 Migration Guide](https://github.com/rs/SDWebImage/wiki/5.0-Migration-guide)
 
 ## Information
 
