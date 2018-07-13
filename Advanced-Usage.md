@@ -175,27 +175,69 @@ Image transition is only applied for image from network by default. If you want 
 ### Animated Image (5.0)
 SDWebImage 5.0 provide a full stack solution for animated image loading, rendering and decoding.
 
-Since animated image appear many part of current applications. 
+Since animated image format like GIF, WebP, APNG appears everywhere in today's Internet and Apps. It's important to provide a better solution to keep both simple and powerful. Since `FLAnimatedImage` we used in 4.x, is tied to GIF format only, use a `NSObject` subclass image representation which it's not integrated with our framework, and we can not do further development since it's a third-party lib. We decide to build our own solution for this task.
 
 #### Loading
-`UIImage/NSImage` is really familiar for Cocoa/Cocoa Touch developer. Which hold a reference for bitmap image storage and let it works for `UIImageView/NSImageView`. However, these class for animated image support not works so well for many aspect. You can check `-[SDImageCoderHelper animatedImageWithFrames:]` for detailed reason.
+`UIImage/NSImage` is really familiar for Cocoa/Cocoa Touch developer. Which hold a reference for bitmap image storage and let it works for `UIImageView/NSImageView`. However, these class for animated image support not works so well for many aspects. You can check `-[SDImageCoderHelper animatedImageWithFrames:]` for detailed reason.
 
-So we create a new class called `SDAnimatedImage`, which is subclass of `UIImage/NSImage`. This class will use our animated image coder and support animated image rendering for `SDAnimatedImageView`. By subclassing `UIImage/NSImage`, this allow it to be integrated with most framework API. Including our `SDImageCache`'s memory cache, as well as `SDWebImageManager`, `SDWebImageDownloader`'s completion block.
+So we create a new class called `SDAnimatedImage`, which is subclass of `UIImage/NSImage`. This class will use our animated image coder and support animated image rendering for `SDAnimatedImageView`. By subclassing `UIImage/NSImage`, this allow it to be integrated with most framework APIs. Including our `SDImageCache`'s memory cache, as well as `SDWebImageManager`, `SDWebImageDownloader`'s completion block.
 
-All the method not listed in the header files will just fallback to the super implementation. Which allow you to just set this `SDAnimatedImage` to normal `UIImageView/NSImageView` class and show a static poster image. At most of time, you don't need complicated check for this class. It just work.
+All the method not listed in the header files will just fallback to the super implementation. Which allow you to can just set this `SDAnimatedImage` to normal `UIImageView/NSImageView` class and show a static poster image. At most of time, you don't need complicated check for this class. It just works.
 
 This animated image works together with `SDAnimatedImageView` (see below), and we have a `SDAnimatedImageView+WebCache` category to use all the familiar view category methods.
 
+* Objective-C:
+
+```objective-c
+SDAnimatedImageView *imageView = [SDAnimatedImageView new];
+[imageView sd_setImageWithURL:url];
+```
+
+* Swift:
+
+```swift
+let imageView = SDAnimatedImageView()
+imageView.sd_setImage(with: url)
+```
+
 #### Rendering
 
-SDWebImage provide a animated image view called `SDAnimatedImageView` to do animated image rendering. It's a subclass of `UIImageView/NSImageView`, which means you can integrate it easier for most of framework API.
+SDWebImage provide an animated image view called `SDAnimatedImageView` to do animated image rendering. It's a subclass of `UIImageView/NSImageView`, which means you can integrate it easier for most of framework APIs.
 
-When the `SDAnimatedImageView` was trigged by `setImage:`, it will decided how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. ]When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent a animated one.)
+When the `SDAnimatedImageView` was trigged by `setImage:`, it will decide how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent an animated one)
 
-The benefit from this custom image view is that you can control the rendering config base on your use case. We all know that animated image will consume much more memory because it needs to decode all image frames into memory. `UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory forbig animated images like GIF.
- and cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images like GIF.
+The benefit from this custom image view is that you can control the rendering behavior base on your use case. We all know that animated image will consume much more CPU & memory because it needs to decode all image frames into memory. `UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory for big animated images (like 100 frames GIF).
+ and cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images (like Animated WebP because of low decoding speed).
 
-So as `SDAnimatedImageView`, by default will decode and cache the image frames with a buffer (where the buffer size is calculated based on memory usage), when the buffer size out of limit, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own buffer size, check `maxBufferSize` property for more detailed information.
+So now we have `SDAnimatedImageView`, by default it will decode and cache the image frames with a buffer (where the buffer size is calculated based on current memory status), when the buffer is out of limit size, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own buffer size, check `maxBufferSize` property for more detailed information.
+
+* Objective-C
+
+```objective-c
+SDAnimatedImageView *imageView = [SDAnimatedImageView new];
+// this only support bundle file but not asset catalog
+// you can also use other initializer like `imageWithData:scale:`
+SDAnimatedImage *animatedImage = [SDAnimatedImage imageNamed:@"image.gif"];
+// auto start animation
+imageView.image = animatedImage;
+// when you want to stop
+[imageView stopAnimating];
+```
+
+* Swift
+
+```swift
+let imageView = SDAnimatedImageView()
+// this only support bundle file but not asset catalog
+// you can also use other initializer like `init?(data:scale:)`
+let animatedImage = SDAnimatedImage(named: "image.gif")
+// auto start animation
+imageView.image = animatedImage
+// when you want to stop
+imageView.stopAnimating
+```
+
+Another feature, `SDAnimatedImageView` supports progressive animated image rendering. Which behave just looks like when Chrome showing a large GIF image. (The animation pause at last downloaded frame, and continue when new frames available). To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property. You can disable it and just showing the first poster image during progressive image loading.
 
 #### Decoding
 
@@ -203,7 +245,23 @@ To support animated image view rendering. All the image coder plugin should supp
 
 In `SDAnimatedImageCoder`, you need to provide all information used for animated image rendering. Such as frame image, frame duration, total frame count and total loop count. All the built-in animated coder (including `GIF`, `WebP`, `APNG`) support this protocol, which means you can use it to show these animated image format right in `SDAnimatedImageView`.
 
+* Objective-C
+
+```objective-c
+id<SDAnimatedImageCoder> coder = SDImageGIFCoder.sharedCoder;
+UIImage *firstFrame = [coder animatedImageFrameAtIndex:0];
+```
+
+* Swift
+
+```swift
+let coder = SDImageGIFCoder.shared
+let firstFrame = coder.animatedImageFrame(at: 0)
+```
+
 However, if you have your own desired image format, you can try to provide your own by implementing this protocol, add your coder plugin, then all things done.
+
+Note if you also want to support progressive animated image rendering. Your custom coder must conform `SDAnimatedImageCoder` and `SDProgressiveImageCoder` as well. The coder will receive `updateIncrementalData:finished:` call when new data is available. And you should update your decoder and let it produce the correct `animatedImageFrameCount` and other method list in `SDAnimatedImageCoder`, which can be decoded with current data.
 
 #### Customization
 
