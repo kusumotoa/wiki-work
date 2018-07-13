@@ -1,6 +1,6 @@
 ## Getting Started
 
-* [How to use](https://github.com/rs/SDWebImage/blob/master/Docs/HowToUse.md)
+* [How to use](https://github.com/rs/SDWebImage/wiki/How-to-use)
 * [Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide)
 * [Advanced Usage](https://github.com/rs/SDWebImage/wiki/Advanced-Usage)
 * [Common Problems](https://github.com/rs/SDWebImage/wiki/Common-Problems)
@@ -20,3 +20,5 @@
 ## Information
 
 * [Change Log](https://github.com/rs/SDWebImage/blob/master/CHANGELOG.md)
+
+

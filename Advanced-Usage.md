@@ -171,3 +171,41 @@ imageView.sd_imageTransition = transition
 ```	
 
 Image transition is only applied for image from network by default. If you want it been applied for image from cache as well, using `SDWebImageForceTransition` option.
+
+### Animated Image (5.0)
+SDWebImage 5.0 provide a full stack solution for animated image loading, rendering and decoding.
+
+Since animated image appear many part of current applications. 
+
+#### Loading
+`UIImage/NSImage` is really familiar for Cocoa/Cocoa Touch developer. Which hold a reference for bitmap image storage and let it works for `UIImageView/NSImageView`. However, these class for animated image support not works so well for many aspect. You can check `-[SDImageCoderHelper animatedImageWithFrames:]` for detailed reason.
+
+So we create a new class called `SDAnimatedImage`, which is subclass of `UIImage/NSImage`. This class will use our animated image coder and support animated image rendering for `SDAnimatedImageView`. By subclassing `UIImage/NSImage`, this allow it to be integrated with most framework API. Including our `SDImageCache`'s memory cache, as well as `SDWebImageManager`, `SDWebImageDownloader`'s completion block.
+
+All the method not listed in the header files will just fallback to the super implementation. Which allow you to just set this `SDAnimatedImage` to normal `UIImageView/NSImageView` class and show a static poster image. At most of time, you don't need complicated check for this class. It just work.
+
+This animated image works together with `SDAnimatedImageView` (see below), and we have a `SDAnimatedImageView+WebCache` category to use all the familiar view category methods.
+
+#### Rendering
+
+SDWebImage provide a animated image view called `SDAnimatedImageView` to do animated image rendering. It's a subclass of `UIImageView/NSImageView`, which means you can integrate it easier for most of framework API.
+
+When the `SDAnimatedImageView` was trigged by `setImage:`, it will decided how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. ]When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent a animated one.)
+
+The benefit from this custom image view is that you can control the rendering config base on your use case. We all know that animated image will consume much more memory because it needs to decode all image frames into memory. `UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory forbig animated images like GIF.
+ and cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images like GIF.
+
+So as `SDAnimatedImageView`, by default will decode and cache the image frames with a buffer (where the buffer size is calculated based on memory usage), when the buffer size out of limit, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own buffer size, check `maxBufferSize` property for more detailed information.
+
+#### Decoding
+
+To support animated image view rendering. All the image coder plugin should support to decode individual frame instead of just return a simple image using the `SDImageCoder` method `decodedImageWithData:options:`. So this is why we introduce a new protocol `SDAnimatedImageCoder`.
+
+In `SDAnimatedImageCoder`, you need to provide all information used for animated image rendering. Such as frame image, frame duration, total frame count and total loop count. All the built-in animated coder (including `GIF`, `WebP`, `APNG`) support this protocol, which means you can use it to show these animated image format right in `SDAnimatedImageView`.
+
+However, if you have your own desired image format, you can try to provide your own by implementing this protocol, add your coder plugin, then all things done.
+
+#### Customization
+
+For advanced user, since `SDAnimatedImage` also contains a protocol, which allow you to customize your own animated image class. You can specify `SDWebImageContextAnimatedImageClass` for your custom implementation class to load. For example, here is a plugin for YYImage, which you can directly load `YYImage` with `YYAnimatedImageView` using SDWebImage's loading & caching system, see [SDWebImageYYPlugin](https://github.com/SDWebImage/SDWebImageYYPlugin) for detailed information.
+
