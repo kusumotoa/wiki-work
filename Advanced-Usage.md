@@ -175,14 +175,14 @@ Image transition is only applied for image from network by default. If you want 
 ### Animated Image (5.0)
 SDWebImage 5.0 provide a full stack solution for animated image loading, rendering and decoding.
 
-Since animated image format like GIF, WebP, APNG appears everywhere in today's Internet and Apps. It's important to provide a better solution to keep both simple and powerful. Since `FLAnimatedImage` we used in 4.x, is tied to GIF format only, use a `NSObject` subclass image representation which it's not integrated with our framework, and we can not do further development since it's a third-party lib. We decide to build our own solution for this task.
+Since animated image format like GIF, WebP, APNG appears everywhere in today's Internet and Apps. It's important to provide a better solution to keep both simple and powerful. Since `FLAnimatedImage` we used in 4.x, is tied to GIF format only, use a `NSObject` subclass image representation which is not integrated with our framework, and we can not do further development since it's a third-party lib. We decide to build our own solution for this task.
 
 #### Loading
 `UIImage/NSImage` is really familiar for Cocoa/Cocoa Touch developer. Which hold a reference for bitmap image storage and let it works for `UIImageView/NSImageView`. However, these class for animated image support not works so well for many aspects. You can check `-[SDImageCoderHelper animatedImageWithFrames:]` for detailed reason.
 
 So we create a new class called `SDAnimatedImage`, which is subclass of `UIImage/NSImage`. This class will use our animated image coder and support animated image rendering for `SDAnimatedImageView`. By subclassing `UIImage/NSImage`, this allow it to be integrated with most framework APIs. Including our `SDImageCache`'s memory cache, as well as `SDWebImageManager`, `SDWebImageDownloader`'s completion block.
 
-All the method not listed in the header files will just fallback to the super implementation. Which allow you to can just set this `SDAnimatedImage` to normal `UIImageView/NSImageView` class and show a static poster image. At most of time, you don't need complicated check for this class. It just works.
+All the methods not listed in the header files will just fallback to the super implementation. Which allow you to just set this `SDAnimatedImage` to normal `UIImageView/NSImageView` class and show a static poster image. At most of the time, you don't need complicated check for this class. It just works.
 
 This animated image works together with `SDAnimatedImageView` (see below), and we have a `SDAnimatedImageView+WebCache` category to use all the familiar view category methods.
 
