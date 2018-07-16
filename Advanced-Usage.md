@@ -162,7 +162,7 @@ imageView.sd_imageTransition = transition;
 ```swift
 let transition = SDWebImageTransition.fade
 transition.prepares = { (view, image, imageData, cacheType, imageURL) in
-    view.transform = .init(rotationAngle: CGFloat.pi)
+    view.transform = .init(rotationAngle: .pi)
 }
 transition.animations = { (view, image) in
     view.transform = .identity
@@ -266,4 +266,81 @@ Note if you also want to support progressive animated image rendering. Your cust
 #### Customization
 
 For advanced user, since `SDAnimatedImage` also contains a protocol, which allow you to customize your own animated image class. You can specify `SDWebImageContextAnimatedImageClass` for your custom implementation class to load. For example, here is a plugin for YYImage, which you can directly load `YYImage` with `YYAnimatedImageView` using SDWebImage's loading & caching system, see [SDWebImageYYPlugin](https://github.com/SDWebImage/SDWebImageYYPlugin) for detailed information.
+
+### Image Transformer (5.0)
+
+Image transformer is the feature, that allows you to do some [Image Process](https://en.wikipedia.org/wiki/Digital_image_processing) on the image which is just loaded and decoded from the image data. For example, you can resize or crop the current loaded image, then produce the output image to be used for the final result and store to cache.
+
+The different with this and [Image Coder](https://github.com/rs/SDWebImage/wiki/Advanced-Usage#custom-coder-420) is that image coder is focused on the decoding from compressed image format data (JPEG/PNG/WebP) to the image memory representation (typically `UIImage/NSImage`). But image transformer is focused on the **input** and **output** of image memory representation.
+
+#### Usage
+
+For basic image transformer. It should conforms to `SDImageTransformer` protocol. We provide many common built-in transformers for list below, which supports iOS/tvOS/macOS/watchOS all Apple platforms. You can also create your own with the custom protocol.
+
++ Rounded Corner (Clip a rounded corner): `SDImageRoundCornerTransformer`
++ Resize (Scale down or up): `SDImageResizingTransformer`
++ Crop (Crop a rectangle): `SDImageCroppingTransformer`
++ Flip (Flip the orientation): `SDImageFlippingTransformer`
++ Rotate (Rotate a angle): `SDImageRotationTransformer`
++ Tint Color (Overlay a color mask): `SDImageTintTransformer`
++ Blur Effect (Gaussian blur): `SDImageBlurTransformer`
++ Core Image Filter (CIFilter based, exclude watchOS): `SDImageFilterTransformer`
+
+And also, you can chain multiple transformers together, to let the input image been processed from the first one to the last one. By using `SDImagePipelineTransformer` with a list of transformers.
+
++ Objective-C
+
+```objectivec
+id<SDImageTransformer> transformer1 = [SDImageFlippingTransformer transformerWithHorizontal:YES vertical:NO];
+id<SDImageTransformer> transformer2 = [SDImageRotationTransformer transformerWithAngle:M_PI_4 fitSize:YES];
+id<SDImageTransformer> pipelineTransformer = [SDImagePipelineTransformer transformerWithTransformers:@[transformer1, transformer2]];
+```
+
++ Swift
+
+```swift
+let transformer1 = SDImageFlippingTransformer(horizontal: true, vertical: false)
+let transformer2 = SDImageRotationTransformer(angle: .pi / 4, fitSize: true)
+let pipelineTransformer = SDImagePipelineTransformer(transformers: [transformer1, transformer2])
+```
+
+To apply a transformer for image requests, provide the context arg with you transformer, or you can specify a default transformer for image manager level to process all the image requests from that manager.
+
++ Objective-C:
+
+```objectivec
+id<SDImageTransformer> transformer = [SDImageResizingTransformer transformerWithSize:CGSizeMake(300, 300) scaleMode:SDImageScaleModeFill];
+UIImageView *imageView;
+[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextImageTransformer: transformer}];
+```
+
++ Swift: 
+
+```swift
+let transformer = SDImageResizingTransformer(size: CGSize(300, 300), scaleMode: .fill)
+let imageView: UIImageView
+imageView.sd_setImage(withURL: url, placeholderImage: nil, context: [.imageTransformer: transformer])
+```
+
+
+#### Image Extensions
+
+Our built-in image transformers are only the wrapper which call the `UIImage/NSImage` extension for image transform process. You can also use that for common image transform usage. 
+
+The list of the common image extension method is almost equivalent to the built-in image transformer above. See `UIImage+Transform.h` for more detail information.
+
++ Objective-C:
+
+```objectivec
+UIImage *image;
+UIImage *croppedImage = [image sd_croppedImageWithRect:CGRectMake(0, 0, 100, 100)];
+```
+
++ Swift:
+
+```swift
+let image: UIImage
+let croppedImage = image.sd_croppedImage(with: CGRect(0, 0, 100, 100))
+```
+
 
