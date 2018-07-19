@@ -7,14 +7,14 @@ Custom download operation is a way to custom some specify logic for advanced usa
 * Objective-C
 
 ```objective-c
-@interface MySDWebImageDownloaderOperation : SDWebImageDownloaderOperation
+@interface MyWebImageDownloaderOperation : SDWebImageDownloaderOperation
 @end
 ```
 
 * Swift
 
 ```swift
-class MySDWebImageDownloaderOperation : SDWebImageDownloaderOperation {}
+class MyWebImageDownloaderOperation : SDWebImageDownloaderOperation {}
 ```
 
 After you create a custom download operation class, you can now tell the downloader use that class instead of built-in one.
@@ -22,13 +22,13 @@ After you create a custom download operation class, you can now tell the downloa
 * Objective-C
 
 ```objective-c
-[[SDWebImageDownloader sharedDownloader] setOperationClass:[MySDWebImageDownloaderOperation class]];
+[[SDWebImageDownloader sharedDownloader] setOperationClass:[MyWebImageDownloaderOperation class]];
 ```
 
 * Swift
 
 ```swift
-SDWebImageDownloader.shared().setOperationClass(MySDWebImageDownloaderOperation.self)
+SDWebImageDownloader.shared().setOperationClass(MyWebImageDownloaderOperation.self)
 ```
 
 ### Custom Coder (4.2.0)
@@ -40,14 +40,14 @@ For basic custom coder, it must conform to the protocol `SDWebImageCoder`. For c
 * Objective-C
 
 ```objective-c
-@interface MySDWebImageCoder : NSObject <SDWebImageCoder>
+@interface MyWebImageCoder : NSObject <SDWebImageCoder>
 @end
 ```
 
 * Swift
 
 ```swift
-class MySDWebImageCoder : NSObject, SDWebImageCoder {}
+class MyWebImageCoder : NSObject, SDWebImageCoder {}
 ```
 
 After you create a custom coder class, don't forget to register that into the coder manager.
@@ -55,14 +55,14 @@ After you create a custom coder class, don't forget to register that into the co
 * Objective-C
 
 ```objective-c
-MySDWebImageCoder *coder = [MySDWebImageCoder new];
+MyWebImageCoder *coder = [MyWebImageCoder new];
 [[SDWebImageCodersManager sharedInstance] addCoder:coder];
 ```
 
 * Swift
 
 ```swift
-let coder = MySDWebImageCoder()
+let coder = MyWebImageCoder()
 SDWebImageCodersManager.sharedInstance().addCoder(coder)
 ```
 
@@ -343,4 +343,151 @@ let image: UIImage
 let croppedImage = image.sd_croppedImage(with: CGRect(0, 0, 100, 100))
 ```
 
+
+### Custom Loader (5.0)
+This is an advanced feature to allow user to customize the image loader used by SDWebImage.
+
+For example, if you have your own network stack, you can consider to use that to build a loader instead of `SDWebImageDownloader`. And it's not limited to be network only. You can check [SDWebImagePhotosPlugin](https://github.com/SDWebImage/SDWebImagePhotosPlugin), which use custom loader to provide Photos Library loading system based on Photos URL.
+
+#### Loader Protocol
+To create a custom loader, you need a class which conforms to `SDImageLoader` protocol. See `SDImageLoader`
+
++ Objective-C
+
+```objectivec
+@interface MyImageLoader : SDImageLoader
+@end
+```
+
++ Swift
+
+```swift
+class MyImageLoader : SDImageLoader {}
+```
+
+**Note:** Except the image data request task, your loader may also face the issue of image decoding because the protocol method output the `UIImage/NSImage` instance. Since the decoding process may be changed from version to version, the best practice is to use `SDImageLoaderDecodeImageData` or `SDImageLoaderDecodeProgressiveImageData` (For progressive image loading) method. This is the built-in logic for decoding in our `SDWebImageDownloader`. Using this method to generate the `UIImage/NSImage`, can keep the best compatibility of your custom loader for SDWebImage.
+
+#### Loaders Manager
+Since `SDImageLoader` is a protocol, we implement a multiple loader system, which contains multiple loaders and choose the proper loader based on the request URL. By using `SDImageLoadersManager`, you can register multiple loaders as you want to handle different type of request.
+
++ Objective-C
+
+```objectivec
+id<SDImageLoader> loader1 = SDWebImageDownloader.sharedDownloader;
+id<SDImageLoader> loader2 = SDWebImagePhotoLoader.sharedLoader;
+SDImageLoadersManager.sharedLoader.loaders = @[loader1, loader2];
+
+// Assign loader to manager
+SDWebImageManager *manager = [[SDWebImageManager alloc] initWithCache:SDImageCache.sharedCache loader:SDImageLoader.sharedLoader];
+// Start use
+
+// If you want to assign loader to default manager, use `defaultImageLoader` class property before shared manager initialized
+SDWebImageManager.defaultImageLoader = SDImageLoadersManager.sharedManager;
+```
+
++ Swift
+
+```swift
+let loader1 = SDWebImageDownloader.shared
+let loader2 = SDWebImagePhotosLoader.shared
+SDImageLoadersManager.shared.loaders = [loader1, loader2]
+
+// Assign loader to manager
+let manager = SDWebImageManager(cache: SDImageCache.shared, loader: SDImageLoadersManager.shared)
+// Start use
+
+// If you want to assign loader to default manager, use `defaultImageLoader` class property before shared manager initialized
+SDWebImageManager.defaultImageLoader = SDImageLoadersManager.shared
+```
+
+
+### Custom Cache (5.0)
+This is an advanced feature to allow user to customize the image cache used by SDWebImage.
+
+#### Memory Cache
+In 5.x, we separate the memory cache to `SDMemoryCache` class, which focus on memory object storage only. If you want to custom the memory cache, your class should conform to `SDMemoryCache` protocol (`SDMemoryCacheProtocol` in Swift).
+
++ Objective-C
+
+```objectivec
+@interface MyMemoryCache <SDMemoryCache>
+@end
+```
+
++ Swift
+
+```swift
+class MyMemoryCache : SDMemoryCacheProtocol {}
+```
+
+#### Disk Cache
+In 5.x, we separate the disk cache to `SDDiskCache` class, which focus on disk data storage only. If you want to custom the disk cache, your class should conform to `SDDiskCache` protocol (`SDDiskCacheProtocol` in Swift).
+
++ Objective-C
+
+```objectivec
+@interface MyDiskCache <SDDiskCache>
+@end
+```
+
++ Swift
+
+```swift
+class MyDiskCache : SDDiskCacheProtocol {}
+```
+
+#### Cache Protocol
+Most of time, custom memory cache or disk cache is enough. Since most of `SDImageCache` class method are just a wrapper to call the disk cache or memory cache implementation. However, some times we need more control for the cache behavior, so we introduce another protocol called `SDImageCache`(`SDImageCacheProtocol` in Swift), which can be used to replace `SDImageCache` class totally for image cache system.
+
+To create a custom loader, you need a class which conforms to `SDImageCache` protocol. See `SDImageCache` for more detailed information.
+
++ Objective-C
+
+```objectivec
+@interface MyImageCache <SDImageCache>
+@end
+```
+
++ Swift
+
+```swift
+class MyImageCache : SDImageCacheProtocol {}
+```
+
+**Note:** Except the image data query task, your cache may also face the issue of image decoding because the protocol method output the `UIImage/NSImage` instance. Since the decoding process may be changed from version to version, the best practice is to use `SDImageCacheDecodeImageData` method. This is the built-in logic for decoding in our `SDImageCache`. Using this method to generate the `UIImage/NSImage`, can keep the best compatibility of your custom cache for SDWebImage.
+
+#### Caches Manager
+Since `SDImageCache` is a protocol, we implement a multiple cache system, which contains multiple cache and choose the proper cache based on the policy to handle cache CRUD method. By using `SDImageCachesManager`, you can register multiple cache as you want to handle cache CRUD method.
+
+Since different cache CRUD method may need different priority policy unlike `SDImageLoadersManager`, we provide 4 policy to control the order. See `SDImageCachesManagerOperationPolicy` for more detailed information.
+
++ Objective-C
+
+```objectivec
+id<SDImageCache> cache1 = [[SDImageCache alloc] initWithNamespace:@"cache1"];
+id<SDImageCache> cache2 = [[SDImageCache alloc] initWithNamespace:@"cache2"];
+SDImageCachesManager.sharedManager.caches = @[cache1, cache2];
+SDImageCachesManager.sharedManager.storeOperationPolicy = SDImageCachesManagerOperationPolicyConcurrent; // When any `store` method called, both of cache 1 && cache 2 will be stored in concurrently
+
+// Assign cache to manager
+SDWebImageManager *manager = [[SDWebImageManager alloc] initWithCache:SDImageCachesManager.sharedManager loader:SDWebImageDownloader.sharedDownloader];
+// Start use
+
+// If you want to assign cache to default manager, use `defaultImageCache` class property before shared manager initialized
+SDWebImageManager.defaultImageCache = SDImageCachesManager.sharedManager;
+```
+
+```swift
+let cache1 = SDImageCache(namespace: "cache1")
+let cache2 = SDImageCache(namespace: "cache2")
+SDImageCachesManager.shared.caches = [cache1, cache2]
+SDImageCachesManager.shared.storeOperationPolicy = .concurrent // When any `store` method called, both of cache 1 && cache 2 will be stored in concurrently
+
+// Assign cache to manager
+let manager = SDWebImageManager(cache:SDImageCachesManager.shared, loader:SDWebImageDownloader.shared)
+// Start use
+
+// If you want to assign cache to default manager, use `defaultImageCache` class property before shared manager initialized
+SDWebImageManager.defaultImageCache = SDImageCachesManager.shared
+```
 
