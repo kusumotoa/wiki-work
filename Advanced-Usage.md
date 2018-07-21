@@ -355,14 +355,14 @@ To create a custom loader, you need a class which conforms to `SDImageLoader` pr
 + Objective-C
 
 ```objectivec
-@interface MyImageLoader : SDImageLoader
+@interface MyImageLoader : NSObject <SDImageLoader>
 @end
 ```
 
 + Swift
 
 ```swift
-class MyImageLoader : SDImageLoader {}
+class MyImageLoader : NSObject, SDImageLoader {}
 ```
 
 **Note:** Except the image data request task, your loader may also face the issue of image decoding because the protocol method output the `UIImage/NSImage` instance. Since the decoding process may be changed from version to version, the best practice is to use `SDImageLoaderDecodeImageData` or `SDImageLoaderDecodeProgressiveImageData` (For progressive image loading) method. This is the built-in logic for decoding in our `SDWebImageDownloader`. Using this method to generate the `UIImage/NSImage`, can keep the best compatibility of your custom loader for SDWebImage.
@@ -444,14 +444,14 @@ To create a custom loader, you need a class which conforms to `SDImageCache` pro
 + Objective-C
 
 ```objectivec
-@interface MyImageCache <SDImageCache>
+@interface MyImageCache : NSObject <SDImageCache>
 @end
 ```
 
 + Swift
 
 ```swift
-class MyImageCache : SDImageCacheProtocol {}
+class MyImageCache : NSObject, SDImageCacheProtocol {}
 ```
 
 **Note:** Except the image data query task, your cache may also face the issue of image decoding because the protocol method output the `UIImage/NSImage` instance. Since the decoding process may be changed from version to version, the best practice is to use `SDImageCacheDecodeImageData` method. This is the built-in logic for decoding in our `SDImageCache`. Using this method to generate the `UIImage/NSImage`, can keep the best compatibility of your custom cache for SDWebImage.
