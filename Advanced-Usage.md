@@ -66,13 +66,12 @@ let coder = MyWebImageCoder()
 SDWebImageCodersManager.sharedInstance().addCoder(coder)
 ```
 
+#### Coder Plugin List
+
 For more practical usage, check the demo project [SDWebImageProgressiveJPEGDemo](https://github.com/SDWebImage/SDWebImageProgressiveJPEGDemo), which integrate [Concorde](https://github.com/contentful-labs/Concorde) to support better progressive JPEG decoding.
 
-There are the list of custom coders from the contributors.
-
-+ APNG (Decoding & Encoding with Image/IO): [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder)
-+ BPG (Decoding with [libbpg](https://github.com/mirrorer/libbpg)): [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder)
-+ HEIF (Decoding & Encoding with [libheif](https://github.com/strukturag/libheif)): [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder)
+There are also the list of custom coders from the contributors.
+See [Coder Plugin List](https://github.com/rs/SDWebImage/wiki/Coder-Plugin-List) for detailed information.
 
 #### GIF coder
 
