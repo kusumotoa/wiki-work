@@ -206,9 +206,9 @@ SDWebImage provide an animated image view called `SDAnimatedImageView` to do ani
 When the `SDAnimatedImageView` was trigged by `setImage:`, it will decide how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent an animated one)
 
 The benefit from this custom image view is that you can control the rendering behavior base on your use case. We all know that animated image will consume much more CPU & memory because it needs to decode all image frames into memory. `UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory for big animated images (like 100 frames GIF).
- and cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images (like Animated WebP because of low decoding speed).
+ Which may cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images (like Animated WebP because of low decoding speed).
 
-So now we have `SDAnimatedImageView`, by default it will decode and cache the image frames with a buffer (where the buffer size is calculated based on current memory status), when the buffer is out of limit size, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own buffer size, check `maxBufferSize` property for more detailed information.
+So now we have `SDAnimatedImageView`, by default it will decode and cache the image frames with a buffer (where the buffer size is calculated based on current memory status), when the buffer is out of limit size, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own desired buffer size and control the behavior, check `maxBufferSize` property for more detailed information.
 
 * Objective-C
 
@@ -233,7 +233,7 @@ let animatedImage = SDAnimatedImage(named: "image.gif")
 // auto start animation
 imageView.image = animatedImage
 // when you want to stop
-imageView.stopAnimating
+imageView.stopAnimating()
 ```
 
 Another feature, `SDAnimatedImageView` supports progressive animated image rendering. Which behave just looks like when Chrome showing a large GIF image. (The animation pause at last downloaded frame, and continue when new frames available). To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property. You can disable it and just showing the first poster image during progressive image loading.
@@ -260,7 +260,7 @@ let firstFrame = coder.animatedImageFrame(at: 0)
 
 However, if you have your own desired image format, you can try to provide your own by implementing this protocol, add your coder plugin, then all things done.
 
-Note if you also want to support progressive animated image rendering. Your custom coder must conform `SDAnimatedImageCoder` and `SDProgressiveImageCoder` as well. The coder will receive `updateIncrementalData:finished:` call when new data is available. And you should update your decoder and let it produce the correct `animatedImageFrameCount` and other method list in `SDAnimatedImageCoder`, which can be decoded with current data.
+Note if you also want to support progressive animated image rendering. Your custom coder must conform both `SDAnimatedImageCoder` and `SDProgressiveImageCoder`. The coder will receive `updateIncrementalData:finished:` call when new data is available. And you should update your decoder and let it produce the correct `animatedImageFrameCount` and other method list in `SDAnimatedImageCoder`, which can be decoded with current available data.
 
 #### Customization
 
