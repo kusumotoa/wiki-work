@@ -419,6 +419,20 @@ In 5.x, we separate the memory cache to `SDMemoryCache` class, which focus on me
 class MyMemoryCache : SDMemoryCacheProtocol {}
 ```
 
+To specify custom memory cache class, use `memoryCacheClass` property of `SDImageCacheConfig`.
+
++ Objective-C
+
+```objectivec
+SDImageCacheConfig.defaultCacheConfig.memoryCacheClass = MyMemoryCache.class
+```
+
++ Swift
+
+```swift
+SDImageCacheConfig.default.memoryCacheClass = MyMemoryCache.self
+```
+
 #### Disk Cache
 In 5.x, we separate the disk cache to `SDDiskCache` class, which focus on disk data storage only. If you want to custom the disk cache, your class should conform to `SDDiskCache` protocol (`SDDiskCacheProtocol` in Swift).
 
@@ -433,6 +447,20 @@ In 5.x, we separate the disk cache to `SDDiskCache` class, which focus on disk d
 
 ```swift
 class MyDiskCache : SDDiskCacheProtocol {}
+```
+
+To specify custom disk cache class, use `diskCacheClass` property of `SDImageCacheConfig`.
+
++ Objective-C
+
+```objectivec
+SDImageCacheConfig.defaultCacheConfig.diskCacheClass = MyDiskCache.class
+```
+
++ Swift
+
+```swift
+SDImageCacheConfig.default.diskCacheClass = MyDiskCache.self
 ```
 
 #### Cache Protocol
