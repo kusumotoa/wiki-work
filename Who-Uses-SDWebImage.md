@@ -141,6 +141,7 @@ Do not hesitate to add yours.
 - [Riders](https://ride.rs)
 - [SOHUVideo](http://tv.sohu.com/sohuapp/) for [iPhone](https://itunes.apple.com/cn/app/id458587755?mt=8) and [iPad](https://itunes.apple.com/cn/app/sou-hu-shi-pinhd/id414430589?mt=8)
 - [Saloote](http://saloote.com/) A totally new concept about create virtual bands.
+- [Sea-Doo UK](https://itunes.apple.com/gb/app/sea-doo-uk/id426268497?mt=8)
 - [Searchr](http://bit.ly/SearchrAppStore) - Action and Search Made Simple
 - [Shopwave](http://getshopwave.com/)
 - [SimplePrints](https://itunes.apple.com/us/app/create-photo-books-simple/id548773050?mt=8)
@@ -148,6 +149,7 @@ Do not hesitate to add yours.
 - [Smart Post](http://pyraego.com)
 - [Smart Weather](https://itunes.apple.com/us/app/smart-weather/id662949357?l=es&ls=1&mt=8)
 - Smule for [Magic Piano](https://itunes.apple.com/us/app/magic-piano-by-smule/id421254504?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_PianoiOS&ls=1), [Sing! Karaoke](https://itunes.apple.com/us/app/sing!-karaoke-by-smule/id509993510?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_SingiOS&ls=1) , [Autorap](https://itunes.apple.com/us/app/autorap-by-smule/id524299475?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_AutoRapiOS&ls=1), [Guitar](https://itunes.apple.com/us/app/guitar!-by-smule/id632353530?mt=8&at=10l3Lc&app=itunes&ct=web_AppPage_GuitariOS&ls=1)
+- [Social Dummy](https://itunes.apple.com/gb/app/social-dummy/id610088272?mt=8)
 - [SocialPar](http://socialpar.com)
 - [SoSafe](http://sosafeapp.com)
 - [Soundwave Music Discovery](https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
