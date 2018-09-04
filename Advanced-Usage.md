@@ -377,7 +377,7 @@ id<SDImageLoader> loader2 = SDWebImagePhotoLoader.sharedLoader;
 SDImageLoadersManager.sharedLoader.loaders = @[loader1, loader2];
 
 // Assign loader to manager
-SDWebImageManager *manager = [[SDWebImageManager alloc] initWithCache:SDImageCache.sharedCache loader:SDImageLoader.sharedLoader];
+SDWebImageManager *manager = [[SDWebImageManager alloc] initWithCache:SDImageCache.sharedCache loader: SDImageLoadersManager.sharedManager];
 // Start use
 
 // If you want to assign loader to default manager, use `defaultImageLoader` class property before shared manager initialized
