@@ -157,7 +157,7 @@ Do not hesitate to add yours.
 - [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
 - [Spots](https://itunes.apple.com/app/spots-location-search-for/id568368743)
 - [Stars & Stats](https://itunes.apple.com/us/app/stars-stats/id568043448)
-- [Streets](https://itunes.apple.com/us/app/stars-stats/id568043448) - The Street View App
+- [Streets](https://www.futuretap.com/streets) - The Street View App
 - [Subtitles Viewer](http://www.subtitlesviewer.com) View subtitles synchronized with TV or movies.  
 - [Surge](http://surgeapp.org) - An Uber Surge tracking app for Uber drivers
 - [SwiftFlickrSearch](https://github.com/kyleclegg/SwiftFlickrSearch) - A simple Flickr Search app written in Swift
@@ -187,7 +187,7 @@ Do not hesitate to add yours.
 - [War of Words Apocalypse](https://itunes.apple.com/us/app/war-of-words-apocalypse/id508103291)
 - [War of Words](https://itunes.apple.com/us/app/war-of-words-free/id395392584)
 - [Wayang](https://itunes.apple.com/us/app/wayang/id1217113186)
-- [Where To?](http://itunes.apple.com/app/id903955898?mt=8) - Find the best places around you
+- [Where To?](https://www.futuretap.com/whereto) - Find the best places around you
 - [Whoniverse](https://itunes.apple.com/app/id821412407) - Guide to Doctor Who, Your coolest companion to Doctor Who Universe
 - [Wikipedia](https://itunes.apple.com/us/app/wikipedia-mobile/id324715238?mt=8) - WikiPedia's official iOS app 
 - [Woo](http://getwoo.at) - Matchmaking app for singles
