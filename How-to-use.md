@@ -129,7 +129,7 @@ By default, the image will be stored in memory cache as well as on disk cache (a
 you want only the memory cache, use the alternative method storeImage:forKey:toDisk:completion: with a negative
 third argument.
 
-### Using cache key filter
+### Using Cache Key Filter
 
 Sometime, you may not want to use the image URL as cache key because part of the URL is dynamic
 (i.e.: for access control purpose). SDWebImageManager provides a way to set a cache key filter that
@@ -138,20 +138,67 @@ takes the NSURL as input, and output a cache key NSString.
 The following example sets a filter in the application delegate that will remove any query-string from
 the URL before to use it as a cache key:
 
-```objective-c
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    SDWebImageManager.sharedManager.cacheKeyFilter = ^(NSURL *url) {
-        url = [[NSURL alloc] initWithScheme:url.scheme host:url.host path:url.path];
-        return [url absoluteString];
-    };
++ Objective-C
 
-    // Your app init code...
-    return YES;
-}
+```objectivec
+SDWebImageCacheKeyFilter *cacheKeyFilter = [SDWebImageCacheKeyFilter cacheKeyFilterWithBlock:^NSString * _Nullable(NSURL * _Nonnull url) {
+    NSURLComponents *urlComponents = [[NSURLComponents alloc] initWithURL:url resolvingAgainstBaseURL:NO];
+    urlComponents.query = nil;
+    return urlComponents.URL.absoluteString;
+}];
+SDWebImageManager.sharedManager.cacheKeyFilter = cacheKeyFilter;
 ```
 
++ Swift
+
+```swift
+let cacheKeyFilter = SDWebImageCacheKeyFilter { (url) -> String? in
+    var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
+    urlComponents?.query = nil
+    return urlComponents?.url?.absoluteString
+}
+SDWebImageManager.shared.cacheKeyFilter = cacheKeyFilter
+```
+
+Note: In 4.x version, the cache key filter is actual a block. However, in 5.x we wrap the block into a object `SDWebImageCacheKeyFilter`. This is because we support the cache key filter as context option. However, Swift is hard to use a `NSDictionary<NSString *, id>` (bridging as `[String: Any]`) which contains a Objective-C block object.
+
+### Use Request Modifier (5.0)
+Sometime, you want to specify some custom HTTP Header, or modify the download request just beyond the default configuration from SDWebImage. You can use the request modifier, to modify and return a new `NSHTTPRequest` object for the actual network request.
+
+The following example sets a custom HTTP Header for specify URL on the shared downloader level. You can also use the request modifier as context option to make it work for individual image request level.
+
++ Objective-C
+
+```objectivec
+SDWebImageDownloaderRequestModifier *requestModifier = [SDWebImageDownloaderRequestModifier requestModifierWithBlock:^NSURLRequest * _Nullable(NSURLRequest * _Nonnull request) {
+    if ([request.URL.host isEqualToString:@"foo"]) {
+        NSMutableURLRequest *mutableRequest = [request mutableCopy];
+        [mutableRequest setValue:@"foo=bar" forHTTPHeaderField:@"Cookie"];
+        return [mutableRequest copy];
+    }
+    return request;
+}];
+SDWebImageDownloader.sharedDownloader.requestModifier = requestModifier;
+```
+
++ Swift
+
+```swift
+let requestModifier = SDWebImageDownloaderRequestModifier { (request) -> URLRequest? in
+    if (request.url?.host == "foo") {
+        var mutableRequest = request
+        mutableRequest.setValue("foo=bar", forHTTPHeaderField: "Cookie")
+        return mutableRequest
+    }
+    return request
+};
+SDWebImageDownloader.shared.requestModifier = requestModifier
+```
+
+Note: Though this feature is introduced in 5.x, in early 4.x version, you can use the Headers Filter to specify custom HTTP Headers. However, you can not custom any other properties inside `NSURLRequest` like `HTTPBody`, `cachePolicy`, etc.
+
 ### Use View Indicator (5.0)
-SDWWebImage provide a easy and extensible API for image loading indicator. Which will show or animate during image loading from network. All you need to do is to setup the indicator before your image loading start.
+SDWebImage provide a easy and extensible API for image loading indicator. Which will show or animate during image loading from network. All you need to do is to setup the indicator before your image loading start.
 
 Objective-C:
 
