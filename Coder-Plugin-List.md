@@ -25,6 +25,7 @@ extension SDImageFormat {
 ## SDWebImage organization
 | Format | Repo | Format Code | Decode | Encode | Animation | Vector |
 | ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
+| WebP | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `SDImageFormatWebP` | Y | Y | Y | N |
 | APNG | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y | N |
 | HEIF | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
 | BPG | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | N | Y | N |
