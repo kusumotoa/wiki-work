@@ -22,11 +22,17 @@ extension SDImageFormat {
 }
 ```
 
-## List
-| Format | Repo | Format Code | Decode | Encode | Animation |
-| ------ | ---- | ----------- | ------ | ------ | -------- |
-| APNG | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y |
-| HEIF | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N |
-| BPG | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | N | Y |
+## SDWebImage organization
+| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
+| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
+| APNG | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y | N |
+| HEIF | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
+| BPG | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | N | Y | N |
+| SVG | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
+| PDF | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
+
+## Community contribution (Welcome !)
+| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
+| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
 
 
