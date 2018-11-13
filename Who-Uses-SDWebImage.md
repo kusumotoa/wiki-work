@@ -240,3 +240,4 @@ Do not hesitate to add yours.
 - [翼健康](https://itunes.apple.com/cn/app/yi-jian-kang-yu-yue-gua-hao/id534168352?mt=8)
 - [LocalList](https://itunes.apple.com/us/app/locallist-live-updates-nearby/id1156706788?mt=8)
 - [Wonderland](https://itunes.apple.com/cn/app/id1315269952?mt=8)
+- [明德在线](http://e.mingde.com/aboutPay/showAboutPay.do?pid=5217) 
