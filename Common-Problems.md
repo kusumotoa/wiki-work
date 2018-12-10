@@ -6,6 +6,19 @@ The following article gives a way to workaround this issue:
 
 [http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/](http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/)
 
+### Configuration for large images (avoid high memory usage)
+
+```swift
+SDImageCache.shared().config.maxCacheAge = 3600 * 24 * 7 //1 Week
+SDImageCache.shared().maxMemoryCost = 1024 * 1024 * 20 //Aprox 20 images
+SDImageCache.shared().config.shouldCacheImagesInMemory = false //Default True => Store images in RAM cache for Fast performance
+SDImageCache.shared().config.shouldDecompressImages = false
+SDWebImageDownloader.shared().shouldDecompressImages = false
+SDImageCache.shared().config.diskCacheReadingOptions = NSData.ReadingOptions.mappedIfSafe
+```
+
+For details see https://github.com/SDWebImage/SDWebImage/issues/1544#issuecomment-423445538
+
 ### Handle cell reusing for view category
 
 The View Category including `UIImage+WebCache`, `UIView+WebCache` or some other categories supports cell reusing from the scratch design. Actually, for most of use cases. All you need to do to work with cell reusing in `UITableView`, `UICollectionView` on iOS (`NSTableView`, `NSCollectionView`on macOS) is quite simple, just use:
