@@ -8,12 +8,13 @@ You can check some public coder plugin here for image format which is not availa
 ## SDWebImage organization maintained
 | Format | Repo | Format Code | Decode | Encode | Animation | Vector |
 | ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
-| [WebP](https://developers.google.com/speed/webp/) | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `SDImageFormatWebP` | Y | Y | Y | N |
-| [APNG](https://en.wikipedia.org/wiki/APNG) | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y | N |
+| [WebP](https://developers.google.com/speed/webp/) | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `SDImageFormatWebP` | Y (Progressive) | Y | Y | N |
+| [APNG](https://en.wikipedia.org/wiki/APNG) | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y (Progressive) | Y | Y | N |
 | [HEIF](http://nokiatech.github.io/heif/) | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
 | [BPG](https://bellard.org/bpg/) | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | Y (from v0.4) | Y | N |
 | [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
 | [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
+| [FLIF](https://flif.info/) | [SDWebImageFLIFCoder](https://github.com/SDWebImage/SDWebImageFLIFCoder) | `SDImageFormatFLIF` = 14 | Y | Y | Y | N |
 
 ## Community contribution (Welcome !)
 | Format | Repo | Format Code | Decode | Encode | Animation | Vector |
