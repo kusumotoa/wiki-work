@@ -7,6 +7,7 @@
 * [How to use](https://github.com/rs/SDWebImage/wiki/How-to-use)
 * [Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide)
 * [Advanced Usage](https://github.com/rs/SDWebImage/wiki/Advanced-Usage)
+* [Image Coder Plugins](https://github.com/SDWebImage/SDWebImage/wiki/Coder-Plugin-List)
 * [Common Problems](https://github.com/rs/SDWebImage/wiki/Common-Problems)
 * [API Reference](http://cocoadocs.org/docsets/SDWebImage/)
 

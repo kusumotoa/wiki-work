@@ -1,7 +1,23 @@
 ## Coder Plugin
 SDWebImage supports custom image coder plugin. Which can easily extern image format support when using SDWebImage's core feature.
 
+Our core lib, only use the Apple System build-in codec. Which support the common image format, like JPEG/PNG/GIF/BMP/HEIF. But you can use any of your preferred image formats by using the correct image coder plugins.
+
 You can check some public coder plugin here for image format which is not available from SDWebImage's core repo. See [Custom Coder](https://github.com/rs/SDWebImage/wiki/Advanced-Usage#custom-coder-420) for more detailed usage.
+
+## SDWebImage organization maintained
+| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
+| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
+| [WebP](https://developers.google.com/speed/webp/) | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `SDImageFormatWebP` | Y | Y | Y | N |
+| [APNG](https://en.wikipedia.org/wiki/APNG) | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y | N |
+| [HEIF](http://nokiatech.github.io/heif/) | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
+| [BPG](https://bellard.org/bpg/) | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | Y (~> 0.3) | Y | N |
+| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
+| [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
+
+## Community contribution (Welcome !)
+| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
+| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
 
 
 ## For Coder Plugin Developers
@@ -21,19 +37,4 @@ extension SDImageFormat {
     public static let BPG: SDImageFormat = SDImageFormat(rawValue: 11)
 }
 ```
-
-## SDWebImage organization
-| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
-| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
-| WebP | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `SDImageFormatWebP` | Y | Y | Y | N |
-| APNG | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) | `SDImageFormatPNG` | Y | Y | Y | N |
-| HEIF | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
-| BPG | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | N | Y | N |
-| SVG | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
-| PDF | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
-
-## Community contribution (Welcome !)
-| Format | Repo | Format Code | Decode | Encode | Animation | Vector |
-| ------ | ---- | ----------- | ------ | ------ | -------- | ------- |
-
 
