@@ -14,7 +14,7 @@ You can check some public coder plugin here for image format which is not availa
 | [BPG](https://bellard.org/bpg/) | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | Y (from v0.4) | Y | N |
 | [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
 | [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
-| [FLIF](https://flif.info/) | [SDWebImageFLIFCoder](https://github.com/SDWebImage/SDWebImageFLIFCoder) | `SDImageFormatFLIF` = 14 | Y | Y | Y | N |
+| [FLIF](https://flif.info/) | [SDWebImageFLIFCoder](https://github.com/SDWebImage/SDWebImageFLIFCoder) | `SDImageFormatFLIF` = 14 | Y (Progressive) | Y | Y | N |
 
 ## Community contribution (Welcome !)
 | Format | Repo | Format Code | Decode | Encode | Animation | Vector |
