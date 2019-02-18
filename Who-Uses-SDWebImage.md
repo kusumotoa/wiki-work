@@ -42,6 +42,7 @@ Do not hesitate to add yours.
 - [Dieta e Saúde](https://itunes.apple.com/br/app/dieta-e-saude-emagrecer-vez/id400488936?mt=8) One of biggest apps from Brazil
 - [Earthmiles](https://itunes.apple.com/gb/app/earthmiles-healthy-rewards/id926440987?mt=8) - Fitness Rewards
 - [Eatgether](https://itunes.apple.com/app/eatgether/id1121788143?mt=8) - Social platform specialized in meals
+- [Eden](https://itunes.apple.com/us/app/level/id1397380873?ls=1&mt=8) - Dating app to be your self.
 - [Eennadu Sunday Book](https://itunes.apple.com/us/app/eenadu-sunday-book/id623694370?mt=8)
 - [Epiclist](https://itunes.apple.com/cl/app/epiclist/id789778193?l=en&mt=8)
 - [Evil Apples](https://itunes.apple.com/us/app/evil-apples-filthy-adult-card/id645705454)
