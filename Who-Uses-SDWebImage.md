@@ -69,6 +69,7 @@ Do not hesitate to add yours.
 - [Hot Hotels](http://hot.co.uk)
 - [Housing India](https://itunes.apple.com/us/app/housing-india/id681756431?mt=8)
 - [IIIF Presenter](https://itunes.apple.com/us/app/iiif-presenter/id1174552203?mt=8) - App client for image viewing using IIIF Presentation and Image APIs.
+- [Igloo IRC](https://iglooirc.com) - IRC client
 - [INKHUNTER](http://inkhunter.tattoo) Augmented Reality tattoo app
 - [Imgury For Imgur](https://itunes.apple.com/us/app/imgury-for-imgur/id908045724?mt=8) TO convert Images to URLs using Imgur API.
 - [Instamotor](https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=929373823) - The Trusted Peer-To-Peer Car Marketplace. A free, safe, and friendly app to buy & sell local cars between individuals.
