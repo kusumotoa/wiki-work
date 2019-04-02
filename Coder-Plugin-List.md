@@ -23,7 +23,7 @@ You can check some public coder plugin here for image format which is not availa
 
 ## For Coder Plugin Developers
 
-If your custom coder add new image format support, which is not listed in SDWebImage built-in define of `SDImageFormat`, you can define it and place and update the format code here. To avoid the format code conflict with others. The custom minimum format code should be larger than **10**, to keep future reserved format used by SDWebImage core repo.
+If your custom coder add new image format support, which is not listed in SDWebImage built-in define of `SDImageFormat`, you can define it and update the format code here. To avoid the format code conflict with others. The custom minimum format code should be larger than **10**, to keep future reserved format used by SDWebImage core repo.
 
 + Objective-C
 
