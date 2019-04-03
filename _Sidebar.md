@@ -20,6 +20,7 @@
 
 ## Information
 
+* [Documentation](https://sdwebimage.github.io/)
 * [Change Log](https://github.com/rs/SDWebImage/blob/master/CHANGELOG.md)
 
 
