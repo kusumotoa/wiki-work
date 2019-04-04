@@ -203,12 +203,15 @@ imageView.sd_setImage(with: url)
 
 SDWebImage provide an animated image view called `SDAnimatedImageView` to do animated image rendering. It's a subclass of `UIImageView/NSImageView`, which means you can integrate it easier for most of framework APIs.
 
-When the `SDAnimatedImageView` was trigged by `setImage:`, it will decide how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent an animated one)
+When the `SDAnimatedImageView` was trigged by `setImage:`, it will decide how to rendering the image base on image instance. If the image is a `SDAnimatedImage`, it will try to do animated image rendering, and start animation immediately. When the image is a `UIImage/NSImage`, it will call super method instead to behave like a normal `UIImageView/NSImageView` (Note `UIImage/NSImage` also can represent an animated one using [animatedImageWithImages:duration:](https://developer.apple.com/documentation/uikit/uiimage/1624149-animatedimage) API)
 
-The benefit from this custom image view is that you can control the rendering behavior base on your use case. We all know that animated image will consume much more CPU & memory because it needs to decode all image frames into memory. `UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory for big animated images (like 100 frames GIF).
- Which may cause OOM. However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images (like Animated WebP because of low decoding speed).
+The benefit from this custom image view is that you can control the rendering behavior base on your use case. We all know that animated image will consume much more CPU & memory because it needs to decode all image frames into memory.
 
-So now we have `SDAnimatedImageView`, by default it will decode and cache the image frames with a buffer (where the buffer size is calculated based on current memory status), when the buffer is out of limit size, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own desired buffer size and control the behavior, check `maxBufferSize` property for more detailed information.
+`UIImageView` with animated `UIImage` on iOS/tvOS will always store all frames into memory, which may consume huge memory for big animated images (like 100 frames GIF). Which have risk of OOM (Out of memory).
+ 
+However, `NSImageView` on macOS will always decode animated image just in time without cache, consume huge CPU usage for big animated images (like Animated WebP because of low decoding speed).
+
+So now we have `SDAnimatedImageView`, by default it will decode and cache the image frames with a buffer (where the buffer size is calculated based on current memory status), when the buffer is out of limit size, the older image frame will be purged to free up memory. This allows you to keep a balance in both CPU & memory. However, you can also set up your own desired buffer size and control the behavior, check `maxBufferSize` property in `SDAnimatedImageView` for more detailed information.
 
 * Objective-C
 
@@ -236,7 +239,9 @@ imageView.image = animatedImage
 imageView.stopAnimating()
 ```
 
-Another feature, `SDAnimatedImageView` supports progressive animated image rendering. Which behave just looks like when Chrome showing a large GIF image. (The animation pause at last downloaded frame, and continue when new frames available). To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property. You can disable it and just showing the first poster image during progressive image loading.
+Another feature, `SDAnimatedImageView` supports progressive animated image rendering. Which behave just looks like when Chrome showing a large GIF image. (The animation pause at last downloaded frame, and continue when new frames available).
+
+To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property in `SDAnimatedImageView`. You can disable it and just showing the first poster image during progressive image loading.
 
 #### Decoding
 
