@@ -252,14 +252,14 @@ In `SDAnimatedImageCoder`, you need to provide all information used for animated
 * Objective-C
 
 ```objective-c
-id<SDAnimatedImageCoder> coder = SDImageGIFCoder.sharedCoder;
+id<SDAnimatedImageCoder> coder = [[SDImageGIFCoder alloc] initWithAnimatedImageData:gifData options:nil];
 UIImage *firstFrame = [coder animatedImageFrameAtIndex:0];
 ```
 
 * Swift
 
 ```swift
-let coder = SDImageGIFCoder.shared
+let coder = SDImageGIFCoder(animatedImageData: gifData)
 let firstFrame = coder.animatedImageFrame(at: 0)
 ```
 
@@ -269,7 +269,11 @@ Note if you also want to support progressive animated image rendering. Your cust
 
 #### Customization
 
-For advanced user, since `SDAnimatedImage` also contains a protocol, which allow you to customize your own animated image class. You can specify `SDWebImageContextAnimatedImageClass` for your custom implementation class to load. For example, here is a plugin for YYImage, which you can directly load `YYImage` with `YYAnimatedImageView` using SDWebImage's loading & caching system, see [SDWebImageYYPlugin](https://github.com/SDWebImage/SDWebImageYYPlugin) for detailed information.
+For advanced user, since `SDAnimatedImage` also represents a protocol, which allow you to customize your own animated image class. You can specify `SDWebImageContextAnimatedImageClass` for your custom implementation class to load.
+
+For example, the [SDWebImageFLPlugin](https://github.com/SDWebImage/SDWebImageFLPlugin) use this to support [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) for user migrated from 4.x.
+
+Here is also a plugin for YYImage, which you can directly load `YYImage` with `YYAnimatedImageView` using SDWebImage's loading & caching system, see [SDWebImageYYPlugin](https://github.com/SDWebImage/SDWebImageYYPlugin) for detailed information.
 
 ### Image Transformer (5.0)
 
