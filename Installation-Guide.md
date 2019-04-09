@@ -1,7 +1,7 @@
 There are three ways to use SDWebImage in your project:
 - using CocoaPods
 - using Carthage
-- manual install
+- manual install (build-only or embed Xcode Project)
 
 ### Installation with CocoaPods
 
@@ -177,7 +177,7 @@ Then all things done if you use Static Library.
 
 ### Using SDWebImage as Sub Xcode Project
 
-You can also embed SDWebImage as a Sub Xcode Project using in your Xcode Workspace. This can be used for some specify environment which does not support external dependency manager.
+You can also embed SDWebImage as a Sub Xcode Project using in your Xcode Project/Workspace. This can be used for some specify environment which does not support external dependency manager.
 
 #### Clone the repository as submodule
 
@@ -188,15 +188,13 @@ cd Vendor/
 git submodule add https://github.com/SDWebImage/SDWebImage.git
 ```
 
-#### Ensure you have a Workspace
+#### Add `SDWebImage.xcodeproj` into your Workspace/Project
 
-If you don't have a Xcode Workspace, you can simply create one.
+Just drag the `SDWebImage.xcodeproj` you cloned, into your Xcode Workspace/Project 's Project Navigator.
 
-Open your exist Xcode Project. Click `File -> Save As Workspace...`. You can save it to the same directory of your original Project.
+For Xcode Workspace, you can put it the same level of your App Project.
 
-#### Add `SDWebImage.xcodeproj` into your Workspace
-
-Just drag the `SDWebImage.xcodeproj` you cloned, into your Xcode Workspace's Project Navigator. Put it the same level of your original Project.
+For Xcode Project, you can put it inside your App Project.
 
 ![](https://user-images.githubusercontent.com/6919743/55799669-802de900-5b04-11e9-84c0-08d4d9452549.png)
 
