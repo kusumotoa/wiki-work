@@ -58,7 +58,7 @@ To install with carthage, follow the instruction on [Carthage](https://github.co
 github "SDWebImage/SDWebImage"
 ```
 
-### Manual Installation
+### Manual Installation Guide
 
 ### Build SDWebImage as Framework or Static Library
 
