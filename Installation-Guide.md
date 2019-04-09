@@ -170,6 +170,11 @@ $(SRCROOT)/Vendor
 
 Then all things done if you use Static Library.
 
+
+#### Reference
+
+[Technical Note TN2435 - Embedding Frameworks In An App](https://developer.apple.com/library/archive/technotes/tn2435/_index.html)
+
 ### Using SDWebImage as Sub Xcode Project
 
 You can also embed SDWebImage as a Sub Xcode Project using in your Xcode Workspace. This can be used for some specify environment which does not support external dependency manager.
