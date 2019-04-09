@@ -8,28 +8,43 @@ There are three ways to use SDWebImage in your project:
 [CocoaPods](http://cocoapods.org/) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries in your projects. See the [Get Started](http://cocoapods.org/#get_started) section for more details.
 
 #### Podfile
-
-```ruby
-platform :ios, '7.0'
-pod 'SDWebImage', '~> 4.0'
+```
+platform :ios, '8.0'
+pod 'SDWebImage', '~> 5.0'
 ```
 
-If you are using Swift, be sure to add `use_frameworks!` and set your target to iOS 8+:
+##### Swift and static framework
 
-```ruby
+Swift project previously have to use `use_frameworks!` to make all Pods into dynamic framework to let CocoaPods works.
+
+However, start with `CocoaPods 1.5.0+` (with `Xcode 9+`), which supports to build both Objective-C && Swift code into static framework. You can use modular headers to use SDWebImage as static framework, without the need of `use_frameworks!`:
+
+```
+platform :ios, '8.0'
+# Uncomment the next line when you want all Pods as static framework
+# use_modular_headers!
+pod 'SDWebImage', :modular_headers => true
+```
+
+See more on [CocoaPods 1.5.0 — Swift Static Libraries](http://blog.cocoapods.org/CocoaPods-1.5.0/)
+
+If not, you still need to add `use_frameworks!` to use SDWebImage as dynamic framework:
+
+```
 platform :ios, '8.0'
 use_frameworks!
+pod 'SDWebImage'
 ```
 
 #### Subspecs
 
-There are 4 subspecs available now: `Core`, `MapKit`, `GIF` and `WebP` (this means you can install only some of the SDWebImage modules. By default, you get just `Core`, so if you need `WebP`, you need to specify it). 
+There are 2 subspecs available now: `Core` and `MapKit` (this means you can install only some of the SDWebImage modules. By default, you get just `Core`, so if you need `MapKit`, you need to specify it). 
 
 Podfile example:
-
-```ruby
-pod 'SDWebImage/WebP'
 ```
+pod 'SDWebImage/MapKit'
+```
+
 
 ### Installation with Carthage (iOS 8+)
 
@@ -40,7 +55,7 @@ To install with carthage, follow the instruction on [Carthage](https://github.co
 #### Cartfile
 
 ```ogdl
-github "rs/SDWebImage"
+github "SDWebImage/SDWebImage"
 ```
 
 ### Manual Installation
