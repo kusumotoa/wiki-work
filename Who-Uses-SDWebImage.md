@@ -169,6 +169,7 @@ Do not hesitate to add yours.
 - [Swim Records](https://itunes.apple.com/us/app/swim-records/id588420533)
 - [Tastebuds - Meet People Through Music](https://itunes.apple.com/gb/app/tastebuds-meet-people-through/id824167513?mt=8)
 - [Tennis Score Tracker](https://itunes.apple.com/us/app/tennis-score-tracker-free/id632261225) (**new**)
+- [theCHIVE](https://itunes.apple.com/us/app/thechive/id448999087)
 - [The Daily Boards](https://itunes.apple.com/app/id571048721)
 - [The Oakland Post](https://github.com/aclissold/the-oakland-post) Open-source news reader for Oakland University's independent school newspaper
 - [The Three Six](https://itunes.apple.com/us/app/the-three-six/id909076961?mt=8)
