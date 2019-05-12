@@ -12,8 +12,8 @@ You can check some public coder plugin here for image format which is not availa
 | [APNG](https://en.wikipedia.org/wiki/APNG) | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) (Deprecated, 5.x built-in plugin) | `SDImageFormatPNG` | Y (Progressive) | Y | Y | N |
 | [HEIF](http://nokiatech.github.io/heif/) | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `SDImageFormatHEIF` | Y | Y | N | N |
 | [BPG](https://bellard.org/bpg/) | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `SDImageFormatBPG` = 11 | Y | Y (from v0.4) | Y | N |
-| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | N | N | Y |
-| [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | N | N | Y |
+| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `SDImageFormatSVG` = 12 | Y | Y (from v0.3) | N | Y |
+| [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `SDImageFormatPDF` = 13 | Y | Y (from v0.3) | N | Y |
 | [FLIF](https://flif.info/) | [SDWebImageFLIFCoder](https://github.com/SDWebImage/SDWebImageFLIFCoder) | `SDImageFormatFLIF` = 14 | Y (Progressive) | Y | Y | N |
 | [AVIF](https://aomediacodec.github.io/av1-avif) | [SDWebImageAVIFCoder](https://github.com/SDWebImage/SDWebImageAVIFCoder) | `SDImageFormatAVIF` = 15 | Y | Y (from v0.2) | N | N |
 
