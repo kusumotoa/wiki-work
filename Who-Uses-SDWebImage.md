@@ -5,6 +5,7 @@ Do not hesitate to add yours.
 - [60Hz](http://m2d2apps.com/60hz-for-ios7)
 - [@ME App](https://itunes.apple.com/us/app/me-app/id675428660?ls=1&mt=8) (Never get lost again)
 - [ARMS F&B](http://www.arms-fnb.com/)
+- [Ammy](https://ammy.fr)
 - [Appboy iOS SDK](https://github.com/Appboy/appboy-ios-sdk)
 - [Apprazed](https://itunes.apple.com/us/app/apprazed/id817741899?mt=8) - Free Crowdsourced Appraisals
 - [Artsy's Eigen](https://github.com/artsy/eigen/)
