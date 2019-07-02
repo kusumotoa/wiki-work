@@ -21,6 +21,7 @@ Do not hesitate to add yours.
 - [Bycaster](https://itunes.apple.com/app/bycaster/id594950889)
 - [CATCHPLAY](https://itunes.apple.com/tw/app/catchplay/id1062810357?mt=8)
 - [Chance](http://chance.fm)
+- [Charmy](https://charmy.app) - Social Discovery Assistant
 - [Chimani](https://www.chimani.com/) - Apps for all 59 U.S. National Parks
 - [Choosic - Discover new music](https://itunes.apple.com/gb/app/choosic-discover-new-music/id921246986?mt=8)
 - [Cinery](https://www.cinery.de)
