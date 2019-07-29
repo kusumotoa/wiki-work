@@ -85,7 +85,7 @@ let package = Package(
 
 SDWebImage supports to build SDWebImage as [xcframework on Xcode 11](https://developer.apple.com/videos/play/wwdc2019/416/) from version 5.1.0. This is the simplest way to build SDWebImage.
 
-To build xcframework, clone the repo and open `SDWebImage.xcodeproj`, choose the `SDWebImage XCFramework` target. Then just click `Build` (Command + R). You'll start to build all individual platform's framework and produce a `xcframework` product on your `build` directory. After all the builds success, Finder will pop-up and select this file.
+To build xcframework, you can clone the repo and open `SDWebImage.xcodeproj`, choose the `SDWebImage XCFramework` target. Then just click `Build` (Command + R). You'll start to build all individual platform's framework and produce a `xcframework` product on your `build` directory. After all the builds success, Finder will pop-up and select this file.
 
 On Xcode 10, this step only build frameworks and placing them in `build` directory, without producing a `xcframework` product.
 
