@@ -2,7 +2,7 @@ There are four ways to use SDWebImage in your project:
 - using CocoaPods
 - using Carthage
 - using Swift Package Manager
-- manual install (build-only or embed Xcode Project)
+- manual install (xcframework, build-only or embed Xcode Project)
 
 ### Installation with CocoaPods
 
@@ -61,13 +61,13 @@ github "SDWebImage/SDWebImage"
 
 ### Installation with Swift Package Manager (Xcode 11+)
 
-[Swift Package Manager](https://swift.org/package-manager/) (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM get natively integrated with Xcode.
+[Swift Package Manager](https://swift.org/package-manager/) (SwiftPM) is a tool for managing the distribution of Swift code as well as C-family dependency. From Xcode 11, SwiftPM got natively integrated with Xcode.
 
-We support SwiftPM from version 5.1.0. To use SwiftPM, you should use Xcode 11 to open your project. Click `File` -> `Swift Packages` -> `Add Package Dependency`, enter [SDWebImage repo's URL](https://github.com/SDWebImage/SDWebImage.git). Or you can login Xcode with your GitHub account and just type `SDWebImage` to search.
+SDWebImage support SwiftPM from version 5.1.0. To use SwiftPM, you should use Xcode 11 to open your project. Click `File` -> `Swift Packages` -> `Add Package Dependency`, enter [SDWebImage repo's URL](https://github.com/SDWebImage/SDWebImage.git). Or you can login Xcode with your GitHub account and just type `SDWebImage` to search.
 
-After select the package, you can type to choose the dependency type (tagged version, branch or commit). Then Xcode will setup all the stuff for you.
+After select the package, you can choose the dependency type (tagged version, branch or commit). Then Xcode will setup all the stuff for you.
 
-If you're a framework author and use SDWebImage as a dependency, you should add the dependency in your `Package.swift` file:
+If you're a framework author and use SDWebImage as a dependency, update your `Package.swift` file:
 
 ```swift
 let package = Package(
@@ -80,6 +80,14 @@ let package = Package(
 ```
 
 ### Manual Installation Guide
+
+### Build SDWebImage as XCFramework
+
+SDWebImage supports to build SDWebImage as [xcframework on Xcode 11](https://developer.apple.com/videos/play/wwdc2019/416/) from version 5.1.0. This is the simplest way to build SDWebImage.
+
+You can open SDWebImage.xcodeproj, select `SDWebImage XCFramework` target. Then just click `Run`. You'll start to build all individual platform's framework product. And produce a `xcframework` product on your `build` directory. After all the build success, Finder will pop-up and select this file.
+
+On Xcode 10, this step only build frameworks and leave them without produce a `xcframework` product.
 
 ### Build SDWebImage as Framework or Static Library
 
