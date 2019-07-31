@@ -162,6 +162,7 @@ Do not hesitate to add yours.
 - [Soundwave Music Discovery](https://itunes.apple.com/ie/app/soundwave-music-discovery/id623353909?mt=8)
 - [SpeakingCars](https://itunes.apple.com/ru/app/speakingcars/id567952026?mt=8)
 - [Sport Battle](https://itunes.apple.com/ru/app/sport-battle/id1089999973?mt=8) - App for sport fans
+- [SpotlightNews](https://apps.apple.com/us/app/spotlightnews/id1291820344?ls=1) - News: College, Local, & Sports
 - [Spots](https://itunes.apple.com/app/spots-location-search-for/id568368743)
 - [Stars & Stats](https://itunes.apple.com/us/app/stars-stats/id568043448)
 - [Streets](https://www.futuretap.com/streets) - The Street View App
