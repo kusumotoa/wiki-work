@@ -28,6 +28,7 @@ Do not hesitate to add yours.
 - [Cinémur](https://itunes.apple.com/fr/app/cinemur-films-bandes-annonces-et-s%C3%A9ances/id596346457?mt=8) - Le nouveau réflexe cinéma
 - [ClassDojo](https://www.classdojo.com)
 - [Cloud9 Learning](https://itunes.apple.com/us/app/cloud9-learning/id527207186)
+- [CloudMall](https://itunes.apple.com/us/app/cloudmall/id1438492356)
 - [Cluster](https://getcluster.com) - Privately share special moments with friends and family
 - [CoachGuitar](https://itunes.apple.com/app/id405338085) - The virtual teacher for guitar (2M+ downloads)
 - [Colab](https://itunes.apple.com/us/app/colab/id609666061?mt=8) - Social Network for Citizenship
