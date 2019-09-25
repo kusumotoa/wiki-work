@@ -1,2 +1,2 @@
-[Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide) - [How to use](https://github.com/rs/SDWebImage/wiki/How-to-use) - [Advanced Usage](https://github.com/rs/SDWebImage/wiki/Advanced-Usage) - [Common Problems](https://github.com/rs/SDWebImage/wiki/Common-Problems) - [API Reference](http://cocoadocs.org/docsets/SDWebImage/)
+[Installation Guide](https://github.com/rs/SDWebImage/wiki/Installation-Guide) - [How to use](https://github.com/rs/SDWebImage/wiki/How-to-use) - [Advanced Usage](https://github.com/rs/SDWebImage/wiki/Advanced-Usage) - [Common Problems](https://github.com/rs/SDWebImage/wiki/Common-Problems) - [API Reference](http://cocoadocs.org/docsets/SDWebImage/) - [Contribution](https://github.com/rs/SDWebImage/wiki/How-to-Contribute)
 

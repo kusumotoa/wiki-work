@@ -17,6 +17,9 @@
 * [Submit an issue](https://github.com/rs/SDWebImage/issues/new)
 * [Track the milestones](https://github.com/rs/SDWebImage/milestones) 
 
+## Contribution
+* [How-to-Contribute](https://github.com/rs/SDWebImage/wiki/How-to-Contribute)
+
 ## Migration Guide
 
 * [4.0 Migration Guide](https://github.com/rs/SDWebImage/blob/master/Docs/SDWebImage-4.0-Migration-guide.md)
