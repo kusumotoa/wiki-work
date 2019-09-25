@@ -1,6 +1,6 @@
 # SDWebImage Contributing Guide
 
-Hi! I'm really excited that you are interested in contributing to SDWebImage. Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
+It's really excited that you are interested in contributing to SDWebImage. Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 
 - [Issue Reporting Guidelines](#issue-reporting-guidelines)
 - [Pull Request Guidelines](#pull-request-guidelines)
@@ -13,21 +13,21 @@ Hi! I'm really excited that you are interested in contributing to SDWebImage. Be
 
 ## Issue Reporting Guidelines
 
-- If you face issue, use GitHub's [New Issue](https://github.com/SDWebImage/SDWebImage/issues/new) to submit issues.
-- There is an issue template built in. You should always fill them as necessary, to make it easy for us to reproduce issue and fix it.
+- If you have an issue, use GitHub's [New Issue](https://github.com/SDWebImage/SDWebImage/issues/new) to submit issues.
+- There is an issue template built in. You should always fill them as necessary as possible, Thus it is easy for us to reproduce issue and fix it.
 
 ## Pull Request Guidelines
 
-- If you face issue, use GitHub's [New PR](https://github.com/SDWebImage/SDWebImage/compare) to submit pull requests.
+- If you have an issue, use GitHub's [New PR](https://github.com/SDWebImage/SDWebImage/compare) to submit pull requests.
 - The `master` branch is used for releasing the next mainstream version of SDWebImage.
-- There are also some other branches used for maintain the legacy version. Because we follows the [Semantic Versioning](https://semver.org/). Like [5.1.x](https://github.com/SDWebImage/SDWebImage/tree/5.1.x) and [4.x](https://github.com/SDWebImage/SDWebImage/tree/4.x)
+- There are also some other branches used for maintain the legacy version. Because we followed the [Semantic Versioning](https://semver.org/). Like [5.1.x](https://github.com/SDWebImage/SDWebImage/tree/5.1.x) and [4.x](https://github.com/SDWebImage/SDWebImage/tree/4.x)
 
-- If adding a new feature:
+- New feature:
   - Add accompanying test case (See more about Testing later)
   - Provide a convincing reason to add this feature. You can add this in your Pull Request description.
-  - Ideally, you can open a feature request issue first before working on it. We will tag it with [feature request](https://github.com/SDWebImage/SDWebImage/labels/feature%20request). Good example: #2743 and #2808
+  - Ideally, you can open a feature request issue first before working on it. We will tag it with [feature request](https://github.com/SDWebImage/SDWebImage/labels/feature%20request). Good example: [#2743](https://github.com/SDWebImage/SDWebImage/pull/2743) and [#2808](https://github.com/SDWebImage/SDWebImage/pull/2808)
 
-- If fixing bug:
+- Fixing bug:
   - If you are resolving a special issue, fill the issue `#xxxx` you want to fix in the pull request template.
   - Provide a detailed description of the bug in the PR. A demo or screenshot is better.
   - Add appropriate test coverage if applicable.
