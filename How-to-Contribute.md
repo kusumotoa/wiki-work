@@ -1,12 +1,12 @@
 # SDWebImage Contributing Guide
 
-Hi! I'm really excited that you are interested in contributing to Vue.js. Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
+Hi! I'm really excited that you are interested in contributing to SDWebImage. Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 
 - [Issue Reporting Guidelines](#issue-reporting-guidelines)
 - [Pull Request Guidelines](#pull-request-guidelines)
 - [Development Setup](#development-setup)
 - [Project Structure](#project-structure)
-- [Add new source files](#add-new-source-files)
+- [Adding Files](#adding-files)
 - [Unit Test](#unit-test)
 - [Coding Style](#coding-style)
 - [API and semversion](#api-and-semversion)
@@ -19,9 +19,7 @@ Hi! I'm really excited that you are interested in contributing to Vue.js. Before
 ## Pull Request Guidelines
 
 - If you face issue, use GitHub's [New PR](https://github.com/SDWebImage/SDWebImage/compare) to submit pull requests.
-
 - The `master` branch is used for releasing the next mainstream version of SDWebImage.
-
 - There are also some other branches used for maintain the legacy version. Because we follows the [Semantic Versioning](https://semver.org/). Like [5.1.x](https://github.com/SDWebImage/SDWebImage/tree/5.1.x) and [4.x](https://github.com/SDWebImage/SDWebImage/tree/4.x)
 
 - If adding a new feature:
@@ -71,8 +69,7 @@ There are also one `SDWebImage.xcodeproj`. This contains the framework target to
 - **`Docs`**:
   Contains the documentation for SDWebImage. Some of them can also be found at [SDWebImage Wiki](https://github.com/SDWebImage/SDWebImage/wiki)
   
-## Add new source files
-
+## Adding Files
 In most cases, if you just want to add a small patch with only modification. You don't need to read this at all.
 
 But, if you decide to adding new source files for your feature. You should have a detailed look at this.
@@ -127,6 +124,8 @@ If possible, don't expose too much unnecessary public APIs for internal process 
 ## Credits
 
 Thank you to all the people who have already contributed to SDWebimage.
+
+You can also help for this open source project by becoming sponsor. See [opencollective/SDWebImage](https://opencollective.com/sdwebimage)
 
 [![Contributors](https://img.shields.io/github/contributors/SDWebImage/SDWebImage.svg)](https://github.com/SDWebImage/SDWebImage/graphs/contributors)
 
