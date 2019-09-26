@@ -74,7 +74,7 @@ In most cases, if you just want to add a small patch with only modification. You
 
 But, if you decide to adding new source files for your feature. You should have a detailed look at this.
 
-Since SDWebImage support 4 different install ways. This may be a challenge for most new contributor. Here are the steps to do:
+Since SDWebImage support 4 different install ways. This may be a challenge for most new contributors. Here are the steps to do:
 
 1. Open `SDWebImage.xcodeproj` (not workspace)
 2. Xcode -> New File... -> Cocoa Touch Class, add your class
@@ -83,13 +83,17 @@ Since SDWebImage support 4 different install ways. This may be a challenge for m
 5. Check the right side `Target Membership` for new source file. Change to `Public` (If you add private APIs, change to `Private`)
 6. Click on the top `SDWebImage.xcodeproj`. Goto the `Build Phase` tab
 7. Choose `SDWebImage static` target's `Copy Headers` build phase, add your new header into the file list
-8. Open `SDWebImage.h`, add one new line `#import <SDWebImage/XXX.h>` with your class header name
+8. Open `SDWebImage.h`, add one new line `#import <SDWebImage/XXX.h>` with your class header name (If you add private APIs, don't do this)
 
 <img src="https://user-images.githubusercontent.com/6919743/65586966-a282c880-dfb7-11e9-9ae0-364393bedef0.jpg" width=960 />
 
 Then all things done for adding new source file. These source file is available in all 4 CocoaPods/Carthage/SwiftPM/Manual install ways.
 
-Since our demo use CocoaPods's development Pod feature. After adding new source file, if you need to see it on our demo.  remember to re-run `pod install` again, and open `SDWebImage.xcworkspace`. For source file modification you don't need to re-run this.
+Since our demo use CocoaPods's development Pod feature. After adding new source file, if you need to see it on our demo.  remember to re-run `pod install` again, then open `SDWebImage.xcworkspace`.
+
+For source file modification only changes, you don't need to re-run `pod install`.
+
+Tips: Xcode 11's New Build System seems cause cache issue when using CocoaPods. If you find your code changes does not take effect, you can try clean build again. Or, you can try to switch to Legacy Build System.
 
 ## Unit Test
 SDWebImage provide unit test to ensure function. After you change all your code. You should run unit test to see if the test passed.
