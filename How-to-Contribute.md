@@ -127,10 +127,8 @@ If possible, don't expose too much unnecessary public APIs for internal process 
 
 ## Credits
 
-Thank you to all the people who have already contributed to SDWebimage.
+Thank you to all the people who have already contributed to SDWebImage.
 
-You can also help for this open source project by becoming sponsor. See [opencollective/SDWebImage](https://opencollective.com/sdwebimage)
-
-[![Contributors](https://img.shields.io/github/contributors/SDWebImage/SDWebImage.svg)](https://github.com/SDWebImage/SDWebImage/graphs/contributors)
+[![Contributors](https://opencollective.com/SDWebImage/contributors.svg?width=890)](https://github.com/SDWebImage/SDWebImage/graphs/contributors)
 
 
