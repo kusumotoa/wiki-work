@@ -93,6 +93,81 @@ For macOS, `NSImage` supports built-in GIF decoding. However, the frame duration
 SDWebImageCodersManager.sharedInstance().addCoder(SDWebImageGIFCoder.shared())
 ```
 
+#### Coder Usage
+
+##### Add Coder
+
+* Objective-C
+
+```objective-c
+// Add WebP support, do this just after launching (AppDelegate)
+[SDImageCodersManager.sharedManager addCoder:SDImageWebPCoder.shared];
+```
+
+* Swift
+
+```swift
+// Add WebP support, do this just after launching (AppDelegate)
+SDImageCodersManager.shared.addCoder(SDImageWebPCoder.shared)
+```
+
+##### Decoding
+
+* Objective-C
+
+```objective-c
+NSData *webpData;
+SDImageCoderOptions *options; // If you don't need animation, use `SDImageCoderDecodeFirstFrameOnly`
+UIImage *image = [SDImageWebPCoder.sharedCoder decodedImageWithData:webpData options:options];
+```
+
+* Swift
+
+```swift
+let webpData: Data
+let options: SDImageCoderOptions // If you don't need animation, use `.decodeFirstFrameOnly`
+let image = SDImageWebPCoder.shared.decodedImage(with: webpData, options: options)
+```
+
+##### Encoding
+
+* Objective-C
+
+```objective-c
+// For Animated Image, supply frames to create animated image and encode
+NSArray<SDImageFrame *> *frames;
+UIImage *animatedImage = [SDImageCoderHelper animatedImageWithFrames:frames];
+NSData *webpData = [SDImageWebPCoder.sharedCoder encodedDataWithImage:animatedImage format:SDImageFormatWebP options:options];
+// For Static Image, just use normal UIImage
+NSData *webpData = [SDImageWebPCoder.sharedCoder encodedDataWithImage:staticImage format:SDImageFormatWebP options:options];
+```
+
+* Swift
+
+```swift
+// For Animated Image, supply frames to create animated image and encode
+let frames: [SDImageFrame]
+let aniamtedImage = SDImageCoderHelper.animatedImage(with: frames)
+let webpData = encodedData(with: animatedImage, format: .webP, options: options)
+// For Static Image, just use normal UIImage
+let webpData = encodedData(with: staticImage, format: .webP, options: options)
+```
+
+For most simple or common cases, you can the convenient UIImage Category:
+
+* Objective-C
+
+```objective-c
+UIImage *image = [UIImage sd_imageWithData:webpData];
+NSData *webpData =[image sd_imageDataAsFormat:SDImageFormatWebP];
+```
+
+* Swift
+
+```swift
+let image = UIImage.sd_image(with: webpData)
+let webpData = image.sd_imageData(as .webP)
+```
 
 ### Image Progress (4.3.0)
 
