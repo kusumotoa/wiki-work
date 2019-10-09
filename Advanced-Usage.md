@@ -137,6 +137,7 @@ let image = SDImageWebPCoder.shared.decodedImage(with: webpData, options: option
 // For Animated Image, supply frames to create animated image and encode
 NSArray<SDImageFrame *> *frames;
 UIImage *animatedImage = [SDImageCoderHelper animatedImageWithFrames:frames];
+SDImageCoderOptions *options;
 NSData *webpData = [SDImageWebPCoder.sharedCoder encodedDataWithImage:animatedImage format:SDImageFormatWebP options:options];
 // For Static Image, just use normal UIImage
 NSData *webpData = [SDImageWebPCoder.sharedCoder encodedDataWithImage:staticImage format:SDImageFormatWebP options:options];
@@ -148,9 +149,10 @@ NSData *webpData = [SDImageWebPCoder.sharedCoder encodedDataWithImage:staticImag
 // For Animated Image, supply frames to create animated image and encode
 let frames: [SDImageFrame]
 let aniamtedImage = SDImageCoderHelper.animatedImage(with: frames)
-let webpData = encodedData(with: animatedImage, format: .webP, options: options)
+let options: SDImageCoderOptions
+let webpData = SDImageWebPCoder.shared.encodedData(with: animatedImage, format: .webP, options: options)
 // For Static Image, just use normal UIImage
-let webpData = encodedData(with: staticImage, format: .webP, options: options)
+let webpData = SDImageWebPCoder.shared.encodedData(with: staticImage, format: .webP, options: options)
 ```
 
 For most simple or common cases, you can the convenient UIImage Category:
