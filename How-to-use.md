@@ -195,10 +195,12 @@ let requestModifier = SDWebImageDownloaderRequestModifier { (request) -> URLRequ
 SDWebImageDownloader.shared.requestModifier = requestModifier
 ```
 
+Note: For some special image format like WebP/APNG, image servers may prefer client to send HTTP Accept header. Check wiki here: [Coder Accept MIME Type](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#coder-accept-mime-type). You can also use the request modifier feature for the same configuration.
+
 Note: Though this feature is introduced in 5.x, in early 4.x version, you can use the Headers Filter to specify custom HTTP Headers. However, you can not custom any other properties inside `NSURLRequest` like `HTTPBody`, `cachePolicy`, etc.
 
 ### Use View Indicator (5.0)
-SDWebImage provide a easy and extensible API for image loading indicator. Which will show or animate during image loading from network. All you need to do is to setup the indicator before your image loading start.
+SDWebImage provide an easy and extensible API for image loading indicator. Which will show or animate during image loading from network. All you need to do is to setup the indicator before your image loading start.
 
 Objective-C:
 
