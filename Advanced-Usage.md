@@ -171,6 +171,24 @@ let image = UIImage.sd_image(with: webpData)
 let webpData = image.sd_imageData(as .webP)
 ```
 
+### Coder Accept MIME Type
+
+Some of image server provider, may use [HTTP Accept Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept) to detect client supported format. By default, SDWebImage use `image/*,*/*;q=0.8`, you can also modify this header for your usage.
+
+For example, [WebP](https://en.wikipedia.org/wiki/WebP) use `image/webp` MIME type for Accept header, [APNG](https://en.wikipedia.org/wiki/APNG) use `image/apng`. This sample code setup the Accept Header to the same as Google Chrome:
+
++ Objective-C
+
+```objective-c
+[[SDWebImageDownloader sharedDownloader] setValue:@"image/webp,image/apng,image/*,*/*;q=0.8" forHTTPHeaderField:@"Accept"];
+```
+
++ Swift
+
+```swift
+SDWebImageDownloader.shared.setValue("image/webp,image/apng,image/*,*/*;q=0.8", forHTTPHeaderField:"Accept")
+```
+
 ### Image Progress (4.3.0)
 
 Image progress use a [NSProgress](https://developer.apple.com/documentation/foundation/progress) to allow user to observe the download progress. Through you can still use the `progressBlock`. But using `NSProgress` with [KVO](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html) make your code more easy to maintain. The code snippet use [KVOController](https://github.com/facebook/KVOController) to simplify the usage for KVO.
