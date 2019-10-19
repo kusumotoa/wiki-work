@@ -624,3 +624,60 @@ let manager = SDWebImageManager(cache:SDImageCachesManager.shared, loader:SDWebI
 SDWebImageManager.defaultImageCache = SDImageCachesManager.shared
 ```
 
+### Options Processor (5.1.0)
+
+SDWebImage have both `SDWebImageOptions` (enum) and `SDWebImageContext` (dictionary) to hold extra control options during image loading. These args are available right in `sd_setImageWithURL:` method, for user to control the detail behavior for individual image requests.
+
+We recommend to treat each image request independent pipeline which does not effect each others. This can avoid sharing global status and cause issues. However, sometimes, users may still prefer a global control for these options, instead of changing each method calls. For this propose, we have options processor.
+
+Option Processor is a hook block in the manager level, which let user to interact with the original options and context, and process them with the final result to load. This can make a central control and perform complicated logic, better than just a **default options and context** feature, compared to the similar API on [Kingfisher.defaultOptions](https://github.com/onevcat/Kingfisher/blob/5.8.3/Sources/General/KingfisherManager.swift#L70-L75).
+
+Here are some common use case to use options processor:
+
+#### Disable Force Decoding in global
+
++ Objective-C
+
+```objective-c
+SDWebImageManager.sharedManager.optionsProcessor = [SDWebImageOptionsProcessor optionsProcessorWithBlock:^SDWebImageOptionsResult * _Nullable(NSURL * _Nullable url, SDWebImageOptions options, SDWebImageContext * _Nullable context) {
+     options |= SDWebImageAvoidDecodeImage;
+     return [[SDWebImageOptionsResult alloc] initWithOptions:options context:context];
+}];
+```
+
++ Swift
+
+```swift
+SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, options, context in
+    var mutableOptions = options
+    mutableOptions.insert(.avoidDecodeImage)
+    return SDWebImageOptionsResult(options: mutableOptions, context: context)
+}
+```
+
+#### Only do animation on SDAnimatedImageView
+
++ Objective-C
+
+```objective-c
+SDWebImageManager.sharedManager.optionsProcessor = [SDWebImageOptionsProcessor optionsProcessorWithBlock:^SDWebImageOptionsResult * _Nullable(NSURL * _Nullable url, SDWebImageOptions options, SDWebImageContext * _Nullable context) {
+     // Check `SDAnimatedImageView`
+     if (!context[SDWebImageContextAnimatedImageClass]) {
+        options |= SDWebImageDecodeFirstFrameOnly;
+     }
+     return [[SDWebImageOptionsResult alloc] initWithOptions:options context:context];
+}];
+```
+
++ Swift
+
+```swift
+SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, options, context in
+    var mutableOptions = options
+    // Check `SDAnimatedImageView`
+    if let context = context, let _ = context[.animatedImageClass] {
+        mutableOptions.insert(.decodeFirstFrameOnly)
+    }
+    return SDWebImageOptionsResult(options: mutableOptions, context: context)
+}
+```
