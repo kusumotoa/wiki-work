@@ -155,7 +155,7 @@ let webpData = SDImageWebPCoder.shared.encodedData(with: animatedImage, format: 
 let webpData = SDImageWebPCoder.shared.encodedData(with: staticImage, format: .webP, options: options)
 ```
 
-For most simple or common cases, you can the convenient UIImage Category:
+For most simple or common cases, you can use the convenient UIImage Category. Remember to register coders.
 
 * Objective-C
 
