@@ -630,9 +630,9 @@ SDWebImage have both `SDWebImageOptions` (enum) and `SDWebImageContext` (diction
 
 We recommend to treat each image request independent pipeline which does not effect each others. This can avoid sharing global status and cause issues. However, sometimes, users may still prefer a global control for these options, instead of changing each method calls. For this propose, we have options processor.
 
-Option Processor is a hook block in the manager level, which let user to interact with the original options and context, and process them with the final result to load. This can make a central control and perform complicated logic, better than just a **default options and context** feature, compared to the similar API on [Kingfisher.defaultOptions](https://github.com/onevcat/Kingfisher/blob/5.8.3/Sources/General/KingfisherManager.swift#L70-L75).
+Option Processor is a hook block in the manager level, which let user to interact with the original options and context, process them based on your usage, and return the final result to load. This can make a central control and perform complicated logic, better than just a **default options and context** feature, compared to the similar API on [Kingfisher](https://github.com/onevcat/Kingfisher/blob/5.8.3/Sources/General/KingfisherManager.swift#L70-L75).
 
-Here are some common use case to use options processor:
+Here are some common use cases to use options processor:
 
 #### Disable Force Decoding in global
 
@@ -674,8 +674,9 @@ SDWebImageManager.sharedManager.optionsProcessor = [SDWebImageOptionsProcessor o
 ```swift
 SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, options, context in
     var mutableOptions = options
-    // Check `SDAnimatedImageView`
     if let context = context, let _ = context[.animatedImageClass] {
+        // Check `SDAnimatedImageView`
+    } else {
         mutableOptions.insert(.decodeFirstFrameOnly)
     }
     return SDWebImageOptionsResult(options: mutableOptions, context: context)
