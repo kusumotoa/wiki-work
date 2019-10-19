@@ -6,18 +6,67 @@ The following article gives a way to workaround this issue:
 
 [http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/](http://www.wrichards.com/blog/2011/11/sdwebimage-fixed-width-cell-images/)
 
-### Configuration for large images (avoid high memory usage)
+### Optimization for large images
 
-```swift
-SDImageCache.shared().config.maxCacheAge = 3600 * 24 * 7 //1 Week
-SDImageCache.shared().maxMemoryCost = 1024 * 1024 * 20 //Aprox 20 images
-SDImageCache.shared().config.shouldCacheImagesInMemory = false //Default True => Store images in RAM cache for Fast performance
-SDImageCache.shared().config.shouldDecompressImages = false
-SDWebImageDownloader.shared().shouldDecompressImages = false
-SDImageCache.shared().config.diskCacheReadingOptions = NSData.ReadingOptions.mappedIfSafe
+#### Configuration to reduce memory pressure (aggressive)
+
+You may not need all these configurations, pick what you need base on the use case.
+
++ Objective-C
+
+```objective-c
+SDImageCache.sharedImageCache.config.maxCacheAge = 3600 * 24 * 7; // 1 Week
+SDImageCache.sharedImageCache.maxMemoryCost = 1024 * 1024 * 4 * 20; // 20 images (1024 * 1024 pixels)
+SDImageCache.sharedImageCache.config.shouldCacheImagesInMemory = NO; // Disable memory cache, may cause cell-reusing flash because disk query is async
+SDImageCache.shared.config.shouldUseWeakMemoryCache = NO; // Disable weak cache, may see blank when return from background because memory cache is purged under pressure
+SDImageCache.sharedImageCache.config.diskCacheReadingOptions = NSDataReadingMappedIfSafe; // Use mmap for disk cache query
+SDWebImageManager.sharedManager.optionsProcessor = [SDWebImageOptionsProcessor optionsProcessorWithBlock:^SDWebImageOptionsResult * _Nullable(NSURL * _Nullable url, SDWebImageOptions options, SDWebImageContext * _Nullable context) {
+     // Disable Force Decoding in global, may reduce the frame rate
+     options |= SDWebImageAvoidDecodeImage;
+     return [[SDWebImageOptionsResult alloc] initWithOptions:options context:context];
+}];
 ```
 
-For details see https://github.com/SDWebImage/SDWebImage/issues/1544#issuecomment-423445538
++ Swift
+
+```swift
+SDImageCache.shared.config.maxCacheAge = 3600 * 24 * 7 // 1 Week
+SDImageCache.shared.maxMemoryCost = 1024 * 1024 * 4 * 20 // 20 images (1024 * 1024 pixels)
+SDImageCache.shared.config.shouldCacheImagesInMemory = false // Disable memory cache, may cause cell-reusing flash because disk query is async
+SDImageCache.shared.config.shouldUseWeakMemoryCache = false // Disable weak cache, may see blank when return from background because memory cache is purged under pressure
+SDImageCache.shared.config.diskCacheReadingOptions = .mappedIfSafe // Use mmap for disk cache query
+SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, options, context in
+    // Disable Force Decoding in global, may reduce the frame rate
+    var mutableOptions = options
+    mutableOptions.insert(.avoidDecodeImage)
+    return SDWebImageOptionsResult(options: mutableOptions, context: context)
+}
+```
+
+#### Reduce image memory usage by resolution and channel
+
+For bitmap image, the memory usage is simple to follows the formula:
+
+`RAM = pixel count * bytes per pixel (4 for RGBA)`
+
+So, try to reduce both resolution and channel as much as you can.
+
++ Channel
+  1. Use non-alpha channel image if possible (25% reduce)
+  2. Use greyscale image if possible (75% reduce)
+
++ Resolution
+  1. Best: Optimize image resolution on server, before sending to client
+  2. Use [SDWebImageScaleDownLargeImages](https://sdwebimage.github.io/Enums/SDWebImageOptions.html#/c:@E@SDWebImageOptions@SDWebImageScaleDownLargeImages) option
+  3. Use Resize [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50) to scale down
+
+#### Use SDAnimatedImageView to play animated image
+
+[SDAnimatedImageView](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#animated-image-50) provide the **Decoding Just in Time** feature for animated image. It also provides a flexible buffer size and based on current CPU/RAM pressure.
+
+Compared to UIImageView (which keep all frames in memory), it can help you to reduce the memory usage. Especially you have large and long frames animated images. 
+
+For all these details see [#1544](https://github.com/SDWebImage/SDWebImage/issues/1544#issuecomment-423445538)
 
 ### Handle cell reusing for view category
 
@@ -93,7 +142,9 @@ imageView.sd_setIndicatorStyle(.Gray)
 When you try to use `sd_setImageWithURL:completed` and write some code in the completion block which contains `self`. You should take care that this may cause [Strong Reference Cycles for Closures
 ](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID56). This because the completion block you provided will be retained by `SDWebImageManager`'s running operations. So the `self` in the completionBlock will also be captured until the load progress finished (Cache fetched or network finished).
 
-If you do not want to keep `self` instance alive during load progress, just mark it to weak. For Objective-C, use a weak reference to `self`:
+If you do not want to keep `self` instance alive during load progress, just mark it to weak.
+
++ For Objective-C, use a weak reference to `self`:
 
 ```objective-c
 __weak typeof(self) wself = self;
@@ -102,7 +153,7 @@ __weak typeof(self) wself = self;
 }];
 ```
 
-For Swift, use `weak self` in capture lists:
++ For Swift, use `weak self` in capture lists:
 
 ```swift
 self.imageView.sd_setImage(with: url, completed: { [weak self] (image, error, cacheType, imageURL) in
