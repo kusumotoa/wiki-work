@@ -340,6 +340,8 @@ Another feature, `SDAnimatedImageView` supports progressive animated image rende
 
 To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property in `SDAnimatedImageView`. You can disable it and just showing the first poster image during progressive image loading.
 
+Note from 5.3.0, we do refactoring on this and provide a new component called `SDAnimatedImagePlayer`, see [below](#animated-player-530)
+
 #### Decoding
 
 To support animated image view rendering. All the image coder plugin should support to decode individual frame instead of just return a simple image using the `SDImageCoder` method `decodedImageWithData:options:`. So this is why we introduce a new protocol `SDAnimatedImageCoder`.
@@ -682,3 +684,41 @@ SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, 
     return SDWebImageOptionsResult(options: mutableOptions, context: context)
 }
 ```
+
+### Animated Player (5.3.0)
+
+From 5.0.0, SDWebImage provide a `SDAnimatedImageView` (see [above](#animated-image-50)) for the animated image rendering solution. However, sometimes, we want to do animation about image, without any `UIView`, or `CALayer` backend. The image may also not a `UIImage` subclass. SDAnimatedImageView can not been used there and we still facing the problem.
+
+For example, like WatchKit animation, which don't have a CALayer. Another case is the new SwiftUI environment, which don't have any UIKit behavior.
+
+In 5.3.0, we do refactory on `SDAnimatedImageView`, seperate the rendering part from the player part. The `SDAnimatedImagePlayer` is the solution for this.
+
+A player, does not care about **how you consume each frame** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even do some digital process pipeline). It also does not care about **how you generate the frame** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
+
+The simple usage for WatchKit, can be concluded into:
+
++ Objective-C
+
+```objective-c
+id<SDAnimatedImageProvider> provider; // Anything conforms to protocol like `SDAnimatedImage`
+SDAnimatedImagePlayer *player = [SDAnimatedImagePlayer playerWithProvider:provider];
+WKInterfaceImage *target; // Anything can receive image
+player.animationFrameHandler = ^(NSUInteger index, UIImage * frame) {
+    [target setImage:frame];
+};
+```
+
++ Swift
+
+```swift
+let provider: SDAnimatedImageProvider // Anything conforms to protocol like `SDAnimatedImage`
+let player = SDAnimatedImagePlayer(provider: provider)
+let target: WKInterfaceImage // Anything can receive image
+player.animationFrameHandler { index, frame in
+    target.setImage(frame)
+}
+```
+
+Note that the provider can represent mutable content, which means provider can update their internal data structure, to provide more frames for playing. But note you should update the frame count or loop count by calling the `SDAnimatedImagePlayer` method. Our `SDAnimatedImageView` use this design to support progressive animate image loading.
+
+Animated Player also has small details control like playback rate, frame skip, etc. Check the latest [documentation](https://sdwebimage.github.io/) for details.
