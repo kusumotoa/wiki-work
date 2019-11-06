@@ -207,8 +207,7 @@ Like request modifier, SDWebImage provide the response modifier for HTTP respons
 ```objective-c
 SDWebImageDownloaderResponseModifier *responseModifier = [SDWebImageDownloaderResponseModifier responseModifierWithBlock:^NSURLResponse * _Nullable(NSURLResponse * _Nonnull response) {
     if ([response.URL.host isEqualToString:@"foo"]) {
-        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-        NSMutableDictionary *mutableHeaderFields = [httpResponse.allHeaderFields mutableCopy];
+        NSMutableDictionary *mutableHeaderFields = [((NSHTTPURLResponse *)response).allHeaderFields mutableCopy];
         mutableHeaderFields[@"Foo"] = @"Bar";
         NSHTTPURLResponse *modifiedResponse = [[NSHTTPURLResponse alloc] initWithURL:response.URL statusCode:404 HTTPVersion:nil headerFields:[mutableHeaderFields copy]];
         return [modifiedResponse copy];
