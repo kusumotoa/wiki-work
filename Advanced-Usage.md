@@ -728,20 +728,20 @@ Animated Player also has small details control like playback rate, frame skip, e
 
 Sometime, you want to load image contents with is encrypted. Such as AES/DES/Base64 algorithm. For previous release, you have to write [custom operation](#custom-download-operation-40) and complicated code for this task.
 
-From 5.3.0, we provide a simple solution, to write a custom handler block to decrypt the original image data. Then we process it as the default download and decoding part. For example, a base64 image data drcryptor:
+From 5.3.0, we provide a simple solution, to write a custom handler block to decrypt the original image data. Then we process it as the default download and decoding part. For example, a base64 image data decryptor:
 
 + Objective-C
 
-```objective-c;
+```objective-c
 NSURL *url;
-id<SDWebImageDownloaderDecryptor> drcryptor = SDWebImageDownloaderDecryptor.base64Decryptor;
-[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextDownloadDecryptor : drcryptor}];
+id<SDWebImageDownloaderDecryptor> decryptor = SDWebImageDownloaderDecryptor.base64Decryptor;
+[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextDownloadDecryptor : decryptor}];
 ```
 
 + Swift
 
 ```swift
 let url: URL
-let drcryptor = SDWebImageDownloaderDecryptor.base64
-imageView.sd_setImage(with: url, context:[.downloadDecryptor : drcryptor])
+let decryptor = SDWebImageDownloaderDecryptor.base64
+imageView.sd_setImage(with: url, context:[.downloadDecryptor : decryptor])
 ```
