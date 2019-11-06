@@ -722,3 +722,26 @@ player.animationFrameHandler { index, frame in
 Note that the provider can represent mutable content, which means provider can update their internal data structure, to provide more frames for playing. But note you should update the frame count or loop count by calling the `SDAnimatedImagePlayer` method. Our `SDAnimatedImageView` use this design to support progressive animate image loading.
 
 Animated Player also has small details control like playback rate, frame skip, etc. Check the latest [documentation](https://sdwebimage.github.io/) for details.
+
+
+### Data Decryptor (5.3.0)
+
+Sometime, you want to load image contents with is encrypted. Such as AES/DES/Base64 algorithm. For previous release, you have to write [custom operation](#custom-download-operation-40) and complicated code for this task.
+
+From 5.3.0, we provide a simple solution, to write a custom handler block to decrypt the original image data. Then we process it as the default download and decoding part. For example, a base64 image data drcryptor:
+
++ Objective-C
+
+```objective-c;
+NSURL *url;
+id<SDWebImageDownloaderDecryptor> drcryptor = SDWebImageDownloaderDecryptor.base64Decryptor;
+[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextDownloadDecryptor : drcryptor}];
+```
+
++ Swift
+
+```swift
+let url: URL
+let drcryptor = SDWebImageDownloaderDecryptor.base64
+imageView.sd_setImage(with: url, context:[.downloadDecryptor : drcryptor])
+```
