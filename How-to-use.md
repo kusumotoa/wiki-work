@@ -199,6 +199,40 @@ Note: For some special image format like WebP/APNG, image servers may prefer cli
 
 Note: Though this feature is introduced in 5.x, in early 4.x version, you can use the Headers Filter to specify custom HTTP Headers. However, you can not custom any other properties inside `NSURLRequest` like `HTTPBody`, `cachePolicy`, etc.
 
+### Use Response Modifier (5.3.0)
+Like request modifier, SDWebImage provide the response modifier for HTTP response. You can modify the HTTP header,  status code if you want to mock the data, or provide custom process logic.
+
++ Objective-C
+
+```objective-c
+SDWebImageDownloaderResponseModifier *responseModifier = [SDWebImageDownloaderResponseModifier responseModifierWithBlock:^NSURLResponse * _Nullable(NSURLResponse * _Nonnull response) {
+    if ([response.URL.host isEqualToString:@"foo"]) {
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+        NSMutableDictionary *mutableHeaderFields = [httpResponse.allHeaderFields mutableCopy];
+        mutableHeaderFields[@"Foo"] = @"Bar";
+        NSHTTPURLResponse *modifiedResponse = [[NSHTTPURLResponse alloc] initWithURL:response.URL statusCode:404 HTTPVersion:nil headerFields:[mutableHeaderFields copy]];
+        return [modifiedResponse copy];
+    }
+    return response;
+}];
+SDWebImageDownloader.sharedDownloader.responseModifier = responseModifier;
+```
+
++ Swift
+
+```swift
+let responseModifier = SDWebImageDownloaderResponseModifier { (response) -> URLResponse? in
+    if (response.url?.host == "foo") {
+        var mutableHeaderFields = (response as! HTTPURLResponse).allHeaderFields as? [String: String]
+        mutableHeaderFields?["Foo"] = "Bar"
+        let modifiedResponse = HTTPURLResponse(url: response.url!, statusCode: 404, httpVersion: nil, headerFields: mutableHeaderFields)
+        return modifiedResponse
+    }
+    return response
+};
+SDWebImageDownloader.shared.responseModifier = responseModifier
+```
+
 ### Use View Indicator (5.0)
 SDWebImage provide an easy and extensible API for image loading indicator. Which will show or animate during image loading from network. All you need to do is to setup the indicator before your image loading start.
 
