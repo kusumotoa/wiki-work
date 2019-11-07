@@ -693,7 +693,7 @@ For example, like WatchKit animation, which don't have a CALayer. Another case i
 
 In 5.3.0, we do refactory on `SDAnimatedImageView`, seperate the rendering part from the player part. The `SDAnimatedImagePlayer` is the solution for this.
 
-A player, does not care about **how you consume each frame** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even do some digital process pipeline). It also does not care about **how you generate the frame** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
+A player, does not care about **how you consume the frames** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even do some digital process pipeline). It also does not care about **how you generate the frames** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
 
 The simple usage for WatchKit, can be concluded into:
 
@@ -714,7 +714,7 @@ player.animationFrameHandler = ^(NSUInteger index, UIImage * frame) {
 let provider: SDAnimatedImageProvider // Anything conforms to protocol like `SDAnimatedImage`
 let player = SDAnimatedImagePlayer(provider: provider)
 let target: WKInterfaceImage // Anything can receive image
-player.animationFrameHandler { index, frame in
+player.animationFrameHandler = { index, frame in
     target.setImage(frame)
 }
 ```
@@ -745,3 +745,5 @@ let url: URL
 let decryptor = SDWebImageDownloaderDecryptor.base64
 imageView.sd_setImage(with: url, context:[.downloadDecryptor : decryptor])
 ```
+
+You can also build your own data decryptor algorithm use the protocol method or block, which is always get called on the URLSession delegate queue (A global serial queue)
