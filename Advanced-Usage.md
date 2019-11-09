@@ -687,15 +687,15 @@ SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, 
 
 ### Animated Player (5.3.0)
 
-From 5.0.0, SDWebImage provide a `SDAnimatedImageView` (see [above](#animated-image-50)) for the animated image rendering solution. However, sometimes, we want to do animation about image, without any `UIView`, or `CALayer` backend. The image may also not a `UIImage` subclass. SDAnimatedImageView can not been used there and we still facing the problem.
+From 5.0.0, SDWebImage provide a `SDAnimatedImageView` (see [above](#animated-image-50)) for the animated image rendering solution. However, sometimes, we may want to do animation processing, where we don't have or don't want to create either `UIView` or `SDAnimatedImage` objects. For those cases, `SDAnimatedImageView`  can not solve the problem.
 
-For example, like WatchKit animation, which don't have a CALayer. Another case is the new SwiftUI environment, which don't have any UIKit behavior.
+For example, we can not use `SDAnimatedImageView` on watchOS animation, where we don't have a CALayer. Another case is the new SwiftUI environment, which don't have any UIKit behavior.
 
-In 5.3.0, we do refactory on `SDAnimatedImageView`, seperate the rendering part from the player part. The `SDAnimatedImagePlayer` is the solution for this.
+In 5.3.0, we do refactoring on `SDAnimatedImageView`, separate the rendering part from the player part. The `SDAnimatedImagePlayer` is the solution for this.
 
-A player, does not care about **how you consume the frames** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even do some digital process pipeline). It also does not care about **how you generate the frames** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
+A player, does not care about **how you consume the frames** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even some digital process pipeline). It also does not care about **how you generate the frames** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
 
-The simple usage for WatchKit, can be concluded into:
+The simple usage for WatchKit animation, can be concluded into this:
 
 + Objective-C
 
