@@ -75,6 +75,42 @@ SDWebImageManager *manager = [SDWebImageManager sharedManager];
                  }];
 ```
 
+### Using SDWebImagePrefetcher
+
+`SDWebImageManager` is used for image query in cache and network. However, sometimes, you don't want to consume the queried image right now, but want to do a prefetching in advance. Here we have `SDWebImagePrefetcher`.
+
+`SDWebImagePrefetcher` can prefetch multiple url list with array. Each url list will bind to single token (which allows cancel on current url list). Don't worry about duplicated urls, the prefetcher is backed by `SDWebImageManager`, it will check cache firstly, only image not in cache will go through network download.
+
++ Objective-C
+
+```objectivec
+NSArray<NSURL> *imageURLs;
+[SDWebImagePrefetcher.sharedImagePrefetcher] prefetchURLs:imageURLs progress:^(NSUInteger noOfFinishedUrls, NSUInteger noOfTotalUrls) {
+    // prefetch progress changed
+} completed:^(NSUInteger noOfFinishedUrls, NSUInteger noOfSkippedUrls) {
+    // all provided urls prefetched
+}];
+```
+
++ Swift
+
+```swift
+let imageURLs: [URL]
+SDWebImagePrefetcher.shared.prefetchURLs(urls, progress: { (noOfFinishedUrls, noOfTotalUrls) in
+    // prefetch progress changed
+}) { (noOfFinishedUrls, noOfSkippedUrls) in
+    // all provided urls prefetched
+}
+```
+
+`SDWebImagePrefetcher` has a shared instance for convenience, but remember it's light-weight. If you need extra configuration for image urls which share the same options and context, create a new object instead.
+
+`SDWebImagePrefetcher` supports delegate methods to observe the fetch count changes as well. You can use that for detailed fetching status check.
+
+Notes:
++ When you want to prefetch animated image format to used with `SDAnimatedImageView`, make sure you pass the `.customImageClass` context option, or we will still use the UIImage animation, which is less performant.
++ Before 5.0, the cancel method on prefetcher will cancel all previous requests. Which means each prefetcher can prefetch one url lists at the same time. But 5.0 change that to use the `SDWebImagePrefetchToken` instead. You can just current url list, without effect all other fetching url list.
+
 ### Using Asynchronous Image Downloader Independently
 
 It's also possible to use the async image downloader independently:
