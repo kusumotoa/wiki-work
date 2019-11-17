@@ -693,7 +693,7 @@ For example, we can not use `SDAnimatedImageView` on watchOS animation, where we
 
 In 5.3.0, we do refactoring on `SDAnimatedImageView`, separate the rendering part from the player part. The `SDAnimatedImagePlayer` is the solution for this.
 
-A player, does not care about **how you consume the frames** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even some digital process pipeline). It also does not care about **how you generate the frames** (whether SDAnimatedImage, SDImageGIFCoder, or even video frames like [AVAssetImageGenerator](https://developer.apple.com/documentation/avfoundation/avassetimagegenerator?language=objc)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
+A player, does not care about **how you consume the frames** (whether to render it on CALayer, on WatchKit, or SwiftUI, or even some digital process pipeline). It also does not care about **how you generate the frames** (whether SDAnimatedImage, SDImageGIFCoder. Even the video format frames - see showcase [SDWebImageVideoCoder](https://github.com/SDWebImage/SDWebImageVideoCoder)). It only drive the logic to calculate the duration, frame rate, and callback the handler to process.
 
 The simple usage for WatchKit animation, can be concluded into this:
 
