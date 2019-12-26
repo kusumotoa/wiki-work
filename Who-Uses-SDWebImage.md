@@ -169,6 +169,7 @@ Do not hesitate to add yours.
 - [Stars & Stats](https://itunes.apple.com/us/app/stars-stats/id568043448)
 - [Streets](https://www.futuretap.com/streets) - The Street View App
 - [Stickerpop](https://www.stickerpop.co) - The Sticker App
+- [Stitchr](https://github.com/ajohnson388/Stitchr) - An open source playlist editor for Spotify
 - [Subtitles Viewer](http://www.subtitlesviewer.com) View subtitles synchronized with TV or movies.  
 - [Surge](http://surgeapp.org) - An Uber Surge tracking app for Uber drivers
 - [SwiftFlickrSearch](https://github.com/kyleclegg/SwiftFlickrSearch) - A simple Flickr Search app written in Swift
