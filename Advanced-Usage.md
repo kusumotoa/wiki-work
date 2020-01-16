@@ -426,7 +426,7 @@ UIImageView *imageView;
 ```swift
 let transformer = SDImageResizingTransformer(size: CGSize(300, 300), scaleMode: .fill)
 let imageView: UIImageView
-imageView.sd_setImage(withURL: url, placeholderImage: nil, context: [.imageTransformer: transformer])
+imageView.sd_setImage(with: url, placeholderImage: nil, context: [.imageTransformer: transformer])
 ```
 
 
@@ -747,3 +747,52 @@ imageView.sd_setImage(with: url, context:[.downloadDecryptor : decryptor])
 ```
 
 You can also build your own data decryptor algorithm use the protocol method or block, which is always get called on the URLSession delegate queue (A global serial queue)
+
+### Thumbnail Decoding (5.5.0)
+
+Previously, for all the image (static or animated), SDWebImage will try to decode the full pixel image, whatever the size image is. This may suitable for most cases. However, since we focus on Web images, sometimes you may load images which size is much more than you view size. This may consume unused RAM and have a higher ratio of OOM.
+
+From v5.0.0, you can use the [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50), to scale down the size you want. This may solve this problem in some aspects. However, by the time transformer is called, the large bitmap pixel already been decoded on the RAM, For example, one huge World Map image which contains 10000x10000 pixels, by the time transformer is called, it already allocated 381MB in RAM, and have to allocated another 381MB for temp buffer, this may cause a OOM.
+
+So, a better way for thumbnail, it's to decode only the small size, instead of decode full pixels and scale it down. Both Apple's Image/IO and some third-party codec (like libwebp/libheif) support this feature. In 5.5.0 version, we introduce the solution for thumbnail decoding.
+
+To use thumbnail decoding, you can just use the context option, to pass the desired limit size you want. Like this:
+
+* Objective-C
+
+```objective-c
+CGSize thumbnailSize = CGSizeMake(200, 200); // Thumbnail will bounds to (200,200)
+[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextImageThumbnailPixelSize : @(thumbnailSize), SDWebImageContextImagePreserveAspectRatio: @(keepAspectRatio)}];
+```
+
+* Swift
+
+```swift
+let thumbnailSize = CGSize(width: 200, height: 200)
+let url = URL(string: "https://foo/bar.jpg")
+imageView.sd_setImage(with: url, placeholderImage: nil, context: [.imageThumbnailPixelSize : thumbnailSize])
+```
+
+Just easy.
+
+We also note that there are already one `SDWebImageScaleDownLargeImages` option in SDWebImage, which does not works so well in previous version. From v5.5.0, when using this option, we will translate this into the correspond thumbnail size limit, using the bytes limit you provided.
+
+The default bytes limit on iOS is 60MB (to keep compatible with old version of SDWebImage). Which result `(3966, 3966)` pixel. If this is not suitable for your case, you can change the default value in global. But actually, we recommended to use the context option instead, which is far more flexible. (Remember, you can also use [Options Processor](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#options-processor-510) to control context globally)
+
+* Objective-C
+
+```objective-c
+SDImageCoderHelper.defaultScaleDownLimitBytes = 1000 * 1000 * 4 * 1024 * 1024; // (1000, 1000) pixels
+```
+
+* Swift
+
+```swift
+SDImageCoderHelper.defaultScaleDownLimitBytes = 1000 * 1000 * 4 * 1024 * 1024 // (1000, 1000) pixels
+```
+
+Note:
+1. When you specify different thumbnail size, they does not hit the same cache key, each thumbnail image will be cached separately. Like the behavior of transformer.
+2. By default, we keep the full image's aspect ratio for thumbnail. You can also use `.imagePreserveAspectRatio` to control this behavior to stretch the image.
+3. When the thumbnail pixel size is larger than full image pixel size, we will do only full pixel decoding, never scale up. For this propose, use resize transformer instead.
+4. These two context options, applied for Vector Image as well, such as PDF, SVG format in our [coder plugin list](https://github.com/SDWebImage/SDWebImage/wiki/Coder-Plugin-List). When you limit the pixel size, they will fallback to produce a bitmap version instead.
