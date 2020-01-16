@@ -7,7 +7,7 @@ You can check some public coder plugin here for image format which is not availa
 
 ## SDWebImage organization maintained
 | Format | Repo | Format Code | Decode | Encode | Animation | Progressive | Thumbnail |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 | [WebP](https://developers.google.com/speed/webp/) | [SDWebImageWebPCoder](https://github.com/SDWebImage/SDWebImageWebPCoder) | `.webP` | Y | Y | Y | Y | Y (from v0.4.0) |
 | [APNG](https://en.wikipedia.org/wiki/APNG) | [SDWebImageAPNGCoder](https://github.com/SDWebImage/SDWebImageAPNGCoder) (Deprecated, 5.x built-in plugin) | `.PNG` | Y | Y | Y | Y | N |
 | [GIF](https://en.wikipedia.org/wiki/GIF) | [SDWebImageFLPlugin](https://github.com/SDWebImage/SDWebImageFLPlugin) (Deprecated, use FLAnimatedImage) | `.GIF` | Y | Y | N | N | N |
