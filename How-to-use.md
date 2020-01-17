@@ -160,12 +160,13 @@ SDWebImageDownloader.shared.downloadImage(
     options: [.highPriority],
     progress: { (receivedSize, expectedSize, url) in
         /// progress tracking code
-    }, completed: { [weak self] (image, data, error, finished) in
-    if let image = image, finished {
-        /// do something with image
-        /// eg. self?.imageView.image = image
-    }
-})
+    }, 
+    completed: { [weak self] (image, data, error, finished) in
+       if let image = image, finished {
+          /// do something with image
+          /// eg. self?.imageView.image = image
+       }
+    })
 ```
 
 ### Using Asynchronous Image Caching Independently
