@@ -50,7 +50,6 @@ With blocks, you can be notified about the image download progress and whenever 
                                 ... completion code here ...
                              }];
 ```
-
 Note: neither your success nor failure block will be call if your image request is canceled before completion.
 
 ### Using SDWebImageManager
@@ -60,6 +59,8 @@ The `SDWebImageManager` is the class behind the `UIImageView(WebCache)` category
 Note: When the image is from memory cache, it will not contains any `NSData` by default. However, if you need image data, you can pass `SDWebImageQueryDataWhenInMemory` in options arg.
 
 Here is a simple example of how to use `SDWebImageManager`:
+
+##### Objective-C
 
 ```objective-c
 SDWebImageManager *manager = [SDWebImageManager sharedManager];
@@ -73,6 +74,26 @@ SDWebImageManager *manager = [SDWebImageManager sharedManager];
                         // do something with image
                     }
                  }];
+```
+
+#####  Swift
+
+```**swift**
+SDWebImageManager.shared.loadImage(
+    with: URL(string: imageUrl),
+    options: [.highPriority, .progressiveLoad],
+    progress: { (receivedSize, expectedSize, url) in
+        //Progress tracking code
+    },
+    completed: { [weak self] (image, data, error, cacheType, finished, url) in
+        guard let self = self else { return }
+        guard error == nil else { return }
+        if let image = image {
+            /// do something with image
+            /// eg. self.imageView.image = image
+        }
+    }
+)
 ```
 
 ### Using SDWebImagePrefetcher
