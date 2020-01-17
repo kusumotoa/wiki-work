@@ -750,11 +750,11 @@ You can also build your own data decryptor algorithm use the protocol method or 
 
 ### Thumbnail Decoding (5.5.0)
 
-Previously, for all the image (static or animated), SDWebImage will try to decode the full pixel image, whatever the size image is. This may suitable for most cases. However, since we focus on Web images, sometimes you may load images which size is much more than you view size. This may consume unused RAM and have a higher ratio of OOM.
+Previously, for all the image (static or animated), SDWebImage will try to decode the full pixel image, whatever the size image is. This may suitable for most cases. However, since we focus on Web images, sometimes you may load images which size is much more than you view size. This may consume unused RAM and have a OOM of high-risk.
 
-From v5.0.0, you can use the [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50), to scale down the size you want. This may solve this problem in some aspects. However, by the time transformer is called, the large bitmap pixel already been decoded on the RAM, For example, one huge World Map image which contains 10000x10000 pixels, by the time transformer is called, it already allocated 381MB in RAM, and have to allocated another 381MB for temp buffer, this may cause a OOM.
+From 5.0.0 version, you can use the [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50), to scale down the size you want. This may solve the problem in some aspects. However,  transformer once is called, the large bitmap pixel already been decoded on the RAM, For example, one huge World Map image which contains 10000x10000 pixels, if transformer is called, it already allocated 381MB in RAM, and have to allocated another 381MB for temp buffer, this may cause a OOM.
 
-So, a better way for thumbnail, it's to decode only the small size, instead of decode full pixels and scale it down. Both Apple's Image/IO and some third-party codec (like libwebp/libheif) support this feature. In 5.5.0 version, we introduce the solution for thumbnail decoding.
+So, a better way for thumbnail, it's only to decode the small size, instead of decoding full pixels and scaling it down. Both Apple's Image/IO and some third-party codec (like libwebp/libheif) support this feature. In 5.5.0 version, we introduce the solution for thumbnail decoding.
 
 To use thumbnail decoding, you can just use the context option, to pass the desired limit size you want. Like this:
 
