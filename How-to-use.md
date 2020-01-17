@@ -136,6 +136,8 @@ Notes:
 
 It's also possible to use the async image downloader independently:
 
+##### Objective-C
+
 ```objective-c
 SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
 [downloader downloadImageWithURL:imageURL
@@ -148,6 +150,22 @@ SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
                                 // do something with image
                             }
                         }];
+```
+
+##### Swift
+
+```swift
+SDWebImageDownloader.shared.downloadImage(
+    with: URL(string: imageUrl),
+    options: [.highPriority],
+    progress: { (receivedSize, expectedSize, url) in
+        /// progress tracking code
+    }, completed: { [weak self] (image, data, error, finished) in
+    if let image = image, finished {
+        /// do something with image
+        /// eg. self?.imageView.image = image
+    }
+})
 ```
 
 ### Using Asynchronous Image Caching Independently
