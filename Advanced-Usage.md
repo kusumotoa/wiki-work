@@ -707,7 +707,7 @@ SDWebImageManager.shared.optionsProcessor = SDWebImageOptionsProcessor() { url, 
 
 ### Animated Player (5.3.0)
 
-From 5.0.0, SDWebImage provide a `SDAnimatedImageView` (see [above](#animated-image-50)) for the animated image rendering solution. However, sometimes, we may want to do animation processing, where we don't have or don't want to create either `UIView` or `SDAnimatedImage` objects. For those cases, `SDAnimatedImageView`  can not solve the problem.
+From 5.0.0, SDWebImage provide a `SDAnimatedImageView` (see [above](#animated-image-50)) for the animated image rendering solution. However, sometimes, we may want to do animation processing, where we don't have or don't want to create either `UIView` or `SDAnimatedImage` objects. For those cases, `SDAnimatedImageView` can not solve the problem.
 
 For example, we can not use `SDAnimatedImageView` on watchOS animation, where we don't have a CALayer. Another case is the new SwiftUI environment, which don't have any UIKit behavior.
 
@@ -772,7 +772,7 @@ You can also build your own data decryptor algorithm use the protocol method or 
 
 Previously, for all the image (static or animated), SDWebImage will try to decode the full pixel image, whatever the size image is. This may suitable for most cases. However, since we focus on Web images, sometimes you may load images which size is much more than you view size. This may consume unused RAM and have a OOM of high-risk.
 
-From 5.0.0 version, you can use the [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50), to scale down the size you want. This may solve the problem in some aspects. However,  transformer once is called, the large bitmap pixel already been decoded on the RAM, For example, one huge World Map image which contains 10000x10000 pixels, if transformer is called, it already allocated 381MB in RAM, and have to allocated another 381MB for temp buffer, this may cause a OOM.
+From 5.0.0 version, you can use the [Image Transformer](https://github.com/SDWebImage/SDWebImage/wiki/Advanced-Usage#image-transformer-50), to scale down the size you want. This may solve the problem in some aspects. However, before transformer is called, the large bitmap pixel already been decoded on the RAM, For example, one huge World Map image which contains 10000x10000 pixels, if transformer is called, it already allocated 381MB in RAM, and have to allocated another 381MB for temp buffer, this may cause a OOM.
 
 So, a better way for thumbnail, it's only to decode the small size, instead of decoding full pixels and scaling it down. Both Apple's Image/IO and some third-party codec (like libwebp/libheif) support this feature. In 5.5.0 version, we introduce the solution for thumbnail decoding.
 
@@ -782,14 +782,13 @@ To use thumbnail decoding, you can just use the context option, to pass the desi
 
 ```objective-c
 CGSize thumbnailSize = CGSizeMake(200, 200); // Thumbnail will bounds to (200,200)
-[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextImageThumbnailPixelSize : @(thumbnailSize), SDWebImageContextImagePreserveAspectRatio: @(keepAspectRatio)}];
+[imageView sd_setImageWithURL:url placeholderImage:nil options:0 context:@{SDWebImageContextImageThumbnailPixelSize : @(thumbnailSize)];
 ```
 
 * Swift
 
 ```swift
-let thumbnailSize = CGSize(width: 200, height: 200)
-let url = URL(string: "https://foo/bar.jpg")
+let thumbnailSize = CGSize(width: 200, height: 200) // Thumbnail will bounds to (200,200)
 imageView.sd_setImage(with: url, placeholderImage: nil, context: [.imageThumbnailPixelSize : thumbnailSize])
 ```
 
