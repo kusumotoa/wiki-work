@@ -336,11 +336,31 @@ imageView.image = animatedImage
 imageView.stopAnimating()
 ```
 
+Note from 5.3.0, we do refactoring on the rendering part and provide a new component called `SDAnimatedImagePlayer`, see [below](#animated-player-530)
+
+#### Progressive Animation
+
 Another feature, `SDAnimatedImageView` supports progressive animated image rendering. Which behave just looks like when Chrome showing a large GIF image. (The animation pause at last downloaded frame, and continue when new frames available).
 
 To enable this, at first you must specify `SDWebImageProgressiveLoad` in the options for view category method. This behavior can also be controlled by `shouldIncrementalLoad` property in `SDAnimatedImageView`. You can disable it and just showing the first poster image during progressive image loading.
 
-Note from 5.3.0, we do refactoring on this and provide a new component called `SDAnimatedImagePlayer`, see [below](#animated-player-530)
++ Objective-C:
+
+```objectivec
+UIImageView *imageView;
+[imageView sd_setImageWithURL:url placeholderImage:nil options:SDWebImageProgressiveLoad];
+```
+
++ Swift: 
+
+```swift
+let imageView: UIImageView
+imageView.sd_setImage(with: url, placeholderImage: nil, options: [.progressiveLoad])
+```
+
+For normal `UIImageView/NSImageView`, because of the limitation of UIKit, we can not actually pause/resume the rendering frame. So, when you use `SDWebImageProgressiveLoad`, we only rendering the first poster frame. This can make best compatible for common use case.
+
+Note: In 4.x, the `SDWebImageProgressiveLoad` is named `SDWebImageProgressiveDownload`. However, 5.x 's third-party loader can have its own explanation of **What is progressive**. For example, the Photos Framework loader [SDWebImagePhotosPlugin](https://github.com/SDWebImage/SDWebImagePhotosPlugin) use `SDWebImageProgressiveLoad` to quickly render the degraded image firstly, then again with the full pixels image.
 
 #### Decoding
 
