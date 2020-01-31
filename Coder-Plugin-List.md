@@ -13,9 +13,9 @@ You can check some public coder plugin here for image format which is not availa
 | [GIF](https://en.wikipedia.org/wiki/GIF) | [SDWebImageFLPlugin](https://github.com/SDWebImage/SDWebImageFLPlugin) (Deprecated, use FLAnimatedImage) | `.GIF` | Y | Y | N | N | N |
 | [HEIF](http://nokiatech.github.io/heif/) | [SDWebImageHEIFCoder](https://github.com/SDWebImage/SDWebImageHEIFCoder) | `.HEIF` | Y | Y | N | N | Y (from v0.7.0) |
 | [BPG](https://bellard.org/bpg/) | [SDWebImageBPGCoder](https://github.com/SDWebImage/SDWebImageBPGCoder) | `.BPG` = 11 | Y | Y (from v0.4) | Y | N | N |
-| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `.SVG` = 12 | Y | Y | N | N | Y (Vector) |
-| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGKitPlugin](https://github.com/SDWebImage/SDWebImageSVGKitPlugin) (Deprecated, use SVGKit) | `.SVG` = 12 | Y | Y | N | N | Y (Vector) |
-| [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `.PDF` = 13 | Y | Y (from v0.3) | N | N | Y (Vector) |
+| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGCoder](https://github.com/SDWebImage/SDWebImageSVGCoder) | `.SVG` = 12 | Y | Y | N | N | Y (Vector from v1.4.0) |
+| [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) | [SDWebImageSVGKitPlugin](https://github.com/SDWebImage/SDWebImageSVGKitPlugin) (Deprecated, use SVGKit) | `.SVG` = 12 | Y | Y | N | N | Y (Vector from v1.1.0) |
+| [PDF](https://en.wikipedia.org/wiki/PDF) | [SDWebImagePDFCoder](https://github.com/SDWebImage/SDWebImagePDFCoder) | `.PDF` = 13 | Y | Y (from v0.3) | N | N | Y (Vector from v0.6.0) |
 | [FLIF](https://flif.info/) | [SDWebImageFLIFCoder](https://github.com/SDWebImage/SDWebImageFLIFCoder) | `.FLIF` = 14 | Y | Y | Y | Y | N |
 | [AVIF](https://aomediacodec.github.io/av1-avif) | [SDWebImageAVIFCoder](https://github.com/SDWebImage/SDWebImageAVIFCoder) | `.AVIF` = 15 | Y | Y (from v0.2) | N | N | N |
 
