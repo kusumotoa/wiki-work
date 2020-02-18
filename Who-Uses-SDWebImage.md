@@ -99,6 +99,7 @@ Do not hesitate to add yours.
 - [Mars Images](https://itunes.apple.com/us/app/mars-images/id492852224?mt=8) Browse a live feed of images from the NASA/JPL Curiosity and Opportunity Mars rovers
 - [Math Ace 2nd Grade](https://itunes.apple.com/us/app/math-ace-2nd-grade/id1381161884) (Fun, fast, and easy minute-long math challenges to master math essentials)
 - [Memeois](http://itunes.apple.com/us/app/memeois/id1237691962) (An app for all your meme needs. Browse. Share. Create. Edit.)
+- [Mensaplan Trier](https://github.com/marchein/Mensaplan) - Mensaplan allows students in Trier, Germany to see what their canteen is offering the next days
 - [Metrekare](https://itunes.apple.com/us/app/metrekare-emlak-ilanlar/id730956184) (Cloud Real Estate app for Turkey)
 - [Microsoft Edge](https://itunes.apple.com/us/app/microsoft-edge/id1288723196)
 - [Mink](http://itunes.com/apps/minkda/mink)
