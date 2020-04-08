@@ -196,6 +196,7 @@ Do not hesitate to add yours.
 - [Vendly](http://www.vend.ly)
 - [Venturepick](https://itunes.apple.com/us/app/venturepick/id1070671554?mt=8) - Connecting entrepreneurs and right investors 
 - [Via Lattea ski area](https://itunes.apple.com/us/app/via-lattea/id574253162)
+- [VillagePod](https://villagepod.app)
 - [VinylWall](https://itunes.apple.com/app/id635737755?mt=8)
 - [Wanelo Shopping](https://itunes.apple.com/us/app/wanelo-shopping/id550842012?mt=8)
 - [War of Words Apocalypse](https://itunes.apple.com/us/app/war-of-words-apocalypse/id508103291)
