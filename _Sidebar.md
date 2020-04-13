@@ -15,6 +15,7 @@
 
 ## Contribution
 * [How-to-Contribute](https://github.com/rs/SDWebImage/wiki/How-to-Contribute)
+* [Code-Architecture-Analysis](https://github.com/rs/SDWebImage/wiki/5.6-Code-Architecture-Analysis)
 
 ## Migration Guide
 
