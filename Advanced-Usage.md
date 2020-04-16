@@ -821,7 +821,7 @@ Note:
 
 Thumbnail encoding is used to encode an exist `UIImage/NSImage` to your target desired size, without pre-scale it down.
 
-The scale part is handled by the encoder, which is far more performant than using CGImage or CoreGraphics to scale it down.
+The scale part is handled by the encoder, which is far more performant than using CoreGraphics API. And it's more smart for some image format who support embed thumbnail item (JPEG/HEIF/AVIF).
 
 + Objective-C
 
