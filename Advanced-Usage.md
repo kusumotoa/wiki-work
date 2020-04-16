@@ -815,3 +815,31 @@ Note:
 2. By default, we keep the full image's aspect ratio for thumbnail. You can also use `.imagePreserveAspectRatio` to control this behavior to stretch the image.
 3. When the thumbnail pixel size is larger than full image pixel size, we will do only full pixel decoding, never scale up. For this propose, use resize transformer instead.
 4. These two context options, applied for Vector Image as well, such as PDF, SVG format in our [coder plugin list](https://github.com/SDWebImage/SDWebImage/wiki/Coder-Plugin-List). When you limit the pixel size, they will fallback to produce a bitmap version instead.
+
+
+### Thumbnail Encoding (5.7.0)
+
+Thumbnail encoding is used to encode an exist `UIImage/NSImage` to your target desired size, without pre-scale it down.
+
+The scale part is handled by the encoder, which is far more performant than using CGImage or CoreGraphics to scale it down.
+
++ Objective-C
+
+```objective-c
+// Image thumbnail encoding
+UIImage *image;
+NSData *thumbnailData = [[SDImageIOCoder sharedCoder] encodedDataWithImage:image format:SDImageFormatHEIC options:@{SDImageCoderEncodeMaxPixelSize : @(CGSizeMake(200, 200)}]; // encoding max pixel size
+```
+
++ Swift
+
+```swift
+// Image thumbnail encoding
+let image: UIImage
+let thumbnailData = SDImageIOCoder.shared.encodedData(with: image, format: .heic, options: [.encodeMaxPixelSize: CGSize(width: 200, height: 200)]) // encoding max pixel size
+```
+
+Note:
+1. The thumbnail always keep aspect ratio from the full image currently.
+2. When the thumbnail pixel size is larger than full image pixel size, we will do only full pixel encoding, never scale up. For this propose, use resize transformer instead.
+3. For JPEG/HEIF/AVIF, which image format container itself support embed thumbnail (think like EXIF), currently we don't write the standalone thumbnail item into the bitstream. This feature will be available in 5.8.0.
