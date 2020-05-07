@@ -16,7 +16,7 @@ You may not need all these configurations, pick what you need base on the use ca
 
 ```objective-c
 SDImageCache.sharedImageCache.config.maxDiskAge = 3600 * 24 * 7; // 1 Week
-SDImageCache.sharedImageCache.maxMemoryCost = 1024 * 1024 * 4 * 20; // 20 images (1024 * 1024 pixels)
+SDImageCache.sharedImageCache.config.maxMemoryCost = 1024 * 1024 * 4 * 20; // 20 images (1024 * 1024 pixels)
 SDImageCache.sharedImageCache.config.shouldCacheImagesInMemory = NO; // Disable memory cache, may cause cell-reusing flash because disk query is async
 SDImageCache.shared.config.shouldUseWeakMemoryCache = NO; // Disable weak cache, may see blank when return from background because memory cache is purged under pressure
 SDImageCache.sharedImageCache.config.diskCacheReadingOptions = NSDataReadingMappedIfSafe; // Use mmap for disk cache query
@@ -31,7 +31,7 @@ SDWebImageManager.sharedManager.optionsProcessor = [SDWebImageOptionsProcessor o
 
 ```swift
 SDImageCache.shared.config.maxDiskAge = 3600 * 24 * 7 // 1 Week
-SDImageCache.shared.maxMemoryCost = 1024 * 1024 * 4 * 20 // 20 images (1024 * 1024 pixels)
+SDImageCache.shared.config.maxMemoryCost = 1024 * 1024 * 4 * 20 // 20 images (1024 * 1024 pixels)
 SDImageCache.shared.config.shouldCacheImagesInMemory = false // Disable memory cache, may cause cell-reusing flash because disk query is async
 SDImageCache.shared.config.shouldUseWeakMemoryCache = false // Disable weak cache, may see blank when return from background because memory cache is purged under pressure
 SDImageCache.shared.config.diskCacheReadingOptions = .mappedIfSafe // Use mmap for disk cache query
