@@ -126,15 +126,13 @@ Add these before you call ```sd_setImageWithURL```
 * Objective-C
 
 ``` objective-c
-[imageView sd_setShowActivityIndicatorView:YES];
-[imageView sd_setIndicatorStyle:UIActivityIndicatorViewStyleGray];
+imageView.sd_imageIndicator = SDWebImageActivityIndicator.grayIndicator;
 ```
 
 * Swift
 
 ``` swift
-imageView.sd_setShowActivityIndicatorView(true)
-imageView.sd_setIndicatorStyle(.Gray)
+imageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
 ```
 
 ### Handle self capture in completion block
